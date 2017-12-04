@@ -1,0 +1,60 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1142.74 1439.43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f4ce75;
+      }
+
+      .cls-2, .cls-3, .cls-8 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-2, .cls-8 {
+        stroke: #231f20;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        stroke: #414042;
+      }
+
+      .cls-4 {
+        font-size: 12px;
+        fill: #cbc630;
+        font-family: MyriadPro-Regular, Myriad Pro;
+      }
+
+      .cls-5 {
+        fill: #38aebe;
+      }
+
+      .cls-6 {
+        fill: #1e1c41;
+      }
+
+      .cls-7 {
+        fill: #ec593e;
+      }
+
+      .cls-8 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>TriangleBalloon</title>
+  <polygon class="cls-1" points="864.52 302.4 483.11 82.19 483.11 522.61 864.52 302.4"/>
+  <ellipse class="cls-2" cx="566.47" cy="1049.31" rx="193.17" ry="36.64"/>
+  <line class="cls-3" x1="566.47" y1="474.92" x2="566.47" y2="1085.94"/>
+  <text class="cls-4" transform="translate(300 400)">cbc631</text>
+  <polygon class="cls-5" points="377.4 149.04 157.19 530.46 597.61 530.46 377.4 149.04"/>
+  <polygon class="cls-6" points="987.41 437.75 606 217.54 606 657.96 987.41 437.75"/>
+  <polygon class="cls-7" points="658.85 360.31 220.6 404.08 477.63 761.73 658.85 360.31"/>
+  <ellipse class="cls-8" cx="566.47" cy="1179.84" rx="206.08" ry="152.88"/>
+  <polygon class="cls-2" points="505.68 448.51 433.87 363.6 543.31 343.87 505.68 448.51"/>
+  <rect class="cls-2" x="448.93" y="1122.95" width="34.18" height="34.18"/>
+  <path class="cls-3" d="M145.54,555.69c115.8-68.2,421,289.11,421,289.11L780.49,547H285.71"/>
+</svg>
