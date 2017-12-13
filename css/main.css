@@ -1,3 +1,19 @@
+/* ================================
+   COLORS
+   ================================ */
+
+/*  blue #1C1B41
+  orange #ED583F
+  teal #2EAFBE
+  yellow #F5CE76
+  gray #D4D3D9
+  light-gray #EAEAEA 
+  brown #3B2310
+  tan #DEB683*/   
+
+/* ================================
+   GENERAL STYLING
+   ================================ */
 .visually-hidden { /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
     position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -9,3 +25,265 @@
     overflow: hidden;
 } 
 body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .visually-hidden button { display: none !important; }
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+  font-family: avenir, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(~"100vh - 150px");
+}
+
+
+.homepage-content, .features,
+footer {
+    padding: 20px;
+}
+
+.homepage-content, .features {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+.homepage-content {
+  max-width: 1000px;
+}
+
+.topics-list, .nav {
+  list-style: none;
+  padding: 0;
+}
+
+/* ================================
+   SVG ANIMATIONS
+   ================================ */
+
+.triangle-balloon, .circle-balloon {
+  height: 150px;
+  position: absolute;
+}
+
+.circle-balloon {
+  right: 0px;
+  bottom: -80px;
+  transform: rotate(-20deg);
+  animation: float-two 3s ease-in-out /*infinite*/;
+}
+
+.triangle-balloon {
+  top: -45px;
+  left: -8px;
+  animation: float-one 3s ease-in-out /*infinite*/;
+  transform: rotate(20deg);
+}
+
+@keyframes float-one {
+  0% {
+   -ms-transform: rotate(5deg);
+   -webkit-transform: rotate(5deg);
+   transform: rotate(5deg);
+   top: -100px;
+  }
+  100% {
+   -ms-transform: rotate(20deg);
+   -webkit-transform: rotate(20deg);
+   transform: rotate(20deg);
+   top: -45px; 
+  }
+}
+
+@keyframes float-two {
+  0% {
+   -ms-transform: rotate(0deg);
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+   bottom: -30px;
+  }
+  100% {
+   -ms-transform: rotate(-20deg);
+   -webkit-transform: rotate(-20deg);
+   transform: rotate(-20deg);
+   bottom: -80px; 
+  }
+}
+
+/* ================================
+   NAVIGATION
+   ================================ */
+
+nav {
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.nav-link-item {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+
+.nav-link {
+  color: rgb(28,27,65);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+
+/* ================================
+   MAIN SECTION
+   ================================ */
+
+.homepage-logo {
+  width: 90%;
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+/* ================================
+   FORMS
+   ================================ */
+
+.email, .button {
+  height: 45px;
+  width: 90%;
+  max-width: 300px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.email {
+  margin: 0 0 15px 0;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background: rgb(28,27,65);
+  color: white;
+}
+
+.signup-form {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* ================================
+   FEATURES SECTION
+   ================================ */
+
+.features {
+  max-width: 750px;
+  position: relative;
+}
+
+.topics-list li {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+}
+
+.topics-list li:nth-child(1), li:nth-child(5), li:nth-child(9) {
+  border: 3px solid #ED583F;
+}
+
+.topics-list li:nth-child(2), li:nth-child(6), li:nth-child(10) {
+  border: 3px solid #2EAFBE;
+}
+
+.topics-list li:nth-child(3), li:nth-child(7) {
+  border: 3px solid #F5CE76;
+}
+
+.topics-list li:nth-child(4), li:nth-child(8) {
+  border: 3px solid #D4D3D9;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+footer {
+    background: #EAEAEA;
+    color: darkblue;
+    text-align: center;
+}
+
+
+i {
+  background: rgb(28,27,65);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+i:hover {
+  color: rgb(28,27,65);
+  background: white;
+  transition: 1s;
+}
+
+
+/* ================================
+   MEDIA QUERIES
+   ================================ */
+
+@media only screen and (min-width: 648px) {
+    .triangle-balloon, .circle-balloon {
+        height: 100%;
+        position: initial;
+        animation: none;
+      }
+    .triangle-balloon {
+      transform: rotate(0deg);
+      }
+    .circle-balloon {
+      transform: rotate(-10deg);
+      height: 400px;
+    }
+    .homepage-balloon-container, .homepage-content-container, .circle-balloon, .features-content {
+      display: inline-block;
+    }
+    .homepage-balloon-container {
+      height: 400px;
+    }
+    .homepage-content-container {
+      width: 50%;
+    }
+    .homepage-content {
+      margin: 0 auto;
+    }
+    .features-content {
+      width: 60%;
+      vertical-align: top;
+      padding-top: 65px;
+    }
+    .horizontal {
+      max-width: 200px;
+    }
+  } 
