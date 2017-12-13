@@ -1,0 +1,47 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1196.24 1743.95">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-1 {
+        stroke: #231f20;
+        stroke-linecap: round;
+      }
+
+      .cls-2 {
+        fill: #f5dc12;
+      }
+
+      .cls-3 {
+        fill: #f7941d;
+      }
+
+      .cls-4 {
+        fill: #f15a29;
+      }
+
+      .cls-5 {
+        fill: #ef4136;
+      }
+
+      .cls-6 {
+        stroke: #414042;
+      }
+    </style>
+  </defs>
+  <title>CircleBalloon</title>
+  <ellipse class="cls-1" cx="610.94" cy="1208.31" rx="193.17" ry="36.64"/>
+  <circle class="cls-2" cx="417.03" cy="351.25" r="76.95"/>
+  <circle class="cls-3" cx="589.32" cy="623.02" r="329.18"/>
+  <circle class="cls-4" cx="851.49" cy="556" r="41.08"/>
+  <circle class="cls-5" cx="340.12" cy="791.91" r="79.98"/>
+  <path class="cls-6" d="M297,724.29h634C680.08,1155.26,500.13,1110.4,297,724.29Z"/>
+  <line class="cls-6" x1="610.94" y1="724.29" x2="610.94" y2="1218.4"/>
+  <circle class="cls-1" cx="824.75" cy="529.26" r="14.34"/>
+  <circle class="cls-1" cx="448.84" cy="1250.59" r="5.65"/>
+  <circle class="cls-1" cx="417.03" cy="470.39" r="5.65"/>
+  <rect class="cls-1" x="422.83" y="1226.96" width="376.33" height="225.2" rx="12" ry="12"/>
+</svg>
