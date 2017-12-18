@@ -7,7 +7,7 @@
   teal #2EAFBE
   yellow #F5CE76
   gray #D4D3D9
-  light-gray #EAEAEA 
+  light-gray #f5f5f5 
   brown #3B2310
   tan #DEB683*/   
 
@@ -47,21 +47,20 @@ main {
     min-height: calc(~"100vh - 150px");
 }
 
+.gray-background {
+  background: #f5f5f5;
+}
 
-.homepage-content, .features,
-footer {
+
+.homepage-content, .features, .about-content, footer {
     padding: 20px;
 }
 
-.homepage-content, .features {
+.homepage-content, .features, .about-content, .about-signup {
   flex: 1;
   position: relative;
   text-align: center;
   margin: auto;
-}
-
-.homepage-content {
-  max-width: 1000px;
 }
 
 .topics-list, .nav {
@@ -70,7 +69,7 @@ footer {
 }
 
 /* ================================
-   SVG ANIMATIONS
+   SVG ANIMATIONS / ILLUSTRATIONS
    ================================ */
 
 .triangle-balloon, .circle-balloon {
@@ -90,6 +89,12 @@ footer {
   left: -8px;
   animation: float-one 3s ease-in-out /*infinite*/;
   transform: rotate(20deg);
+}
+
+.hex-balloon {
+  height: 200px;
+  float: left;
+  margin: -75px -10px 30px -10px;
 }
 
 @keyframes float-one {
@@ -127,8 +132,8 @@ footer {
    ================================ */
 
 nav {
-  text-align: right;
-  padding: 10px 20px;
+  text-align: center;
+  padding: 10px 50px;
 }
 
 .nav-link-item {
@@ -145,6 +150,9 @@ nav {
   font-weight: bold;
 }
 
+.header-logo {
+  height: 21px;
+}
 
 /* ================================
    MAIN SECTION
@@ -223,12 +231,38 @@ nav {
   border: 3px solid #D4D3D9;
 }
 
+/* ================================
+   ABOUT PAGE
+   ================================ */
+
+.profile {
+  display: inline-block;
+  padding: 15px;
+  margin: 10px;
+}
+.profile-img {
+  height: 130px;
+  border-radius: 50%;
+}
+
+.profile-name, .profile-title {
+  margin: 5px 0;
+}
+
+.profile-title {
+  font-style: italic;
+}
+
+.about-signup {
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
+}
 
 /* ================================
    FOOTER
    ================================ */
 footer {
-    background: #EAEAEA;
     color: darkblue;
     text-align: center;
 }
@@ -255,6 +289,13 @@ i:hover {
    ================================ */
 
 @media only screen and (min-width: 648px) {
+    nav {
+      text-align: right;
+    }
+    .header-logo {
+      float: left;
+      margin: 16px 0;
+    }
     .triangle-balloon, .circle-balloon {
         height: 100%;
         position: initial;
@@ -266,17 +307,26 @@ i:hover {
     .circle-balloon {
       transform: rotate(-10deg);
       height: 400px;
+      margin-left: 40px;
+    }
+    .hex-balloon {
+      height: 400px;
+      margin: -75px 0 0 0;
+      float: none;
     }
     .homepage-balloon-container, .homepage-content-container, .circle-balloon, .features-content {
       display: inline-block;
     }
     .homepage-balloon-container {
-      height: 400px;
+      height: 500px;
+      margin-right: 50px;
     }
     .homepage-content-container {
       width: 50%;
+      margin-top:70px;
+      vertical-align: top;
     }
-    .homepage-content {
+    .homepage-content, .about-content {
       margin: 0 auto;
     }
     .features-content {
@@ -286,5 +336,11 @@ i:hover {
     }
     .horizontal {
       max-width: 200px;
+    }
+    .about-signup-content {
+      display: inline-block;
+      width: 40%;
+      vertical-align: top;
+      margin-top: 70px;
     }
   } 
