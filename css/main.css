@@ -257,6 +257,7 @@ nav {
   width: 100%;
   padding: 30px;
   margin-top: 50px;
+  height: 320px;
 }
 
 /* ================================
@@ -341,6 +342,6 @@ i:hover {
       display: inline-block;
       width: 40%;
       vertical-align: top;
-      margin-top: 70px;
+      margin-top: 36px;
     }
   } 
