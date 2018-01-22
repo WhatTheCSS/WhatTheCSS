@@ -240,9 +240,30 @@ nav {
   padding: 15px;
   margin: 10px;
 }
+
+.profile-img-container {
+  position: relative;
+}
 .profile-img {
-  height: 130px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
+  margin: 0 auto;
+  transition: .6s;
+}
+
+.profile-img-mascot {
+  height: 175px;
+  width: 175px;
+  margin: 0 auto;
+  position: absolute;
+  top: -18px;
+  left: -8px;
+}
+
+.profile-img-mascot:hover {
+  opacity: 0;
+  transition: .8s;
 }
 
 .profile-name, .profile-title {
