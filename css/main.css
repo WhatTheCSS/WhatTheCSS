@@ -152,8 +152,8 @@ nav {
 
 .header-logo {
   height: 35px;
-  padding: 5px;
-  border: 3px solid  #1C1B41;
+/*  padding: 5px;
+  border: 3px solid  #1C1B41;*/
 }
 
 /* ================================
@@ -319,6 +319,9 @@ i:hover {
     .header-logo {
       float: left;
       margin: 16px 0;
+      height: 35px;
+      padding: 5px;
+      border: 3px solid  #1C1B41;
     }
     .triangle-balloon, .circle-balloon {
         height: 100%;
