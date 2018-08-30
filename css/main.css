@@ -262,7 +262,7 @@ nav {
       overflow: hidden; }
       @media screen and (max-width: 709px) {
         .homepage .bonus .bonus-content .playlists .playlists-content {
-          padding: 15px; } }
+          padding: 30px; } }
       .homepage .bonus .bonus-content .playlists .playlists-content .playlist-quote {
         font-size: 18px;
         font-style: italic;
@@ -270,6 +270,9 @@ nav {
         .homepage .bonus .bonus-content .playlists .playlists-content .playlist-quote a {
           text-decoration: none;
           color: #ED583F; }
+        @media screen and (max-width: 709px) {
+          .homepage .bonus .bonus-content .playlists .playlists-content .playlist-quote {
+            font-size: 16px; } }
       .homepage .bonus .bonus-content .playlists .playlists-content .playlist-section svg {
         display: inline-block;
         margin-top: 45px;

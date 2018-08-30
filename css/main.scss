@@ -324,7 +324,7 @@ nav {
           text-align: center;
           overflow: hidden;
           @media screen and (max-width: 709px){ 
-          padding: 15px;
+          padding: 30px;
 
           }
           .playlist-quote {
@@ -334,6 +334,9 @@ nav {
             a {
               text-decoration: none;  
               color: $red;
+            }
+            @media screen and (max-width: 709px){ 
+              font-size: 16px;
             }
            }
           .playlist-section {
