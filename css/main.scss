@@ -373,11 +373,8 @@ nav {
             p {
               color: $blue;
               display: inline-block;
-              max-width: 330px;
+              max-width: 400px;
               text-align: left;
-              @media screen and (max-width: 709px){ 
-                  max-width: 400px;
-              }
             }
         }
       }
