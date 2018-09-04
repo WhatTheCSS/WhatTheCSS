@@ -26,6 +26,8 @@ h2 {
     font-size: 40px;
     line-height: 1.10;
     text-transform: uppercase;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 3px;
 }
 
 h3 {
@@ -101,22 +103,21 @@ ul {
   }
 
 nav {
-  background-color: $red;
-  // background-image: url(../imgs/navigation-bar-red-curve-updated.svg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // min-height: 163px;
-  min-height: 130px;
+  background-color: white;
+  background-image: url(../imgs/navigation-bar-red-curve-updated.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 163px;
   padding: 12px 20px 20px 20px;
-  // background-position: right 0;
+  background-position: right 0;
   margin-left: -5px;
   margin-bottom: -5px;
-  // @media screen and (min-width: 500px){
-  //   background-position: right -10px;
-  // }
-  // @media screen and (min-width: 1000px){
-  //   background-position: right -33px;
-  // }
+  @media screen and (min-width: 500px){
+    background-position: right -10px;
+  }
+  @media screen and (min-width: 1000px){
+    background-position: right -33px;
+  }
   h1 {
     display: inline-block;
     margin: 0;
@@ -191,6 +192,10 @@ nav {
       margin: auto;
       text-align: left;
       padding: 20px 40px;
+      h2 {
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+      }
     }
   }
   
@@ -318,6 +323,10 @@ nav {
       padding: 40px;
       max-width: 800px;
       margin: auto;
+      h2 span {
+        animation: float 5s ease-in-out infinite;
+        display: inline-block;
+      }
       .playlists {
         .playlists-content {
           h3 {
@@ -416,6 +425,7 @@ nav {
 
 nav.about-nav {
   background-color: $blue;
+  background-image: url(../imgs/navigation-bar-blue.svg);
 }
 
 .about-content {
@@ -499,6 +509,9 @@ nav.about-nav {
   h1 {
     text-transform: uppercase;
     text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 45px;
+    line-height: 10px;
   }
   p {
     max-width: 600px;
@@ -509,8 +522,8 @@ nav.about-nav {
       text-align: center;
   }
   .course-list {
-    color: $blue;
-    background-color: $white;
+    color: $white;
+    // background-color: $white;
     padding: 40px;
     margin: auto;
     max-width: 1000px;
@@ -532,7 +545,35 @@ nav.about-nav {
     padding: 0;
   }
 }
+.client-days-section {
+  background-color: white;
+  padding: 40px;
+  margin: auto;
+  max-width: 1000px;
+  color: $blue;
+  position: relative;
+  margin-top: 60px;
+  &:before {
+    position: absolute;
+    content: '';
+    top: -70px;
+    left: 0px;
+    width: 100%;
+    height: 150px;
 
+    background-image: url(../imgs/navigation-bar-white.svg);
+    background-repeat: no-repeat;
+    @media screen and (max-width: 648px){
+      top: -50px;
+    }
+    @media screen and (max-width: 500px){
+      top: -40px;
+    }
+  }
+  h2 {
+    color: $yellow;
+  }
+}
 .clients, .client-challenges {
   max-width: 800px;
   margin: auto;
@@ -635,7 +676,7 @@ footer {
 }
 
 .music-3 {
-  animation: rotate-left 1.5s infinite;
+  animation: rotate-left-1 1.5s infinite;
 }
 
 .music-4 {
@@ -848,4 +889,24 @@ animation: colors 6s infinite;
             100% {
             opacity: 1;
             }
+}
+
+
+
+@keyframes float {
+  0% {
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0); 
+   transform: translateY(0); 
+  }
+  50% {
+    -ms-transform: translateY(-5px);
+  -webkit-transform: translateY(-5px); 
+   transform: translateY(-5px);   
+  }
+   100% {
+   -ms-transform: translateY(0px);
+   -webkit-transform: translateY(0px); 
+   transform: translateY(0px);   
+  }
 }
