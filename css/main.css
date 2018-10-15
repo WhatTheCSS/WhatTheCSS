@@ -76,8 +76,8 @@ a.button {
       background-color: #b4b013; }
 
 nav {
-  background-color: white;
-  background-image: url(../imgs/navigation-bar-red-curve-updated.svg);
+  background-color: #ED583F;
+/*   background-image: url(../imgs/navigation-bar-red-curve-updated.svg); */
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 165px;
