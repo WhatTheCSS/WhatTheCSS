@@ -76,8 +76,6 @@ a.button {
       background-color: #b4b013; }
 
 nav {
-  background-color: #ED583F;
-/*   background-image: url(../imgs/navigation-bar-red-curve-updated.svg); */
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 130px;
@@ -129,6 +127,9 @@ nav {
           font-weight: bold; }
     nav .nav-links li:last-child {
       margin-right: 0; }
+
+nav.homepage-nav {
+  background-color: #ED583F; }
 
 .homepage .hero {
   position: relative;
@@ -353,8 +354,8 @@ nav {
   color: #263557; }
 
 nav.about-nav {
-  background-color: #263557;
-  background-image: url(../imgs/navigation-bar-blue.svg); }
+  background-color: #22AFBF !important;
+  background-image: none; }
 
 .about-content {
   text-align: center; }

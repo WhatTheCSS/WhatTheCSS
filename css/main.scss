@@ -104,11 +104,12 @@ ul {
   }
 
 nav {
-  background-color: white;
-  background-image: url(../imgs/navigation-bar-red-curve-updated.svg);
+  // background-color: white;
+  // background-image: url(../imgs/navigation-bar-red-curve-updated.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 165px;
+  // min-height: 165px;
+  min-height: 130px;
   padding: 12px 20px 20px 20px;
   background-position: right 0;
   margin-left: -5px;
@@ -167,6 +168,10 @@ nav {
       margin-right: 0;
     }
   }
+}
+
+nav.homepage-nav {
+  background-color: $red;
 }
 
 .homepage {
@@ -428,8 +433,9 @@ nav {
 //About Page
 
 nav.about-nav {
-  background-color: $blue;
-  background-image: url(../imgs/navigation-bar-blue.svg);
+  background-color: $teal !important;
+  background-image: none;
+  // background-image: url(../imgs/navigation-bar-blue.svg);
 }
 
 .about-content {
