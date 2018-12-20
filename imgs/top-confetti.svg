@@ -130,7 +130,7 @@
         opacity: 0.981;
       }
 
-      .cls-25, .cls-26, .cls-31, .cls-34, .cls-35 {
+      .cls-25, .cls-26, .cls-31, .cls-35 {
         stroke: #707070;
       }
 
@@ -191,7 +191,7 @@
       }
     </style>
   </defs>
-  <g id="Group_825" data-name="Group 825" transform="translate(2.553 -759.868)">
+  <g id="Group_828" data-name="Group 828" transform="translate(2.553 -759.868)">
     <rect id="Rectangle_25" data-name="Rectangle 25" class="cls-1" width="45.701" height="73.065" transform="matrix(-0.766, 0.643, -0.643, -0.766, 376.646, 891.654)"/>
     <rect id="Rectangle_24" data-name="Rectangle 24" class="cls-2" width="31.513" height="50.382" transform="translate(79.667 886.936) rotate(-87)"/>
     <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-3" width="25.086" height="40.106" transform="translate(442.811 969.435) rotate(-97)"/>
@@ -234,10 +234,7 @@
     </g>
     <ellipse id="Ellipse_12" data-name="Ellipse 12" class="cls-32" cx="37.684" cy="37.684" rx="37.684" ry="37.684" transform="translate(140.812 1030.712) rotate(-167)"/>
     <ellipse id="Ellipse_8" data-name="Ellipse 8" class="cls-33" cx="36.4" cy="36.4" rx="36.4" ry="36.4" transform="translate(111.404 1021.823) rotate(-5)"/>
-    <g id="Ellipse_4" data-name="Ellipse 4" class="cls-34" transform="matrix(0.326, -0.946, 0.946, 0.326, 77.531, 1165.349)">
-      <ellipse class="cls-37" cx="34.465" cy="34.466" rx="34.465" ry="34.466"/>
-      <ellipse class="cls-38" cx="34.465" cy="34.466" rx="33.965" ry="33.966"/>
-    </g>
+    <ellipse id="Ellipse_4" data-name="Ellipse 4" class="cls-34" cx="34.465" cy="34.466" rx="34.465" ry="34.466" transform="matrix(0.326, -0.946, 0.946, 0.326, 77.531, 1165.349)"/>
     <g id="Rectangle_28" data-name="Rectangle 28" class="cls-35" transform="translate(490.628 795.809) rotate(-60)">
       <rect class="cls-37" width="41.502" height="37.747"/>
       <rect class="cls-38" x="0.5" y="0.5" width="40.502" height="36.747"/>

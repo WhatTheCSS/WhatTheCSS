@@ -52,6 +52,7 @@ nav {
 }
 
 .hero-container {
+  position: relative;
  
 }
 
@@ -168,12 +169,25 @@ nav {
   height: 100px;
 }
 
-.confetti-layer {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/929057/top-confetti.png');
-  background-size: cover;
+footer {
+  position: relative;
 }
 
-.footer-confetti {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/929057/bottom-confetti.png');
+.top-confetti-layer, .bottom-confetti-layer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.top-confetti-layer {
+  background-image: url('../imgs/top-confetti.svg');
+  bottom: -130px;
+}
+
+.bottom-confetti-layer {
+  background-image: url('../imgs/bottom-confetti.svg');
   background-size: cover;
 }
