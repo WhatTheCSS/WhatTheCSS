@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1443.517 453.714">
+  <defs>
+    <style>
+      .cls-1, .cls-32, .cls-8 {
+        fill: #273656;
+      }
+
+      .cls-1 {
+        opacity: 0.83;
+      }
+
+      .cls-19, .cls-2, .cls-20, .cls-36, .cls-6 {
+        fill: #f3cd75;
+      }
+
+      .cls-2 {
+        opacity: 0.895;
+      }
+
+      .cls-10, .cls-13, .cls-14, .cls-22, .cls-3, .cls-5 {
+        fill: #ed583f;
+      }
+
+      .cls-3 {
+        opacity: 0.877;
+      }
+
+      .cls-27, .cls-4 {
+        fill: #dfd8d2;
+      }
+
+      .cls-4 {
+        opacity: 0.944;
+      }
+
+      .cls-5 {
+        opacity: 0.923;
+      }
+
+      .cls-6 {
+        opacity: 0.829;
+      }
+
+      .cls-15, .cls-16, .cls-21, .cls-25, .cls-26, .cls-29, .cls-31, .cls-35, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        opacity: 0.88;
+      }
+
+      .cls-8 {
+        opacity: 0.969;
+      }
+
+      .cls-17, .cls-33, .cls-9 {
+        fill: #e5efed;
+      }
+
+      .cls-9 {
+        opacity: 0.855;
+      }
+
+      .cls-10 {
+        opacity: 0.806;
+      }
+
+      .cls-11, .cls-12, .cls-28, .cls-30, .cls-34 {
+        fill: #2eafbe;
+      }
+
+      .cls-11 {
+        opacity: 0.833;
+      }
+
+      .cls-12 {
+        opacity: 0.928;
+      }
+
+      .cls-13 {
+        opacity: 0.854;
+      }
+
+      .cls-14 {
+        opacity: 0.824;
+      }
+
+      .cls-15 {
+        opacity: 0.994;
+      }
+
+      .cls-16 {
+        opacity: 0.931;
+      }
+
+      .cls-17 {
+        opacity: 0.901;
+      }
+
+      .cls-18, .cls-24 {
+        fill: #cbc530;
+      }
+
+      .cls-18 {
+        opacity: 0.974;
+      }
+
+      .cls-19 {
+        opacity: 0.886;
+      }
+
+      .cls-20 {
+        opacity: 0.938;
+      }
+
+      .cls-21 {
+        opacity: 0.97;
+      }
+
+      .cls-22 {
+        opacity: 0.872;
+      }
+
+      .cls-23 {
+        fill: #ef7e22;
+        opacity: 0.844;
+      }
+
+      .cls-24 {
+        opacity: 0.981;
+      }
+
+      .cls-25, .cls-26, .cls-31, .cls-34, .cls-35 {
+        stroke: #707070;
+      }
+
+      .cls-25 {
+        opacity: 0.885;
+      }
+
+      .cls-26 {
+        opacity: 0.985;
+      }
+
+      .cls-27 {
+        opacity: 0.985;
+      }
+
+      .cls-28 {
+        opacity: 0.98;
+      }
+
+      .cls-29 {
+        opacity: 0.886;
+      }
+
+      .cls-30 {
+        opacity: 0.958;
+      }
+
+      .cls-31 {
+        opacity: 0.805;
+      }
+
+      .cls-32 {
+        opacity: 0.892;
+      }
+
+      .cls-33 {
+        opacity: 0.81;
+      }
+
+      .cls-34 {
+        opacity: 0.95;
+      }
+
+      .cls-35 {
+        opacity: 0.812;
+      }
+
+      .cls-36 {
+        opacity: 0.957;
+      }
+
+      .cls-37 {
+        stroke: none;
+      }
+
+      .cls-38 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_825" data-name="Group 825" transform="translate(2.553 -759.868)">
+    <rect id="Rectangle_25" data-name="Rectangle 25" class="cls-1" width="45.701" height="73.065" transform="matrix(-0.766, 0.643, -0.643, -0.766, 376.646, 891.654)"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" class="cls-2" width="31.513" height="50.382" transform="translate(79.667 886.936) rotate(-87)"/>
+    <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-3" width="25.086" height="40.106" transform="translate(442.811 969.435) rotate(-97)"/>
+    <rect id="Rectangle_21" data-name="Rectangle 21" class="cls-4" width="43.855" height="70.113" transform="matrix(-0.921, -0.391, 0.391, -0.921, 267.512, 1012.974)"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-5" width="25.847" height="41.323" transform="translate(1070.687 1001.27) rotate(-30)"/>
+    <rect id="Rectangle_18" data-name="Rectangle 18" class="cls-6" width="32.947" height="52.674" transform="matrix(-0.799, -0.602, 0.602, -0.799, 917.99, 1074.495)"/>
+    <rect id="Rectangle_16" data-name="Rectangle 16" class="cls-7" width="38.266" height="61.179" transform="translate(942.608 1098.679) rotate(120)"/>
+    <ellipse id="Ellipse_22" data-name="Ellipse 22" class="cls-8" cx="37.669" cy="37.669" rx="37.669" ry="37.669" transform="translate(719.508 836.644) rotate(-88)"/>
+    <ellipse id="Ellipse_19" data-name="Ellipse 19" class="cls-9" cx="33.862" cy="33.862" rx="33.862" ry="33.862" transform="matrix(-0.978, 0.208, -0.208, -0.978, 913.072, 927.236)"/>
+    <ellipse id="Ellipse_17" data-name="Ellipse 17" class="cls-10" cx="29.073" cy="29.073" rx="29.073" ry="29.073" transform="translate(1310.214 1003.742) rotate(-132)"/>
+    <ellipse id="Ellipse_14" data-name="Ellipse 14" class="cls-11" cx="29.709" cy="29.709" rx="29.709" ry="29.709" transform="matrix(-0.545, 0.839, -0.839, -0.545, 766.775, 1022.325)"/>
+    <ellipse id="Ellipse_7" data-name="Ellipse 7" class="cls-12" cx="38.037" cy="38.037" rx="38.037" ry="38.037" transform="translate(1216.002 1202.995) rotate(172)"/>
+    <rect id="Rectangle_26" data-name="Rectangle 26" class="cls-13" width="58.624" height="53.32" transform="translate(-2.553 840.062) rotate(-51)"/>
+    <rect id="Rectangle_23" data-name="Rectangle 23" class="cls-14" width="36.068" height="32.805" transform="translate(696.315 901.359) rotate(-9)"/>
+    <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-15" width="32.055" height="29.154" transform="matrix(-0.616, 0.788, -0.788, -0.616, 544.414, 1106.725)"/>
+    <rect id="Rectangle_14" data-name="Rectangle 14" class="cls-16" width="61.503" height="55.939" transform="translate(437.657 1136.724) rotate(-8)"/>
+    <ellipse id="Ellipse_21" data-name="Ellipse 21" class="cls-17" cx="34.651" cy="34.651" rx="34.651" ry="34.651" transform="translate(1235.019 882.192) rotate(-16)"/>
+    <ellipse id="Ellipse_20" data-name="Ellipse 20" class="cls-18" cx="27.293" cy="27.293" rx="27.293" ry="27.293" transform="translate(1035.352 863.592) rotate(121)"/>
+    <ellipse id="Ellipse_16" data-name="Ellipse 16" class="cls-19" cx="36.347" cy="36.347" rx="36.347" ry="36.347" transform="translate(1131.416 1014.084) rotate(-128)"/>
+    <ellipse id="Ellipse_13" data-name="Ellipse 13" class="cls-20" cx="28.985" cy="28.985" rx="28.985" ry="28.985" transform="matrix(0.358, -0.934, 0.934, 0.358, 397.811, 1064.971)"/>
+    <ellipse id="Ellipse_10" data-name="Ellipse 10" class="cls-21" cx="38.694" cy="38.694" rx="38.694" ry="38.694" transform="translate(671.346 1144.995) rotate(-114)"/>
+    <ellipse id="Ellipse_9" data-name="Ellipse 9" class="cls-22" cx="44.62" cy="44.62" rx="44.62" ry="44.62" transform="matrix(-0.995, 0.105, -0.105, -0.995, 393.526, 1112.327)"/>
+    <ellipse id="Ellipse_6" data-name="Ellipse 6" class="cls-23" cx="36.866" cy="36.866" rx="36.866" ry="36.866" transform="matrix(-0.017, 1, -1, -0.017, 1024.633, 1072.921)"/>
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" class="cls-24" cx="37.24" cy="37.24" rx="37.24" ry="37.24" transform="translate(840.186 1123.461) rotate(114)"/>
+    <g id="Rectangle_30" data-name="Rectangle 30" class="cls-25" transform="translate(1286.268 863.168) rotate(173)">
+      <rect class="cls-37" width="53.682" height="23.03"/>
+      <rect class="cls-38" x="0.5" y="0.5" width="52.682" height="22.03"/>
+    </g>
+    <g id="Rectangle_29" data-name="Rectangle 29" class="cls-26" transform="translate(940.12 852.449) rotate(-34)">
+      <rect class="cls-37" width="49.45" height="21.215"/>
+      <rect class="cls-38" x="0.5" y="0.5" width="48.45" height="20.215"/>
+    </g>
+    <rect id="Rectangle_27" data-name="Rectangle 27" class="cls-27" width="80.89" height="34.703" transform="translate(526.423 829.636) rotate(172)"/>
+    <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-28" width="96.124" height="41.238" transform="matrix(-0.105, 0.995, -0.995, -0.105, 1314.551, 917.342)"/>
+    <rect id="Rectangle_17" data-name="Rectangle 17" class="cls-29" width="80.893" height="34.704" transform="matrix(-0.94, 0.342, -0.342, -0.94, 1193.862, 1088.586)"/>
+    <ellipse id="Ellipse_18" data-name="Ellipse 18" class="cls-30" cx="42.133" cy="42.133" rx="42.133" ry="42.133" transform="translate(610.114 957.816) rotate(158)"/>
+    <g id="Ellipse_15" data-name="Ellipse 15" class="cls-31" transform="translate(704.029 995.344) rotate(-166)">
+      <ellipse class="cls-37" cx="24.478" cy="24.478" rx="24.478" ry="24.478"/>
+      <ellipse class="cls-38" cx="24.478" cy="24.478" rx="23.978" ry="23.978"/>
+    </g>
+    <ellipse id="Ellipse_12" data-name="Ellipse 12" class="cls-32" cx="37.684" cy="37.684" rx="37.684" ry="37.684" transform="translate(140.812 1030.712) rotate(-167)"/>
+    <ellipse id="Ellipse_8" data-name="Ellipse 8" class="cls-33" cx="36.4" cy="36.4" rx="36.4" ry="36.4" transform="translate(111.404 1021.823) rotate(-5)"/>
+    <g id="Ellipse_4" data-name="Ellipse 4" class="cls-34" transform="matrix(0.326, -0.946, 0.946, 0.326, 77.531, 1165.349)">
+      <ellipse class="cls-37" cx="34.465" cy="34.466" rx="34.465" ry="34.466"/>
+      <ellipse class="cls-38" cx="34.465" cy="34.466" rx="33.965" ry="33.966"/>
+    </g>
+    <g id="Rectangle_28" data-name="Rectangle 28" class="cls-35" transform="translate(490.628 795.809) rotate(-60)">
+      <rect class="cls-37" width="41.502" height="37.747"/>
+      <rect class="cls-38" x="0.5" y="0.5" width="40.502" height="36.747"/>
+    </g>
+    <ellipse id="Ellipse_11" data-name="Ellipse 11" class="cls-36" cx="43.29" cy="43.29" rx="43.29" ry="43.29" transform="translate(1339.455 1084.765) rotate(-79)"/>
+  </g>
+</svg>

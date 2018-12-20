@@ -63,39 +63,20 @@ nav {
   // display: inline-block;
 }
 
-.hero-title, .hero-img {
-  position: absolute;
-}
-
-.hero-title {
-  background-color: #E5533B;
-  color: white;
-  max-width: 550px;
-  width: 100%;
-  top: 20%;
-  left: 20%;
-  font-size: 50px;
-  text-align: center;
-}
-
-.hero-title p {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 70px;
-}
-.hero-title span {
-  display: block;
-  font-weight: 800;
-  font-size: 120px;
-}
-
 .hero-img {
-  background-color: #E5EFED;
-  max-width: 450px;
-  width: 100%;
-  top: 5%;
-  right: 5%;
+  
+}
+
+@media screen and (max-width: 667px){
+  .desktop-portrait {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 667px){
+  .mobile-portrait {
+    display: none;
+  }
 }
 
 .hero-img img {
@@ -117,9 +98,14 @@ nav {
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
-  font-size: 25px;
+  font-size: 20px;
   color: #525050;
   transition: .5s;
+  margin-right: 10px;
+  @media screen and (min-width: 425px){
+    font-size: 30px;
+    margin-right: 0;
+  }
 }
 
 .nav-link a:hover {
