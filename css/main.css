@@ -1,3 +1,5 @@
+/* COLORS */
+/* GENERAL STYLES */
 * {
   box-sizing: border-box; }
 
@@ -5,136 +7,86 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif; }
 
-main {
-  background-color: #273656;
-  color: white; }
-
-main, .hero-container {
-  padding: 20px; }
-
-p {
-  font-weight: 400; }
-
-h1 {
-  font-weight: 800;
-  font-size: 50px;
-  margin-bottom: 0; }
-
-h2 {
-  font-weight: 600; }
-
-nav, .hero {
-  vertical-align: top; }
-
-nav {
-  float: left; }
-  @media screen and (min-width: 425px) {
-    nav {
-      width: 130px; } }
-
+/* HERO SECTION */
 .hero-container {
   position: relative; }
 
+nav {
+  padding: 20px; }
+  nav .logo {
+    height: 100px; }
+  nav .navigation-links {
+    list-style: none;
+    padding: 0;
+    text-align: center; }
+    nav .navigation-links .nav-link {
+      margin-bottom: 10px;
+      display: inline-block;
+      margin-right: 10px; }
+    nav .navigation-links .nav-link:first-child a:after {
+      background-color: #F4CE6E;
+      transition: .2s; }
+    nav .navigation-links .nav-link:nth-child(2) a:after {
+      background-color: #22AFBF; }
+    nav .navigation-links .nav-link:nth-child(3) a:after {
+      background-color: #ED583F; }
+    nav .navigation-links .nav-link:nth-child(4) a:after {
+      background-color: #CBC715; }
+    nav .navigation-links .nav-link:last-child {
+      margin-right: 0; }
+    nav .navigation-links .nav-link a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      position: relative;
+      font-size: 20px;
+      color: #525050;
+      transition: .2s;
+      margin-right: 10px; }
+      nav .navigation-links .nav-link a:hover {
+        transition: .2s;
+        color: #1e1e1e; }
+        nav .navigation-links .nav-link a:hover:after {
+          transition: .2s;
+          width: 145%; }
+      nav .navigation-links .nav-link a:after {
+        position: absolute;
+        content: '';
+        height: 12px;
+        width: 115%;
+        left: -2px;
+        bottom: 1px;
+        z-index: -1;
+        transition: .2s; }
+
 .hero {
-  position: relative;
-  min-height: 100vh;
-  z-index: -1; }
+  padding: 0 20px; }
+  .hero .hero-img .desktop-portrait {
+    display: none; }
 
-@media screen and (max-width: 667px) {
-  .desktop-portrait {
-    display: none; } }
-@media screen and (min-width: 667px) {
-  .mobile-portrait {
-    display: none; } }
-.hero-img img {
-  width: 100%; }
-
-.navigation-links {
-  list-style: none;
-  padding: 0;
-  padding-left: 20px; }
-
-.nav-link {
-  transtion: .5s; }
-
-.nav-link a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 500;
-  position: relative;
-  font-size: 20px;
-  color: #525050;
-  transition: .5s;
-  margin-right: 10px; }
-  @media screen and (min-width: 425px) {
-    .nav-link a {
-      font-size: 30px;
-      margin-right: 0; } }
-
-.nav-link a:hover {
-  transition: .5s;
-  color: #1e1e1e; }
-
-.nav-link a::after {
-  position: absolute;
-  content: '';
-  height: 8px;
-  width: 115%;
-  background-color: red;
-  left: -2px;
-  bottom: 5px;
-  z-index: -1;
-  transition: .5s; }
-
-.nav-link:first-child a:after {
-  background-color: #F3CD75;
-  transition: .5s; }
-
-.nav-link a:hover {
-  transition: .5s; }
-  .nav-link a:hover:after {
-    transition: .5s;
-    width: 130%; }
-
-.nav-link:nth-child(2) a:after {
-  background-color: #2EAFBE; }
-
-.nav-link:nth-child(3) a:after {
-  background-color: #E5533B; }
-
-.nav-link:nth-child(4) a:after {
-  background-color: #CBC530; }
-
-.nav-link {
-  margin-bottom: 10px;
-  transition: .5s; }
-
-@media screen and (max-width: 425px) {
-  .navigation-links {
-    display: inline-block; }
-
-  .navigation-links li {
-    display: inline-block; } }
-.logo {
-  height: 100px; }
-
-footer {
-  position: relative; }
-
+/* CONFETTI DIVIDERS */
 .top-confetti-layer, .bottom-confetti-layer {
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 200px;
   position: absolute;
   width: 100%;
-  left: 0; }
+  z-index: 999; }
 
 .top-confetti-layer {
   background-image: url("../imgs/top-confetti.svg");
-  bottom: -130px; }
+  bottom: -170px;
+  background-position: 65% center; }
 
 .bottom-confetti-layer {
   background-image: url("../imgs/bottom-confetti.svg");
   background-size: cover; }
+
+/* MAIN CONTENT */
+main {
+  margin-top: 65px;
+  padding: 100px 20px 20px 20px;
+  background-color: #263557;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */
