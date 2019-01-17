@@ -72,7 +72,7 @@ a.btn {
     color: $blue;
     &:hover, &:focus {
       transition: .2s;
-      box-shadow: 5px 5px $blue;
+      box-shadow: 5px 5px $red;
     }    
   }
   &.teal-btn {
@@ -99,6 +99,14 @@ a.btn {
       box-shadow: 5px 5px $yellow;
     }  
   }
+}
+
+.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
 
@@ -197,6 +205,25 @@ nav {
   }
 }
 
+/* FOOTER SIGNUP FORM */
+
+footer {
+  padding: 40px 40px 100px 40px;
+  position: relative;
+  min-height: 500px;
+  background-color: $blue;
+  p {
+    color: white;
+  }
+  i {
+    background-color: red;
+    padding: 20px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+}
+
 /* CONFETTI DIVIDERS */
 
 .top-confetti-layer, .bottom-confetti-layer {
@@ -216,7 +243,9 @@ nav {
 
 .bottom-confetti-layer {
   background-image: url('../imgs/bottom-confetti.svg');
-  background-size: cover;
+  background-position: 22% center;
+  bottom: 0;
+  left: 0;
 }
 
 /* MAIN CONTENT */
@@ -259,7 +288,6 @@ main {
       background-color: white;
       color: $blue;
       padding: 20px;
-      // background-image: url('../imgs/playlist-player.svg');
       max-width: 600px;
       p {
         margin-bottom: 15px;
@@ -268,25 +296,6 @@ main {
     }
   }
 }
-
-
-// main {
-//   background-color: #273656;
-//   color: white;
-//   padding: 20px;
-// }
-
-// p {
-//   font-weight: 400;
-// }
-
-// h2 {
-//   font-weight: 600;
-// }
-
-// nav, .hero {
-//   vertical-align: top;
-// }
 
 // nav {
 //   float: left;
@@ -334,10 +343,6 @@ main {
 // .hero-img img {
 //   width: 100%;
 // }
-
-
-
-
 
 // @media screen and (max-width: 425px){
 //   .navigation-links {

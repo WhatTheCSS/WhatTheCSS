@@ -50,7 +50,7 @@ a.btn {
     color: #263557; }
     a.btn.yellow-btn:hover, a.btn.yellow-btn:focus {
       transition: .2s;
-      box-shadow: 5px 5px #263557; }
+      box-shadow: 5px 5px #ED583F; }
   a.btn.teal-btn {
     background-color: #22AFBF;
     color: #FAFBFB; }
@@ -69,6 +69,16 @@ a.btn {
     a.btn.blue-btn:hover, a.btn.blue-btn:focus {
       transition: .2s;
       box-shadow: 5px 5px #F4CE6E; }
+
+.visually-hidden {
+  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
 
 /* HERO SECTION */
 .hero-container {
@@ -139,6 +149,21 @@ nav {
   .hero .hero-img .desktop-portrait {
     display: none; }
 
+/* FOOTER SIGNUP FORM */
+footer {
+  padding: 40px 40px 100px 40px;
+  position: relative;
+  min-height: 500px;
+  background-color: #263557; }
+  footer p {
+    color: white; }
+  footer i {
+    background-color: red;
+    padding: 20px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px; }
+
 /* CONFETTI DIVIDERS */
 .top-confetti-layer, .bottom-confetti-layer {
   background-size: cover;
@@ -155,7 +180,9 @@ nav {
 
 .bottom-confetti-layer {
   background-image: url("../imgs/bottom-confetti.svg");
-  background-size: cover; }
+  background-position: 22% center;
+  bottom: 0;
+  left: 0; }
 
 /* MAIN CONTENT */
 main {
