@@ -22,6 +22,53 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+  font-weight: 800;
+  font-size: 42px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 21px;
+}
+
+a.btn {
+  display: block;
+  min-width: 200px;
+  margin: auto;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+  &.red-btn {
+    background-color: $red;
+    color: $white;
+  }
+  &.yellow-btn {
+    background-color: $yellow;
+    color: $blue;
+  }
+  &.teal-btn {
+    background-color: $teal;
+    color: $white;
+  }
+  &.green-btn {
+    background-color: $green;
+    color: $blue;
+  }  
+  &.blue-btn {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+
 /* HERO SECTION */
 
 .hero-container {
@@ -34,6 +81,11 @@ nav {
   padding: 20px;
   .logo {
     height: 100px;
+    @media screen and (max-width: 776px){ 
+      height: 120px;
+      display: block;
+      margin: 0 auto 30px auto;
+    }
   }
   .navigation-links {
     list-style: none;
@@ -70,23 +122,33 @@ nav {
       transition: .2s;
       margin-right: 10px;
       &:hover {
-        transition: .2s;
-        color: darken($black, 20%);   
+        transition: .35s;
+        color: darken($black, 20%);
+        @media screen and (max-width: 776px){
+          padding-bottom: 10px;
+        }
         &:after {
           transition: .2s;
-          width: 145%;
-        }     
+        }
+        @media screen and (min-width: 776px){
+           &:after {
+            width: 145%;
+          }      
+        }       
       }
       &:after {
         position: absolute;
         content: '';
         height: 12px;
-        width: 115%;
-        left: -2px;
+        width: 120%;
+        left: -10%;
         bottom: 1px;
         z-index: -1;
         transition: .2s;        
       }
+    }
+    .nav-link:last-child a {
+      margin-right: 0;
     }
   }
 }
@@ -116,7 +178,7 @@ nav {
 .top-confetti-layer {
   background-image: url('../imgs/top-confetti.svg');
     bottom: -170px;
-    background-position: 65% center;
+    background-position: center;
 }
 
 .bottom-confetti-layer {
@@ -128,7 +190,7 @@ nav {
 
 main {
   margin-top: 65px;
-  padding: 100px 20px 20px 20px;
+  padding: 130px 20px 20px 20px;
   background-color: $blue;
   color: white;
 }
@@ -141,12 +203,6 @@ main {
 
 // p {
 //   font-weight: 400;
-// }
-
-// h1 {
-//   font-weight: 800;
-//   font-size: 50px;
-//   margin-bottom: 0;
 // }
 
 // h2 {

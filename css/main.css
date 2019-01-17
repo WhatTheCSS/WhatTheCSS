@@ -7,6 +7,43 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif; }
 
+h1 {
+  font-weight: 800;
+  font-size: 42px;
+  margin-bottom: 0; }
+
+h2 {
+  font-size: 30px; }
+
+p {
+  font-weight: 300;
+  font-size: 21px; }
+
+a.btn {
+  display: block;
+  min-width: 200px;
+  margin: auto;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px; }
+  a.btn.red-btn {
+    background-color: #ED583F;
+    color: #FAFBFB; }
+  a.btn.yellow-btn {
+    background-color: #F4CE6E;
+    color: #263557; }
+  a.btn.teal-btn {
+    background-color: #22AFBF;
+    color: #FAFBFB; }
+  a.btn.green-btn {
+    background-color: #CBC715;
+    color: #263557; }
+  a.btn.blue-btn {
+    background-color: #263557;
+    color: #FAFBFB; }
+
 /* HERO SECTION */
 .hero-container {
   position: relative; }
@@ -15,6 +52,11 @@ nav {
   padding: 20px; }
   nav .logo {
     height: 100px; }
+    @media screen and (max-width: 776px) {
+      nav .logo {
+        height: 120px;
+        display: block;
+        margin: 0 auto 30px auto; } }
   nav .navigation-links {
     list-style: none;
     padding: 0;
@@ -44,20 +86,27 @@ nav {
       transition: .2s;
       margin-right: 10px; }
       nav .navigation-links .nav-link a:hover {
-        transition: .2s;
+        transition: .35s;
         color: #1e1e1e; }
+        @media screen and (max-width: 776px) {
+          nav .navigation-links .nav-link a:hover {
+            padding-bottom: 10px; } }
         nav .navigation-links .nav-link a:hover:after {
-          transition: .2s;
-          width: 145%; }
+          transition: .2s; }
+        @media screen and (min-width: 776px) {
+          nav .navigation-links .nav-link a:hover:after {
+            width: 145%; } }
       nav .navigation-links .nav-link a:after {
         position: absolute;
         content: '';
         height: 12px;
-        width: 115%;
-        left: -2px;
+        width: 120%;
+        left: -10%;
         bottom: 1px;
         z-index: -1;
         transition: .2s; }
+    nav .navigation-links .nav-link:last-child a {
+      margin-right: 0; }
 
 .hero {
   padding: 0 20px; }
@@ -76,7 +125,7 @@ nav {
 .top-confetti-layer {
   background-image: url("../imgs/top-confetti.svg");
   bottom: -170px;
-  background-position: 65% center; }
+  background-position: center; }
 
 .bottom-confetti-layer {
   background-image: url("../imgs/bottom-confetti.svg");
@@ -85,7 +134,7 @@ nav {
 /* MAIN CONTENT */
 main {
   margin-top: 65px;
-  padding: 100px 20px 20px 20px;
+  padding: 130px 20px 20px 20px;
   background-color: #263557;
   color: white; }
 
