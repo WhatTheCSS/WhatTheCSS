@@ -40,31 +40,64 @@ p {
 a.btn {
   display: block;
   min-width: 200px;
-  margin: auto;
   padding: 15px;
   text-decoration: none;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 26px;
+  margin: 40px auto;
+  max-width: 350px;
+  transition-timing-function: ease-in-out;
+  transition: .2s;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    transform: translateY(-10px);
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 5px 5px white;
+  }
   &.red-btn {
     background-color: $red;
     color: $white;
+    transition: .2s;
+    &:hover, &:focus {
+      transition: .2s;
+      box-shadow: 5px 5px $yellow;
+
+    }
   }
   &.yellow-btn {
     background-color: $yellow;
     color: $blue;
+    &:hover, &:focus {
+      transition: .2s;
+      box-shadow: 5px 5px $blue;
+    }    
   }
   &.teal-btn {
     background-color: $teal;
     color: $white;
+    &:hover, &:focus {
+      transition: .2s;
+      box-shadow: 5px 5px $green;
+    }    
   }
   &.green-btn {
     background-color: $green;
     color: $blue;
+    &:hover, &:focus {
+      transition: .2s;
+      box-shadow: 5px 5px $teal;
+    }    
   }  
   &.blue-btn {
     background-color: $blue;
     color: $white;
+    &:hover, &:focus {
+      transition: .2s;
+      box-shadow: 5px 5px $yellow;
+    }  
   }
 }
 
@@ -177,8 +210,8 @@ nav {
 
 .top-confetti-layer {
   background-image: url('../imgs/top-confetti.svg');
-    bottom: -170px;
-    background-position: center;
+  bottom: -170px;
+  background-position: center;
 }
 
 .bottom-confetti-layer {
@@ -190,10 +223,52 @@ nav {
 
 main {
   margin-top: 65px;
-  padding: 130px 20px 20px 20px;
+  padding: 130px 30px 20px 30px;
   background-color: $blue;
   color: white;
 }
+
+/* CHALLENGES SECTION */
+
+.challenge-info {
+  .challenge-imgs {
+    text-align: center;
+    img {
+      width: 150px;
+      margin-bottom: 10px;
+      @media screen and (min-width: 776px){
+        width: 350px;
+        display: inline-block;
+      }
+    }
+    img:first-child {
+      margin-right: 15px;
+    }
+  }
+}
+
+/* BONUS CONTENT */
+
+.bonus-info {
+  .playlist-info {
+    .playlist-image {
+      width: 100%;
+      max-width: 500px;
+    }
+    .playlist-info-content {
+      background-color: white;
+      color: $blue;
+      padding: 20px;
+      // background-image: url('../imgs/playlist-player.svg');
+      max-width: 600px;
+      p {
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 
 // main {
 //   background-color: #273656;
@@ -280,3 +355,163 @@ main {
 // footer {
 //   position: relative;
 // }
+
+/* COURSE ANIMATION */
+
+.course-board {
+  .cls-26 { 
+    stroke-dasharray: 59px; stroke-dashoffset: 59px; animation: offset 3s forwards infinite ease-out;
+  }
+  .flamingo-hand {
+    -webkit-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+      transform: translateY(15px);
+      animation: hand 5s infinite;
+  }
+
+  .centering-pink-left {
+      animation: centering-left 5s infinite;
+      animation-delay: 1s;
+  }
+
+  .centering-pink-right {
+      animation: centering-right 5s infinite;
+      animation-delay: 1s;
+  }
+
+  .animation-circle-left {
+      animation: animate-up 5s infinite;
+  }
+
+  .animation-circle-right {
+      animation: animate-down 5s infinite;
+  }
+
+  .cls-14.colors-bar, .cls-21.colors-bar, .cls-22.colors-bar, .cls-15.colors-bar, .cls-20.colors-bar {
+      opacity: 0;
+  }
+  .cls-13 { 
+    fill: white;
+  }
+
+  .cls-14.colors-bar {
+  animation: colors 2s infinite backwards;
+  }
+
+  .cls-21.colors-bar {
+  animation: colors 3s infinite;
+      animation-delay: 1s;
+  }
+
+  .cls-22.colors-bar {
+  animation: colors 4s infinite;
+      animation-delay: 2s;
+  }
+
+  .cls-15.colors-bar {
+  animation: colors 5s infinite;
+      animation-delay: 3s;
+  }
+
+  .cls-20.colors-bar {
+  animation: colors 6s infinite;
+      animation-delay: 4s;
+  }
+
+  @keyframes offset { to { stroke-dashoffset: 10px;} }
+  @keyframes hand {
+  0%   {-webkit-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  transform: translateY(15px);}
+  50% {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  }
+  100% {-webkit-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  transform: translateY(15px);}
+  }
+
+  @keyframes centering-left {
+  0%   {-webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);}
+          50% {
+          -webkit-transform: translateX(15px);
+      -ms-transform: translateX(15px);
+          transform: translateX(15px);
+          }
+  100% {-webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);}
+  }
+
+  @keyframes centering-right {
+  0%   {-webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);}
+          50% {
+          -webkit-transform: translateX(-15px);
+      -ms-transform: translateX(-15px);
+          transform: translateX(-15px);
+          }
+  100% {-webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);}
+  }
+
+  @keyframes animate-up {
+  0%   {-webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);}
+          50% {
+          -webkit-transform: translateY(-36px);
+      -ms-transform: translateY(-36px);
+          transform: translateY(-36px);
+          }
+  100% {-webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);}
+  }
+
+  @keyframes animate-down {
+  0%   {-webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);}
+          50% {
+          -webkit-transform: translateY(36px);
+      -ms-transform: translateY(36px);
+          transform: translateY(36px);
+          }
+  100% {-webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);}
+  }
+
+  @keyframes colors {
+    0% {
+      opacity: 0}
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes float {
+    0% {
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0); 
+     transform: translateY(0); 
+    }
+    50% {
+      -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px); 
+     transform: translateY(-5px);   
+    }
+     100% {
+     -ms-transform: translateY(0px);
+     -webkit-transform: translateY(0px); 
+     transform: translateY(0px);   
+    }
+  }
+
+}

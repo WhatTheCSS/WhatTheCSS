@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 686.051 510.338">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #2eafbe;
+      }
+
+      .cls-3 {
+        fill: #d78380;
+      }
+
+      .cls-4 {
+        fill: #f6ddaa;
+      }
+
+      .cls-5 {
+        fill: #443f5b;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        fill: #d5d5d5;
+      }
+
+      .cls-8 {
+        fill: #273656;
+        font-size: 56px;
+        font-family: Poppins-Bold, Poppins;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Group_877" data-name="Group 877" transform="translate(-686.892 -6700.622)">
+    <rect id="Rectangle_512" data-name="Rectangle 512" class="cls-1" width="686.051" height="380.744" transform="translate(686.892 6830.216)"/>
+    <g id="Group_871" data-name="Group 871">
+      <g id="Group_503" data-name="Group 503" transform="translate(686.892 6700.622)">
+        <path id="Rectangle_507" data-name="Rectangle 507" class="cls-2" d="M5,0H66.043a0,0,0,0,1,0,0V66.043a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(0)"/>
+        <rect id="Rectangle_508" data-name="Rectangle 508" class="cls-3" width="66.043" height="66.043" transform="translate(66.043)"/>
+        <rect id="Rectangle_509" data-name="Rectangle 509" class="cls-4" width="66.043" height="66.043" transform="translate(0 66.043)"/>
+        <rect id="Rectangle_510" data-name="Rectangle 510" class="cls-5" width="66.043" height="66.043" transform="translate(66.043 66.043)"/>
+      </g>
+      <circle id="Ellipse_200" data-name="Ellipse 200" class="cls-1" cx="37.383" cy="37.383" r="37.383" transform="translate(715.552 6729.282)"/>
+      <path id="Path_489" data-name="Path 489" class="cls-5" d="M27.42,0l4.557,31.667L0,26.479Z" transform="matrix(0.695, -0.719, 0.719, 0.695, 726.371, 6766.576)"/>
+      <path id="Rectangle_513" data-name="Rectangle 513" class="cls-6" d="M5,0H644.914a5,5,0,0,1,5,5V132.087a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(686.892 6700.622)"/>
+      <path id="Rectangle_511" data-name="Rectangle 511" class="cls-7" d="M0,0H548.725a5,5,0,0,1,5,5V132.087a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(819.218 6700.622)"/>
+    </g>
+    <text id="Stylin_Tunes_" data-name="Stylin’ Tunes
+" class="cls-8" transform="translate(908.285 6730.076)"><tspan x="0" y="59">Stylin’ Tunes</tspan></text>
+  </g>
+</svg>
