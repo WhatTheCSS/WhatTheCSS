@@ -148,6 +148,8 @@ nav {
   padding: 0 20px; }
   .hero .hero-img .desktop-portrait {
     display: none; }
+  .hero .hero-img .mobile-portrait {
+    width: 100%; }
 
 /* FOOTER SIGNUP FORM */
 footer {
@@ -157,12 +159,15 @@ footer {
   background-color: #263557; }
   footer p {
     color: white; }
-  footer i {
-    background-color: red;
-    padding: 20px;
+  footer a.logo-links {
+    padding: 7px 10px 5px 10px;
     border-radius: 50%;
-    height: 30px;
-    width: 30px; }
+    height: 50px;
+    width: 50px;
+    font-size: 23px;
+    color: white;
+    border: 3px solid white;
+    background-color: #ED583F; }
 
 /* CONFETTI DIVIDERS */
 .top-confetti-layer, .bottom-confetti-layer {
