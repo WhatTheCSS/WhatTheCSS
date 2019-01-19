@@ -42,31 +42,31 @@ a.btn {
     background-color: #ED583F;
     color: #FAFBFB;
     transition: .2s; }
-    a.btn.red-btn:hover, a.btn.red-btn:focus {
+    a.btn.red-btn:hover, a.btn.red-btn:focus, a.btn.red-btn:active {
       transition: .2s;
       box-shadow: 5px 5px #F4CE6E; }
   a.btn.yellow-btn {
     background-color: #F4CE6E;
     color: #263557; }
-    a.btn.yellow-btn:hover, a.btn.yellow-btn:focus {
+    a.btn.yellow-btn:hover, a.btn.yellow-btn:focus, a.btn.yellow-btn:active {
       transition: .2s;
-      box-shadow: 5px 5px #ED583F; }
+      box-shadow: 5px 5px #263557; }
   a.btn.teal-btn {
     background-color: #22AFBF;
     color: #FAFBFB; }
-    a.btn.teal-btn:hover, a.btn.teal-btn:focus {
+    a.btn.teal-btn:hover, a.btn.teal-btn:focus, a.btn.teal-btn:active {
       transition: .2s;
       box-shadow: 5px 5px #CBC715; }
   a.btn.green-btn {
     background-color: #CBC715;
     color: #263557; }
-    a.btn.green-btn:hover, a.btn.green-btn:focus {
+    a.btn.green-btn:hover, a.btn.green-btn:focus, a.btn.green-btn:active {
       transition: .2s;
       box-shadow: 5px 5px #22AFBF; }
   a.btn.blue-btn {
     background-color: #263557;
     color: #FAFBFB; }
-    a.btn.blue-btn:hover, a.btn.blue-btn:focus {
+    a.btn.blue-btn:hover, a.btn.blue-btn:focus, a.btn.blue-btn:active {
       transition: .2s;
       box-shadow: 5px 5px #F4CE6E; }
 
@@ -153,12 +153,13 @@ nav {
 
 /* FOOTER SIGNUP FORM */
 footer {
-  padding: 40px 40px 100px 40px;
+  padding: 40px 40px 200px 40px;
   position: relative;
   min-height: 500px;
   background-color: #263557; }
-  footer p {
-    color: white; }
+  footer .footer-form {
+    background-color: white;
+    padding: 20px 30px; }
   footer a.logo-links {
     padding: 7px 10px 5px 10px;
     border-radius: 50%;
@@ -186,7 +187,7 @@ footer {
 .bottom-confetti-layer {
   background-image: url("../imgs/bottom-confetti.svg");
   background-position: 22% center;
-  bottom: 0;
+  bottom: 5%;
   left: 0; }
 
 /* MAIN CONTENT */

@@ -61,7 +61,7 @@ a.btn {
     background-color: $red;
     color: $white;
     transition: .2s;
-    &:hover, &:focus {
+    &:hover, &:focus, &:active {
       transition: .2s;
       box-shadow: 5px 5px $yellow;
 
@@ -70,15 +70,15 @@ a.btn {
   &.yellow-btn {
     background-color: $yellow;
     color: $blue;
-    &:hover, &:focus {
+    &:hover, &:focus, &:active {
       transition: .2s;
-      box-shadow: 5px 5px $red;
+      box-shadow: 5px 5px $blue;
     }    
   }
   &.teal-btn {
     background-color: $teal;
     color: $white;
-    &:hover, &:focus {
+    &:hover, &:focus, &:active {
       transition: .2s;
       box-shadow: 5px 5px $green;
     }    
@@ -86,7 +86,7 @@ a.btn {
   &.green-btn {
     background-color: $green;
     color: $blue;
-    &:hover, &:focus {
+    &:hover, &:focus, &:active {
       transition: .2s;
       box-shadow: 5px 5px $teal;
     }    
@@ -94,7 +94,7 @@ a.btn {
   &.blue-btn {
     background-color: $blue;
     color: $white;
-    &:hover, &:focus {
+    &:hover, &:focus, &:active {
       transition: .2s;
       box-shadow: 5px 5px $yellow;
     }  
@@ -211,12 +211,13 @@ nav {
 /* FOOTER SIGNUP FORM */
 
 footer {
-  padding: 40px 40px 100px 40px;
+  padding: 40px 40px 200px 40px;
   position: relative;
   min-height: 500px;
   background-color: $blue;
-  p {
-    color: white;
+  .footer-form {
+    background-color: white;
+    padding: 20px 30px;
   }
   a.logo-links {
     padding: 7px 10px 5px 10px;
@@ -253,7 +254,7 @@ footer {
 .bottom-confetti-layer {
   background-image: url('../imgs/bottom-confetti.svg');
   background-position: 22% center;
-  bottom: 0;
+  bottom: 5%;
   left: 0;
 }
 
