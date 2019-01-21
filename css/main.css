@@ -26,7 +26,7 @@ a.btn {
   text-decoration: none;
   text-align: center;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 21px;
   margin: 40px auto;
   max-width: 350px;
   transition-timing-function: ease-in-out;
@@ -102,14 +102,14 @@ nav {
       display: inline-block;
       margin-right: 10px; }
     nav .navigation-links .nav-link:first-child a:after {
-      background-color: #F4CE6E;
+      background-color: #22AFBF;
       transition: .2s; }
     nav .navigation-links .nav-link:nth-child(2) a:after {
-      background-color: #22AFBF; }
+      background-color: #F4CE6E; }
     nav .navigation-links .nav-link:nth-child(3) a:after {
-      background-color: #ED583F; }
-    nav .navigation-links .nav-link:nth-child(4) a:after {
       background-color: #CBC715; }
+    nav .navigation-links .nav-link:nth-child(4) a:after {
+      background-color: #ED583F; }
     nav .navigation-links .nav-link:last-child {
       margin-right: 0; }
     nav .navigation-links .nav-link a {
@@ -151,28 +151,8 @@ nav {
   .hero .hero-img .mobile-portrait {
     width: 100%; }
 
-/* FOOTER SIGNUP FORM */
-footer {
-  padding: 40px 40px 200px 40px;
-  position: relative;
-  min-height: 500px;
-  background-color: #263557; }
-  footer .footer-form {
-    background-color: white;
-    padding: 20px 30px; }
-  footer a.logo-links {
-    padding: 7px 10px 10px 13px;
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    display: inline-block;
-    font-size: 30px;
-    color: white;
-    border: 3px solid white;
-    background-color: #ED583F; }
-
 /* CONFETTI DIVIDERS */
-.top-confetti-layer, .bottom-confetti-layer {
+.top-confetti-layer {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 200px;
@@ -184,12 +164,6 @@ footer {
   background-image: url("../imgs/top-confetti.svg");
   bottom: -170px;
   background-position: center; }
-
-.bottom-confetti-layer {
-  background-image: url("../imgs/bottom-confetti.svg");
-  background-position: 22% center;
-  bottom: 5%;
-  left: 0; }
 
 /* MAIN CONTENT */
 main {
@@ -223,6 +197,47 @@ main {
   .bonus-info .playlist-info .playlist-info-content p {
     margin-bottom: 15px;
     margin-top: 0; }
+
+/* FOOTER SIGNUP FORM */
+footer {
+  padding: 40px;
+  position: relative;
+  background-color: #263557; }
+  footer .footer-form {
+    background-color: white;
+    padding: 20px 30px; }
+  footer .footer-links {
+    padding: 40px 0;
+    text-align: center; }
+    footer .footer-links .logo-links {
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      display: inline-block;
+      font-size: 30px;
+      color: white;
+      border: 3px solid white;
+      transition: .2s;
+      margin-right: 15px; }
+      footer .footer-links .logo-links:hover {
+        transition: .2s;
+        transform: translateY(-10px); }
+    footer .footer-links .logo-links:first-child {
+      background-color: #ED583F;
+      padding: 7px 10px 10px 13px; }
+    footer .footer-links .logo-links:nth-child(2) {
+      background-color: #22AFBF;
+      padding: 7px 11px 7px 13px; }
+    footer .footer-links .logo-links:nth-child(3) {
+      background-color: #CBC715;
+      margin-right: 0;
+      padding: 7px 14px 10px 13px; }
+  footer .footer-legal-links {
+    text-align: center; }
+    footer .footer-legal-links a {
+      color: white; }
+      footer .footer-legal-links a:hover {
+        color: #F4CE6E; }
 
 /* COURSE ANIMATION */
 .course-board .cls-26 {

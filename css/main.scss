@@ -44,7 +44,7 @@ a.btn {
   text-decoration: none;
   text-align: center;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 21px;
   margin: 40px auto;
   max-width: 350px;
   transition-timing-function: ease-in-out;
@@ -138,17 +138,17 @@ nav {
       margin-right: 10px;
     }
     .nav-link:first-child a:after {
-      background-color: $yellow;
+      background-color: $teal;
       transition: .2s;
     }
     .nav-link:nth-child(2) a:after {
-      background-color: $teal;
+      background-color: $yellow;
     }
     .nav-link:nth-child(3) a:after {
-      background-color: $red;
+      background-color: $green;
     }
     .nav-link:nth-child(4) a:after {
-      background-color: $green;
+      background-color: $red;
     }
     .nav-link:last-child {
       margin-right: 0;
@@ -208,36 +208,9 @@ nav {
   }
 }
 
-/* FOOTER SIGNUP FORM */
-
-footer {
-  padding: 40px 40px 200px 40px;
-  position: relative;
-  min-height: 500px;
-  background-color: $blue;
-  .footer-form {
-    background-color: white;
-    padding: 20px 30px;
-  }
-  a.logo-links {
-    padding: 7px 10px 10px 13px;
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    display: inline-block;
-    font-size: 30px;
-    color: white;
-    border: 3px solid white;
-    background-color: $red;
-  }
-  i {
-    
-  }
-}
-
 /* CONFETTI DIVIDERS */
 
-.top-confetti-layer, .bottom-confetti-layer {
+.top-confetti-layer {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 200px;
@@ -252,12 +225,6 @@ footer {
   background-position: center;
 }
 
-.bottom-confetti-layer {
-  background-image: url('../imgs/bottom-confetti.svg');
-  background-position: 22% center;
-  bottom: 5%;
-  left: 0;
-}
 
 /* MAIN CONTENT */
 
@@ -308,69 +275,58 @@ main {
   }
 }
 
-// nav {
-//   float: left;
-//   display: inline-block;
-//   @media screen and (min-width: 425px){
-//     width: 130px;
-//   }
-// }
+/* FOOTER SIGNUP FORM */
 
-// .hero-container {
-//   position: relative;
-//   @media screen and (min-width: 425px){
-//     padding: 40px;
-//   }
- 
-// }
-
-// .hero {
-//    position: relative;
-//   min-height: 100vh;
-//   z-index: -1;
-//   @media screen and (min-width: 667px){
-//     width: 75%;
-//     display: inline-block;
-//     padding-top: 50px;
-//     float: right;
-//   }
-//   // max-width: 600px;
-//   // display: inline-block;
-// }
-
-
-// @media screen and (max-width: 667px){
-//   .desktop-portrait {
-//     display: none;
-//   }
-// }
-
-// @media screen and (min-width: 667px){
-//   .mobile-portrait {
-//     display: none;
-//   }
-// }
-
-// .hero-img img {
-//   width: 100%;
-// }
-
-// @media screen and (max-width: 425px){
-//   .navigation-links {
-//     display: inline-block;
-//   }
-//   .navigation-links li {
-//     display: inline-block;
-//   }
-// }
-
-// main {
-//   clear: both;
-// }
-
-// footer {
-//   position: relative;
-// }
+footer {
+  padding: 40px;
+  position: relative;
+  background-color: $blue;
+  .footer-form {
+    background-color: white;
+    padding: 20px 30px;
+  }
+  .footer-links {
+    padding: 40px 0;
+    text-align: center;
+    .logo-links {
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      display: inline-block;
+      font-size: 30px;
+      color: white;
+      border: 3px solid white;
+      transition: .2s;
+      margin-right: 15px;
+      &:hover {
+        transition: .2s;
+        transform: translateY(-10px);
+      }
+    }
+    .logo-links:first-child {
+      background-color: $red;
+      padding: 7px 10px 10px 13px;
+    }
+    .logo-links:nth-child(2) {
+      background-color: $teal;
+      padding: 7px 11px 7px 13px;
+    }
+    .logo-links:nth-child(3) {
+      background-color: $green;
+      margin-right: 0;
+      padding: 7px 14px 10px 13px;
+    }
+  }
+  .footer-legal-links {
+    text-align: center;
+    a {
+      color: white;
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}
 
 /* COURSE ANIMATION */
 
