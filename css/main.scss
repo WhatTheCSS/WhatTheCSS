@@ -235,6 +235,23 @@ main {
   color: white;
 }
 
+/* COURSE CONTENT */
+
+.course-img {
+  background-color: $white;
+  padding: 20px;
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 30px;
+    right: -16px;
+    bottom: -14px;
+    background-color: $yellow;
+  }
+}
+
 /* CHALLENGES SECTION */
 
 .challenge-info {

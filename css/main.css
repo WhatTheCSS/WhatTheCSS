@@ -172,6 +172,20 @@ main {
   background-color: #263557;
   color: white; }
 
+/* COURSE CONTENT */
+.course-img {
+  background-color: #FAFBFB;
+  padding: 20px;
+  position: relative; }
+  .course-img:after {
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 30px;
+    right: -16px;
+    bottom: -14px;
+    background-color: #F4CE6E; }
+
 /* CHALLENGES SECTION */
 .challenge-info .challenge-imgs {
   text-align: center; }
