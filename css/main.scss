@@ -345,6 +345,39 @@ footer {
   }
 }
 
+/* ===========
+   COURSE PAGE 
+   ============ */
+
+.course-section {
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      position: relative;
+      margin: 7px;
+      &:after {
+        content: "*";
+        position: absolute;
+        top: 4px;
+        right: -12px;    
+      }
+      &:last-child {
+        &:after {
+          content: '';
+        }
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+      li:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}   
+
 /* COURSE ANIMATION */
 
 .course-board {

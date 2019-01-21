@@ -253,6 +253,28 @@ footer {
       footer .footer-legal-links a:hover {
         color: #F4CE6E; }
 
+/* ===========
+   COURSE PAGE 
+   ============ */
+.course-section ul {
+  list-style: none;
+  padding: 0; }
+  .course-section ul li {
+    display: inline-block;
+    position: relative;
+    margin: 7px; }
+    .course-section ul li:after {
+      content: "*";
+      position: absolute;
+      top: 4px;
+      right: -12px; }
+    .course-section ul li:last-child:after {
+      content: ''; }
+    .course-section ul li li:last-child {
+      margin-right: 0; }
+    .course-section ul li li:first-child {
+      margin-left: 0; }
+
 /* COURSE ANIMATION */
 .course-board .cls-26 {
   stroke-dasharray: 59px;
