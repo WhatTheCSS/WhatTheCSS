@@ -275,6 +275,44 @@ footer {
     .course-section ul li li:first-child {
       margin-left: 0; }
 
+.clients .client {
+  width: 100%;
+  max-width: 450px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 50px; }
+  .clients .client .mascot-client-image {
+    width: 200px; }
+  .clients .client .mascot-rep-image {
+    width: 100%;
+    background-color: red; }
+  .clients .client .client-personality {
+    padding: 50px 15px 25px 15px;
+    margin-top: -70px;
+    color: #263557; }
+    .clients .client .client-personality h3 {
+      font-size: 24px;
+      margin-bottom: 0; }
+    .clients .client .client-personality p {
+      margin-top: 0; }
+    .clients .client .client-personality ul {
+      padding: 0;
+      margin: auto;
+      display: inline-block;
+      list-style-image: url("../imgs/circle.svg"); }
+      .clients .client .client-personality ul li {
+        text-align: left; }
+  .clients .client.fox-client .client-personality {
+    background-color: #F9E1A9; }
+  .clients .client.bunny-client .client-personality {
+    background-color: #8C83A0; }
+  .clients .client.cat-client .client-personality {
+    background-color: #CBC715; }
+  .clients .client.bulldog-client .client-personality {
+    background-color: #ED583F; }
+  .clients .client.flamingo-client .client-personality {
+    background-color: #22AFBF; }
+
 /* COURSE ANIMATION */
 .course-board .cls-26 {
   stroke-dasharray: 59px;

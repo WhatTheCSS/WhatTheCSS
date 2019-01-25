@@ -8,6 +8,8 @@ $yellow: #F4CE6E;
 $gray: #D5D5D5; 
 $white: #FAFBFB;
 $black: #525050;
+$purple: #8C83A0;
+$tan: #F9E1A9;
 
 
 /* GENERAL STYLES */
@@ -377,6 +379,71 @@ footer {
     }
   }
 }   
+
+.clients {
+  .client {
+    width: 100%;
+    max-width: 450px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+    .mascot-client-image {
+      width: 200px;
+    }
+    .mascot-rep-image {
+      width: 100%;
+      background-color: red;
+    }
+    .client-personality {
+      padding: 50px 15px 25px 15px;
+      margin-top: -70px;
+      color: $blue;
+      h3 {
+        font-size: 24px;
+        margin-bottom: 0;
+      }
+      p {
+        margin-top: 0;
+      }
+      ul {
+        padding: 0;
+        margin: auto;
+        display: inline-block;
+        list-style-image: url('../imgs/circle.svg');
+        li {
+          text-align: left;
+        }
+        li.negative-trait {
+        }
+      }
+    }
+    &.fox-client {
+      .client-personality {
+        background-color: $tan;
+      }
+    }
+    &.bunny-client {
+      .client-personality {
+        background-color: $purple;
+      }
+    }
+    &.cat-client {
+      .client-personality {
+        background-color: $green;
+      }
+    }
+    &.bulldog-client {
+      .client-personality {
+        background-color: $red;
+      }
+    }
+    &.flamingo-client {
+      .client-personality {
+        background-color: $teal;
+      }
+    }
+  }
+}
 
 /* COURSE ANIMATION */
 
