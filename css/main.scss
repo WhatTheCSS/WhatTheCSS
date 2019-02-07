@@ -32,11 +32,13 @@ h1 {
 
 h2 {
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 p {
   font-weight: 300;
   font-size: 21px;
+  margin-top: 0;
 }
 
 a.btn {
@@ -273,6 +275,17 @@ main {
   }
 }
 
+/* CLIENT SECTION */
+
+.client-info {
+  img {
+    @media screen and (max-width: 425px){
+      max-width: 265px;
+    }
+    max-width: 400px;
+  }
+}
+
 /* BONUS CONTENT */
 
 .bonus-info {
@@ -351,7 +364,25 @@ footer {
    COURSE PAGE 
    ============ */
 
+   // change color of header
+
+ .course-page {
+  footer {
+    padding: 0;
+    .footer-form {
+      p {
+        color: $blue;
+        text-align: center;
+      }
+    }
+  }
+ }
+
 .course-section {
+  h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -359,13 +390,17 @@ footer {
       display: inline-block;
       position: relative;
       margin: 7px;
-      &:after {
+      font-size: 21px;
+      padding-left: 10px;
+
+      &:before {
         content: "*";
         position: absolute;
         top: 4px;
-        right: -12px;    
+        left: -10px;  
+        color: $yellow;  
       }
-      &:last-child {
+      &:first-child {
         &:after {
           content: '';
         }
@@ -377,29 +412,45 @@ footer {
         margin-left: 0;
       }
     }
+    li:nth-child(2n){
+      &:before {
+        color: $red;
+      }
+    } 
+    li:nth-child(4n){
+      &:before {
+        color: $teal;
+      }
+    }       
   }
 }   
 
 .clients {
+  margin: auto;
+  text-align: center;
   .client {
     width: 100%;
-    max-width: 450px;
+    max-width: 350px;
     display: inline-block;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
+    @media screen and (min-width: 425px){
+      margin: 0 10px 50px 10px;
+    }
+    vertical-align: top;
     .mascot-client-image {
-      width: 200px;
+      width: 150px;
     }
     .mascot-rep-image {
       width: 100%;
       background-color: red;
     }
     .client-personality {
-      padding: 50px 15px 25px 15px;
+      padding: 50px 15px 40px 15px;
       margin-top: -70px;
       color: $blue;
       h3 {
-        font-size: 24px;
+        font-size: 21px;
         margin-bottom: 0;
       }
       p {
@@ -409,9 +460,15 @@ footer {
         padding: 0;
         margin: auto;
         display: inline-block;
-        list-style-image: url('../imgs/circle.svg');
         li {
           text-align: left;
+          font-size: 18px;
+          display: inline-block;
+          position: relative;
+          margin: 5px;
+          border: 3px solid white;
+          padding: 5px 10px;
+          color: $blue;
         }
         li.negative-trait {
         }
@@ -420,26 +477,66 @@ footer {
     &.fox-client {
       .client-personality {
         background-color: $tan;
+        // li {
+        //   color: darken($tan,30%);
+        //   border: 3px solid darken($tan,30%);
+        // }
+        // li.negative-trait {
+        //   background-color: darken($tan,5%);
+         
+        // }
       }
     }
     &.bunny-client {
       .client-personality {
         background-color: $purple;
+        // li {
+        //   color: darken($purple,30%);
+        //   border: 1px solid darken($purple,30%);
+        // }
+        // li.negative-trait {
+        //   background-color: darken($purple,5%);
+        //   color: darken($purple,30%);
+        // }
       }
     }
     &.cat-client {
       .client-personality {
         background-color: $green;
+        // li {
+        //   color: darken($green,30%);
+        //   border: 1px solid darken($green,30%);
+        // }
+        // li.negative-trait {
+        //   background-color: darken($green,5%);
+        //   color: darken($green,30%);
+        // }
       }
     }
     &.bulldog-client {
       .client-personality {
         background-color: $red;
+        // li {
+        //   color: darken($red,30%);
+        //   border: 1px solid darken($red,30%);
+        // }
+        // li.negative-trait {
+        //   background-color: darken($red,5%);
+        //   color: darken($red,30%);
+        // }
       }
     }
     &.flamingo-client {
       .client-personality {
         background-color: $teal;
+        // li {
+        //   color: darken($teal,30%);
+        //   border: 1px solid darken($teal,30%);
+        // }
+        // li.negative-trait {
+        //   background-color: darken($teal,5%);
+        //   color: darken($teal,30%);
+        // }
       }
     }
   }

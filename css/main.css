@@ -13,11 +13,13 @@ h1 {
   margin-bottom: 0; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 30px;
+  margin-bottom: 10px; }
 
 p {
   font-weight: 300;
-  font-size: 21px; }
+  font-size: 21px;
+  margin-top: 0; }
 
 a.btn {
   display: block;
@@ -199,6 +201,13 @@ main {
   .challenge-info .challenge-imgs img:first-child {
     margin-right: 15px; }
 
+/* CLIENT SECTION */
+.client-info img {
+  max-width: 400px; }
+  @media screen and (max-width: 425px) {
+    .client-info img {
+      max-width: 265px; } }
+
 /* BONUS CONTENT */
 .bonus-info .playlist-info .playlist-image {
   width: 100%;
@@ -256,62 +265,91 @@ footer {
 /* ===========
    COURSE PAGE 
    ============ */
+.course-page footer {
+  padding: 0; }
+  .course-page footer .footer-form p {
+    color: #263557;
+    text-align: center; }
+
+.course-section h3 {
+  font-size: 30px;
+  margin-bottom: 10px; }
 .course-section ul {
   list-style: none;
   padding: 0; }
   .course-section ul li {
     display: inline-block;
     position: relative;
-    margin: 7px; }
-    .course-section ul li:after {
+    margin: 7px;
+    font-size: 21px;
+    padding-left: 10px; }
+    .course-section ul li:before {
       content: "*";
       position: absolute;
       top: 4px;
-      right: -12px; }
-    .course-section ul li:last-child:after {
+      left: -10px;
+      color: #F4CE6E; }
+    .course-section ul li:first-child:after {
       content: ''; }
     .course-section ul li li:last-child {
       margin-right: 0; }
     .course-section ul li li:first-child {
       margin-left: 0; }
+  .course-section ul li:nth-child(2n):before {
+    color: #ED583F; }
+  .course-section ul li:nth-child(4n):before {
+    color: #22AFBF; }
 
-.clients .client {
-  width: 100%;
-  max-width: 450px;
-  display: inline-block;
-  text-align: center;
-  margin-bottom: 50px; }
-  .clients .client .mascot-client-image {
-    width: 200px; }
-  .clients .client .mascot-rep-image {
+.clients {
+  margin: auto;
+  text-align: center; }
+  .clients .client {
     width: 100%;
-    background-color: red; }
-  .clients .client .client-personality {
-    padding: 50px 15px 25px 15px;
-    margin-top: -70px;
-    color: #263557; }
-    .clients .client .client-personality h3 {
-      font-size: 24px;
-      margin-bottom: 0; }
-    .clients .client .client-personality p {
-      margin-top: 0; }
-    .clients .client .client-personality ul {
-      padding: 0;
-      margin: auto;
-      display: inline-block;
-      list-style-image: url("../imgs/circle.svg"); }
-      .clients .client .client-personality ul li {
-        text-align: left; }
-  .clients .client.fox-client .client-personality {
-    background-color: #F9E1A9; }
-  .clients .client.bunny-client .client-personality {
-    background-color: #8C83A0; }
-  .clients .client.cat-client .client-personality {
-    background-color: #CBC715; }
-  .clients .client.bulldog-client .client-personality {
-    background-color: #ED583F; }
-  .clients .client.flamingo-client .client-personality {
-    background-color: #22AFBF; }
+    max-width: 350px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    vertical-align: top; }
+    @media screen and (min-width: 425px) {
+      .clients .client {
+        margin: 0 10px 50px 10px; } }
+    .clients .client .mascot-client-image {
+      width: 150px; }
+    .clients .client .mascot-rep-image {
+      width: 100%;
+      background-color: red; }
+    .clients .client .client-personality {
+      padding: 50px 15px 40px 15px;
+      margin-top: -70px;
+      color: #263557; }
+      .clients .client .client-personality h3 {
+        font-size: 21px;
+        margin-bottom: 0; }
+      .clients .client .client-personality p {
+        margin-top: 0; }
+      .clients .client .client-personality ul {
+        padding: 0;
+        margin: auto;
+        display: inline-block; }
+        .clients .client .client-personality ul li {
+          text-align: left;
+          font-size: 18px;
+          display: inline-block;
+          position: relative;
+          margin: 5px;
+          border: 3px solid white;
+          padding: 5px 10px;
+          color: #263557; }
+    .clients .client.fox-client .client-personality {
+      background-color: #F9E1A9; }
+    .clients .client.bunny-client .client-personality {
+      background-color: #8C83A0; }
+    .clients .client.cat-client .client-personality {
+      background-color: #CBC715; }
+    .clients .client.bulldog-client .client-personality {
+      background-color: #ED583F; }
+    .clients .client.flamingo-client .client-personality {
+      background-color: #22AFBF; }
 
 /* COURSE ANIMATION */
 .course-board .cls-26 {
