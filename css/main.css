@@ -90,15 +90,23 @@ nav {
   padding: 20px; }
   nav .logo {
     height: 200px; }
-    @media screen and (max-width: 776px) {
+    @media screen and (max-width: 991px) {
       nav .logo {
         height: 120px;
         display: block;
         margin: 0 auto 30px auto; } }
+    @media screen and (min-width: 992px) {
+      nav .logo {
+        width: 100%;
+        height: auto; } }
   nav .navigation-links {
     list-style: none;
-    padding: 0;
+    padding: 5px;
     text-align: center; }
+    @media screen and (min-width: 992px) {
+      nav .navigation-links {
+        text-align: left;
+        margin-left: 30px; } }
     nav .navigation-links .nav-link {
       margin-bottom: 10px;
       display: inline-block;
@@ -146,12 +154,66 @@ nav {
     nav .navigation-links .nav-link:last-child a {
       margin-right: 0; }
 
+.hero-container {
+  position: relative;
+  margin-top: 50px; }
+  @media screen and (min-width: 992px) {
+    .hero-container nav {
+      display: inline-block;
+      width: 185px;
+      position: absolute;
+      left: 20px;
+      top: -30px; } }
+
 .hero {
-  padding: 0 20px; }
-  .hero .hero-img .desktop-portrait {
-    display: none; }
-  .hero .hero-img .mobile-portrait {
-    width: 100%; }
+  padding: 0 30px; }
+  @media screen and (min-width: 992px) {
+    .hero {
+      padding: 100px 40px 100px 100px;
+      position: relative;
+      max-width: 1200px;
+      margin: auto; } }
+  .hero .hero-content {
+    background-color: #22AFBF;
+    text-align: center;
+    padding: 50px 20px; }
+    @media screen and (min-width: 667px) {
+      .hero .hero-content {
+        max-width: 540px; } }
+    @media screen and (max-width: 992px) {
+      .hero .hero-content {
+        margin: auto; } }
+    @media screen and (min-width: 992px) {
+      .hero .hero-content {
+        margin-left: 120px; } }
+    @media (min-width: 992px) and (max-width: 1100px) {
+      .hero .hero-content {
+        max-width: 440px; } }
+    .hero .hero-content h1 {
+      color: white;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 83px;
+      text-transform: uppercase;
+      margin: 0; }
+      .hero .hero-content h1 span {
+        font-weight: 800;
+        font-size: 100px; }
+  .hero .hero-img img {
+    width: 100%;
+    max-width: 540px;
+    display: block;
+    margin: auto; }
+  @media screen and (min-width: 992px) {
+    .hero .hero-img {
+      max-width: 450px;
+      position: absolute;
+      right: 50px;
+      top: 0; } }
+  @media (min-width: 992px) and (max-width: 1100px) {
+    .hero .hero-img {
+      max-width: 375px;
+      top: 50px; } }
 
 /* CONFETTI DIVIDERS */
 .top-confetti-layer {
