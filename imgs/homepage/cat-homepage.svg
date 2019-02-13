@@ -127,7 +127,7 @@
       <circle class="cls-26" cx="150.5" cy="150.5" r="150.5"/>
       <circle class="cls-27" cx="150.5" cy="150.5" r="150"/>
     </g>
-    <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-2" width="162" height="151" transform="translate(123 2023)"/>
+    <!-- <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-2" width="162" height="151" transform="translate(123 2023)"/> -->
     <ellipse id="Ellipse_203" data-name="Ellipse 203" class="cls-3" cx="153" cy="153" rx="153" ry="153" transform="translate(162 1845.366)"/>
     <g id="Group_785" data-name="Group 785" transform="translate(242.846 1888.976)">
       <path id="Path_826" data-name="Path 826" class="cls-4" d="M132.917,165.922l-16.966,16.515L93.3,165.922V135.6h39.617Z" transform="translate(-41.951 -13.219)"/>

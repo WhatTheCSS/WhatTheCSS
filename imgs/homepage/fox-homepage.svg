@@ -149,7 +149,7 @@
       <circle class="cls-32" cx="150.5" cy="150.5" r="150.5"/>
       <circle class="cls-33" cx="150.5" cy="150.5" r="150"/>
     </g>
-    <rect id="Rectangle_11" data-name="Rectangle 11" class="cls-2" width="165" height="139" transform="translate(993 2188)"/>
+   <!--  <rect id="Rectangle_11" data-name="Rectangle 11" class="cls-2" width="165" height="139" transform="translate(993 2188)"/> -->
     <circle id="Ellipse_259" data-name="Ellipse 259" class="cls-3" cx="153.241" cy="153.241" r="153.241" transform="translate(1005 1973.366)"/>
     <g id="Group_815" data-name="Group 815" transform="translate(1039.807 2034.725)">
       <g id="Group_814" data-name="Group 814" class="cls-4">

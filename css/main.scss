@@ -113,6 +113,12 @@ a.btn {
     clip: rect(1px, 1px, 1px, 1px);
 }
 
+.intro-text, .challenge-info, .course-info, .client-info, .bonus-info, .footer-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+
 
 /* HERO SECTION */
 
@@ -337,17 +343,53 @@ main {
 .challenge-info {
   .challenge-imgs {
     text-align: center;
-    img {
+    .challenge-img {
       width: 150px;
       margin-bottom: 10px;
+      z-index: 1;
+      position: relative;
       @media screen and (min-width: 776px){
-        width: 350px;
+        width: 250px;
         display: inline-block;
       }
+      &:after {
+        position: absolute;
+        content: '';
+        height: 150px;
+        width: 150px;
+        z-index: -1;
+      }
     }
-    img:first-child {
-      margin-right: 15px;
+    .challenge-img:first-child{
+      &:after {
+        background-color: $red;
+        top: -20px;
+        left: -20px;
+      }
     }
+    .challenge-img:nth-child(2){
+      &:after {
+        background-color: $green;
+        top: -20px;
+        right: -28px;
+      }
+    }
+    .challenge-img:nth-child(3){
+      &:after {
+        background-color: $teal;
+        bottom: -20px;
+        right: -20px;
+      }
+    }
+    .challenge-img:not(last-child){
+      margin-right: 50px;
+    }
+    img {
+      width: 100%;
+    }
+    // img:first-child {
+    //   margin-right: 15px;
+    // }
   }
 }
 

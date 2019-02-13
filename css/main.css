@@ -82,6 +82,11 @@ a.btn {
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
+.intro-text, .challenge-info, .course-info, .client-info, .bonus-info, .footer-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px; }
+
 /* HERO SECTION */
 .hero-container {
   position: relative; }
@@ -264,15 +269,37 @@ main {
 /* CHALLENGES SECTION */
 .challenge-info .challenge-imgs {
   text-align: center; }
-  .challenge-info .challenge-imgs img {
+  .challenge-info .challenge-imgs .challenge-img {
     width: 150px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative; }
     @media screen and (min-width: 776px) {
-      .challenge-info .challenge-imgs img {
-        width: 350px;
+      .challenge-info .challenge-imgs .challenge-img {
+        width: 250px;
         display: inline-block; } }
-  .challenge-info .challenge-imgs img:first-child {
-    margin-right: 15px; }
+    .challenge-info .challenge-imgs .challenge-img:after {
+      position: absolute;
+      content: '';
+      height: 150px;
+      width: 150px;
+      z-index: -1; }
+  .challenge-info .challenge-imgs .challenge-img:first-child:after {
+    background-color: #ED583F;
+    top: -20px;
+    left: -20px; }
+  .challenge-info .challenge-imgs .challenge-img:nth-child(2):after {
+    background-color: #CBC715;
+    top: -20px;
+    right: -28px; }
+  .challenge-info .challenge-imgs .challenge-img:nth-child(3):after {
+    background-color: #22AFBF;
+    bottom: -20px;
+    right: -20px; }
+  .challenge-info .challenge-imgs .challenge-img:not(last-child) {
+    margin-right: 50px; }
+  .challenge-info .challenge-imgs img {
+    width: 100%; }
 
 /* CLIENT SECTION */
 .client-info img {
