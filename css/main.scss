@@ -145,7 +145,7 @@ nav {
       margin-left: 30px;
     }
     .nav-link {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       display: inline-block;
       margin-right: 10px;
     }
@@ -210,8 +210,12 @@ nav {
 
 .hero-container {
   position: relative;
-  margin-top: 50px;
+  padding-bottom: 50px;
+  @media screen and (min-width: 425px){
+    margin-top: 50px;
+  }
   nav {
+    z-index: 9999;
     @media screen and (min-width: 992px){
       display: inline-block;
       width: 185px;
@@ -242,7 +246,7 @@ nav {
       margin: auto;
     }
     @media screen and (min-width: 992px){
-      margin-left: 120px;
+      margin-left: 100px;
     }
     @media (min-width: 992px) and (max-width: 1100px){
       max-width: 440px;
@@ -283,20 +287,24 @@ nav {
 /* CONFETTI DIVIDERS */
 
 .top-confetti-layer {
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat-x;
   min-height: 200px;
   position: absolute;
   width: 100%;
   z-index: 999;
-}
-
-.top-confetti-layer {
-  background-image: url('../imgs/top-confetti.svg');
+  background-image: url('../imgs/other/top-confetti.svg');
   bottom: -170px;
   background-position: center;
+  @media screen and (min-width: 667px){
+    bottom: -200px;
+    background-position: top;
+    min-height: 300px;
+  }
+  @media screen and (max-width: 425px){
+    background-size: cover;
+  }
 }
-
 
 /* MAIN CONTENT */
 

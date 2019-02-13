@@ -108,7 +108,7 @@ nav {
         text-align: left;
         margin-left: 30px; } }
     nav .navigation-links .nav-link {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       display: inline-block;
       margin-right: 10px; }
     nav .navigation-links .nav-link:first-child a:after {
@@ -156,14 +156,19 @@ nav {
 
 .hero-container {
   position: relative;
-  margin-top: 50px; }
-  @media screen and (min-width: 992px) {
-    .hero-container nav {
-      display: inline-block;
-      width: 185px;
-      position: absolute;
-      left: 20px;
-      top: -30px; } }
+  padding-bottom: 50px; }
+  @media screen and (min-width: 425px) {
+    .hero-container {
+      margin-top: 50px; } }
+  .hero-container nav {
+    z-index: 9999; }
+    @media screen and (min-width: 992px) {
+      .hero-container nav {
+        display: inline-block;
+        width: 185px;
+        position: absolute;
+        left: 20px;
+        top: -30px; } }
 
 .hero {
   padding: 0 30px; }
@@ -185,7 +190,7 @@ nav {
         margin: auto; } }
     @media screen and (min-width: 992px) {
       .hero .hero-content {
-        margin-left: 120px; } }
+        margin-left: 100px; } }
     @media (min-width: 992px) and (max-width: 1100px) {
       .hero .hero-content {
         max-width: 440px; } }
@@ -217,17 +222,23 @@ nav {
 
 /* CONFETTI DIVIDERS */
 .top-confetti-layer {
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat-x;
   min-height: 200px;
   position: absolute;
   width: 100%;
-  z-index: 999; }
-
-.top-confetti-layer {
-  background-image: url("../imgs/top-confetti.svg");
+  z-index: 999;
+  background-image: url("../imgs/other/top-confetti.svg");
   bottom: -170px;
   background-position: center; }
+  @media screen and (min-width: 667px) {
+    .top-confetti-layer {
+      bottom: -200px;
+      background-position: top;
+      min-height: 300px; } }
+  @media screen and (max-width: 425px) {
+    .top-confetti-layer {
+      background-size: cover; } }
 
 /* MAIN CONTENT */
 main {
