@@ -1,4 +1,10 @@
 /* COLORS */
+.challenge-info .challenge-imgs .challenge-img, .challenge-info .challenge-imgs .challenge-img:after, .challenge-info .challenge-imgs .challenge-img:first-child:hover:after, .challenge-info .challenge-imgs .challenge-img:nth-child(2):hover:after, .challenge-info .challenge-imgs .challenge-img:nth-child(3):hover:after {
+  transition: all 0.2s ease-in-out !important;
+  -moz-transition: all 0.2s ease-in-out !important;
+  -webkit-transition: all 0.2s ease-in-out !important;
+  -o-transition: all 0.2s ease-in-out !important; }
+
 /* GENERAL STYLES */
 * {
   box-sizing: border-box; }
@@ -9,8 +15,11 @@ body {
 
 h1 {
   font-weight: 800;
-  font-size: 42px;
+  font-size: 45px;
   margin-bottom: 0; }
+  @media screen and (max-width: 425px) {
+    h1 {
+      font-size: 41px; } }
 
 h2 {
   font-size: 30px;
@@ -256,15 +265,24 @@ main {
 .course-img {
   background-color: #FAFBFB;
   padding: 20px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 70px; }
   .course-img:after {
     position: absolute;
     content: '';
     width: 90%;
-    height: 30px;
-    right: -16px;
-    bottom: -14px;
+    height: 50px;
+    right: -32px;
+    bottom: -27px;
     background-color: #F4CE6E; }
+  .course-img:before {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 105%;
+    right: -16px;
+    top: 16px;
+    background-color: #ED583F; }
 
 /* CHALLENGES SECTION */
 .challenge-info .challenge-imgs {
@@ -273,8 +291,9 @@ main {
     width: 150px;
     margin-bottom: 10px;
     z-index: 1;
-    position: relative; }
-    @media screen and (min-width: 776px) {
+    position: relative;
+    display: inline-block; }
+    @media screen and (min-width: 662px) {
       .challenge-info .challenge-imgs .challenge-img {
         width: 250px;
         display: inline-block; } }
@@ -284,18 +303,37 @@ main {
       height: 150px;
       width: 150px;
       z-index: -1; }
+      @media screen and (max-width: 662px) {
+        .challenge-info .challenge-imgs .challenge-img:after {
+          height: 100px;
+          width: 100px; } }
   .challenge-info .challenge-imgs .challenge-img:first-child:after {
     background-color: #ED583F;
     top: -20px;
     left: -20px; }
+    @media screen and (max-width: 662px) {
+      .challenge-info .challenge-imgs .challenge-img:first-child:after {
+        top: -10px; } }
+  .challenge-info .challenge-imgs .challenge-img:first-child:hover:after {
+    top: -30px; }
   .challenge-info .challenge-imgs .challenge-img:nth-child(2):after {
     background-color: #CBC715;
     top: -20px;
     right: -28px; }
+    @media screen and (max-width: 662px) {
+      .challenge-info .challenge-imgs .challenge-img:nth-child(2):after {
+        top: -10px; } }
+  .challenge-info .challenge-imgs .challenge-img:nth-child(2):hover:after {
+    top: -10px; }
   .challenge-info .challenge-imgs .challenge-img:nth-child(3):after {
     background-color: #22AFBF;
     bottom: -20px;
     right: -20px; }
+    @media screen and (max-width: 662px) {
+      .challenge-info .challenge-imgs .challenge-img:nth-child(3):after {
+        bottom: -10px; } }
+  .challenge-info .challenge-imgs .challenge-img:nth-child(3):hover:after {
+    bottom: -10px; }
   .challenge-info .challenge-imgs .challenge-img:not(last-child) {
     margin-right: 50px; }
   .challenge-info .challenge-imgs img {
@@ -309,17 +347,20 @@ main {
       max-width: 265px; } }
 
 /* BONUS CONTENT */
-.bonus-info .playlist-info .playlist-image {
-  width: 100%;
-  max-width: 500px; }
-.bonus-info .playlist-info .playlist-info-content {
-  background-color: white;
-  color: #263557;
-  padding: 20px;
-  max-width: 600px; }
-  .bonus-info .playlist-info .playlist-info-content p {
-    margin-bottom: 15px;
-    margin-top: 0; }
+.bonus-info .playlist-info {
+  text-align: center; }
+  .bonus-info .playlist-info .playlist-image {
+    width: 100%;
+    max-width: 500px; }
+  .bonus-info .playlist-info .playlist-info-content {
+    margin: auto;
+    background-color: white;
+    color: #263557;
+    padding: 20px;
+    max-width: 500px; }
+    .bonus-info .playlist-info .playlist-info-content p {
+      margin-bottom: 15px;
+      margin-top: 0; }
 
 /* FOOTER SIGNUP FORM */
 footer {

@@ -11,6 +11,14 @@ $black: #525050;
 $purple: #8C83A0;
 $tan: #F9E1A9;
 
+%easeanimation {
+     transition: all 0.2s ease-in-out !important;
+     -moz-transition: all 0.2s ease-in-out !important;
+     -webkit-transition: all 0.2s ease-in-out !important;
+     -o-transition: all 0.2s ease-in-out !important;
+}
+
+
 
 /* GENERAL STYLES */
 
@@ -26,8 +34,11 @@ body {
 
 h1 {
   font-weight: 800;
-  font-size: 42px;
+  font-size: 45px;
   margin-bottom: 0;
+  @media screen and (max-width: 425px){
+    font-size: 41px;
+  }
 }
 
 h2 {
@@ -310,7 +321,9 @@ nav {
   @media screen and (max-width: 425px){
     background-size: cover;
   }
+
 }
+
 
 /* MAIN CONTENT */
 
@@ -327,14 +340,24 @@ main {
   background-color: $white;
   padding: 20px;
   position: relative;
+  margin-bottom: 70px;
   &:after {
     position: absolute;
     content: '';
     width: 90%;
-    height: 30px;
-    right: -16px;
-    bottom: -14px;
+    height: 50px;
+    right: -32px;
+    bottom: -27px;
     background-color: $yellow;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 105%;
+    right: -16px;
+    top: 16px;
+    background-color: $red;
   }
 }
 
@@ -348,7 +371,9 @@ main {
       margin-bottom: 10px;
       z-index: 1;
       position: relative;
-      @media screen and (min-width: 776px){
+      display: inline-block;
+      @extend %easeanimation;
+      @media screen and (min-width: 662px){
         width: 250px;
         display: inline-block;
       }
@@ -358,6 +383,11 @@ main {
         height: 150px;
         width: 150px;
         z-index: -1;
+        @extend %easeanimation;
+        @media screen and (max-width: 662px){
+          height: 100px;
+          width: 100px;
+        }
       }
     }
     .challenge-img:first-child{
@@ -365,6 +395,15 @@ main {
         background-color: $red;
         top: -20px;
         left: -20px;
+        @media screen and (max-width: 662px){ 
+          top: -10px;
+        }
+      }
+      &:hover {
+        &:after {
+          top: -30px;
+          @extend %easeanimation;
+        }
       }
     }
     .challenge-img:nth-child(2){
@@ -372,6 +411,15 @@ main {
         background-color: $green;
         top: -20px;
         right: -28px;
+        @media screen and (max-width: 662px){ 
+          top: -10px;
+        }
+      }
+      &:hover {
+        &:after {
+          top: -10px;
+          @extend %easeanimation;
+        }
       }
     }
     .challenge-img:nth-child(3){
@@ -379,6 +427,15 @@ main {
         background-color: $teal;
         bottom: -20px;
         right: -20px;
+        @media screen and (max-width: 662px){ 
+          bottom: -10px;
+        }
+      }
+      &:hover {
+        &:after {
+          bottom: -10px;
+          @extend %easeanimation;
+        }
       }
     }
     .challenge-img:not(last-child){
@@ -408,15 +465,17 @@ main {
 
 .bonus-info {
   .playlist-info {
+    text-align: center;
     .playlist-image {
       width: 100%;
       max-width: 500px;
     }
     .playlist-info-content {
+      margin: auto;
       background-color: white;
       color: $blue;
       padding: 20px;
-      max-width: 600px;
+      max-width: 500px;
       p {
         margin-bottom: 15px;
         margin-top: 0;
