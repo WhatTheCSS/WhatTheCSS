@@ -81,7 +81,7 @@ p {
    ------------------ */
 a.btn {
   display: block;
-  min-width: 300px;
+  width: 100%;
   padding: 15px;
   text-decoration: none;
   text-align: center;
@@ -161,13 +161,13 @@ a.btn {
     position: absolute; }
     @media screen and (max-width: 662px) {
       .half-confetti-layer img {
-        max-width: 500px; } }
+        max-width: 100%; } }
 
 .right-confetti img {
-  right: -90px; }
+  right: -30px; }
 
 .left-confetti img {
-  left: -90px; }
+  left: -30px; }
 
 /* ------------------  
     NAVIGATION
@@ -438,9 +438,15 @@ nav {
 footer {
   padding: 40px;
   position: relative; }
+  @media screen and (max-width: 662px) {
+    footer {
+      padding: 0px; } }
   footer .footer-container .footer-form {
     background-color: white;
     padding: 20px 30px; }
+    @media screen and (max-width: 662px) {
+      footer .footer-container .footer-form {
+        padding: 20px; } }
   footer .footer-container .footer-links {
     padding: 40px 0;
     text-align: center; }
@@ -537,27 +543,39 @@ body.home-page .challenge-info .challenge-imgs {
     margin-right: 50px; }
   body.home-page .challenge-info .challenge-imgs img {
     width: 100%; }
-body.home-page .course-info .course-img {
-  background-color: #E5EFED;
-  padding: 20px;
-  position: relative;
-  margin-bottom: 70px; }
-  body.home-page .course-info .course-img:after {
-    position: absolute;
-    content: '';
-    width: 90%;
-    height: 50px;
-    right: -32px;
-    bottom: -27px;
-    background-color: #F4CE6E; }
-  body.home-page .course-info .course-img:before {
-    position: absolute;
-    content: '';
-    width: 28px;
-    height: 105%;
-    right: -16px;
-    top: 16px;
-    background-color: #ED583F; }
+body.home-page .course-info {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px; }
+  body.home-page .course-info .course-img {
+    background-color: #E5EFED;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 70px; }
+    body.home-page .course-info .course-img:after {
+      position: absolute;
+      content: '';
+      width: 90%;
+      height: 50px;
+      right: -32px;
+      bottom: -27px;
+      background-color: #F4CE6E; }
+    body.home-page .course-info .course-img:before {
+      position: absolute;
+      content: '';
+      width: 28px;
+      height: 105%;
+      right: -16px;
+      top: 16px;
+      background-color: #ED583F; }
+  @media screen and (max-width: 662px) {
+    body.home-page .course-info {
+      padding: 0; }
+      body.home-page .course-info .course-img:after {
+        height: 30px;
+        bottom: -14px; }
+      body.home-page .course-info .course-content {
+        padding: 0 20px 20px 20px; } }
 body.home-page .client-info img {
   max-width: 400px; }
   @media screen and (max-width: 425px) {
@@ -571,10 +589,13 @@ body.home-page .bonus-info .playlist-info {
     @media screen and (min-width: 992px) {
       body.home-page .bonus-info .playlist-info .playlist-image {
         margin-top: -50px; } }
-body.home-page .intro-text, body.home-page .challenge-info, body.home-page .course-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container {
+body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container {
   max-width: 1000px;
   margin: auto;
   padding: 40px; }
+  @media screen and (max-width: 662px) {
+    body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container {
+      padding: 20px; } }
 body.home-page .challenge-content, body.home-page .course-content {
   max-width: 700px;
   margin: auto; }

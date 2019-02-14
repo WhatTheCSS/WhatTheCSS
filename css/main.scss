@@ -118,7 +118,7 @@ p {
 
 a.btn {
   display: block;
-  min-width: 300px;
+  width: 100%;
   padding: 15px;
   text-decoration: none;
   text-align: center;
@@ -208,24 +208,27 @@ a.btn {
 .half-confetti-layer {
   position: relative;
   height: 200px;
+  @media screen and (max-width: 662px){
+    // overflow: hidden;
+  }
   img {
     max-width: 700px;
     position: absolute;
     @media screen and (max-width: 662px){
-      max-width: 500px;
+      max-width: 100%;
     }
   }
 }
 
 .right-confetti {
   img {
-    right: -90px;
+    right: -30px;
   }
 }
 
 .left-confetti {
   img {
-    left: -90px;
+    left: -30px;
   }
 }
 
@@ -560,10 +563,16 @@ nav {
 footer {
   padding: 40px;
   position: relative;
+  @media screen and (max-width: 662px){
+    padding: 0px;
+  }
   .footer-container {
     .footer-form {
       background-color: white;
       padding: 20px 30px;
+      @media screen and (max-width: 662px){
+        padding: 20px;
+      }
     }
     .footer-links {
       padding: 40px 0;
@@ -717,6 +726,9 @@ body.home-page {
   }
 
   .course-info {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
     .course-img {
       background-color: $light-blue;
       padding: 20px;
@@ -739,6 +751,18 @@ body.home-page {
         right: -16px;
         top: 16px;
         background-color: $red;
+      }
+    }
+    @media screen and (max-width: 662px){
+      padding: 0;
+      .course-img {
+        &:after {
+          height: 30px;
+          bottom: -14px;
+        }
+      }
+      .course-content {
+        padding: 0 20px 20px 20px;
       }
     }
   }
@@ -765,10 +789,13 @@ body.home-page {
     }
   }
 
-  .intro-text, .challenge-info, .course-info, .client-info, .bonus-info, .footer-container {
+  .intro-text, .challenge-info, .client-info, .bonus-info, .footer-container {
     max-width: 1000px;
     margin: auto;
     padding: 40px;
+    @media screen and (max-width: 662px){
+      padding: 20px;
+    }
   }
 
   .challenge-content, .course-content {
