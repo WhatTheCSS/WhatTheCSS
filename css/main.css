@@ -1,7 +1,7 @@
 /* ==============================
    VARIABLES, MIXINS, ETC 
    ============================== */
-.challenge-info .challenge-imgs .challenge-img, .challenge-info .challenge-imgs .challenge-img:after, .challenge-info .challenge-imgs .challenge-img:first-child:hover:after, .challenge-info .challenge-imgs .challenge-img:nth-child(2):hover:after, .challenge-info .challenge-imgs .challenge-img:nth-child(3):hover:after {
+body.home-page .challenge-info .challenge-imgs .challenge-img, body.home-page .challenge-info .challenge-imgs .challenge-img:after, body.home-page .challenge-info .challenge-imgs .challenge-img:hover:after {
   transition: all 0.2s ease-in-out !important;
   -moz-transition: all 0.2s ease-in-out !important;
   -webkit-transition: all 0.2s ease-in-out !important;
@@ -34,12 +34,54 @@ p {
   font-size: 21px;
   margin-top: 0; }
 
+.main {
+  margin-top: 65px;
+  padding: 130px 30px 20px 30px; }
+
+.visually-hidden {
+  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.two-third-grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-column-gap: 50px; }
+
+.half-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; }
+
+@media screen and (max-width: 992px) {
+  .two-third-grid-container, .half-grid-container {
+    grid-template-columns: 1fr; } }
+
+@media all and (-ms-high-contrast: none) {
+  .two-third-grid {
+    display: -ms-grid;
+    -ms-grid-columns: 2fr 1fr;
+    -ms-grid-rows: 1fr;
+    -ms-align-items: center;
+    -ms-grid-column-gap: 20px; }
+
+  .half-grid-container {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr; } }
 /* ------------------  
     BUTTONS
    ------------------ */
 a.btn {
   display: block;
-  min-width: 200px;
+  min-width: 300px;
   padding: 15px;
   text-decoration: none;
   text-align: center;
@@ -50,7 +92,8 @@ a.btn {
   transition-timing-function: ease-in-out;
   transition: .2s;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  max-height: 61px; }
   a.btn:hover {
     transform: translateY(-10px);
     transition: .2s;
@@ -110,32 +153,24 @@ a.btn {
     .top-confetti-layer {
       background-size: cover; } }
 
-.visually-hidden {
-  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px); }
+.half-confetti-layer {
+  background-image: url("../imgs/other/half-confetti.svg");
+  min-height: 200px;
+  background-repeat: no-repeat; }
 
-/* ==============================
-   ------------------------------
-    HOMEPAGE
-   ------------------------------
-   ============================== */
-.intro-text, .challenge-info, .course-info, .client-info, .bonus-info, .footer-container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px; }
-
-/* HERO SECTION */
-.hero-container {
-  position: relative; }
-
+/* ------------------  
+    NAVIGATION
+   ------------------ */
 nav {
-  padding: 20px; }
+  padding: 20px;
+  z-index: 9999; }
+  @media screen and (min-width: 992px) {
+    nav {
+      display: inline-block;
+      width: 185px;
+      position: absolute;
+      left: 20px;
+      top: -30px; } }
   nav .logo {
     height: 200px; }
     @media screen and (max-width: 991px) {
@@ -202,196 +237,77 @@ nav {
     nav .navigation-links .nav-link:last-child a {
       margin-right: 0; }
 
+/* ------------------  
+    HERO
+   ------------------ */
 .hero-container {
   position: relative;
   padding-bottom: 50px; }
   @media screen and (min-width: 425px) {
     .hero-container {
       margin-top: 50px; } }
-  .hero-container nav {
-    z-index: 9999; }
+  .hero-container .hero {
+    padding: 0 30px; }
     @media screen and (min-width: 992px) {
-      .hero-container nav {
-        display: inline-block;
-        width: 185px;
-        position: absolute;
-        left: 20px;
-        top: -30px; } }
-
-.hero {
-  padding: 0 30px; }
-  @media screen and (min-width: 992px) {
-    .hero {
-      padding: 100px 40px 100px 100px;
-      position: relative;
-      max-width: 1200px;
-      margin: auto; } }
-  .hero .hero-content {
-    background-color: #22AFBF;
-    text-align: center;
-    padding: 50px 20px; }
-    @media screen and (min-width: 667px) {
-      .hero .hero-content {
-        max-width: 540px; } }
-    @media screen and (max-width: 992px) {
-      .hero .hero-content {
+      .hero-container .hero {
+        padding: 100px 40px 100px 100px;
+        position: relative;
+        max-width: 1200px;
         margin: auto; } }
+    .hero-container .hero .hero-content {
+      text-align: center;
+      padding: 50px 20px; }
+      @media screen and (min-width: 667px) {
+        .hero-container .hero .hero-content {
+          max-width: 540px; } }
+      @media screen and (max-width: 992px) {
+        .hero-container .hero .hero-content {
+          margin: auto; } }
+      @media screen and (min-width: 992px) {
+        .hero-container .hero .hero-content {
+          margin-left: 100px; } }
+      @media (min-width: 992px) and (max-width: 1100px) {
+        .hero-container .hero .hero-content {
+          max-width: 440px; } }
+      .hero-container .hero .hero-content h1 {
+        color: white;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 83px;
+        text-transform: uppercase;
+        margin: 0; }
+        .hero-container .hero .hero-content h1 span {
+          font-weight: 800;
+          font-size: 100px; }
+    .hero-container .hero .hero-img img {
+      width: 100%;
+      max-width: 540px;
+      display: block;
+      margin: auto; }
     @media screen and (min-width: 992px) {
-      .hero .hero-content {
-        margin-left: 100px; } }
+      .hero-container .hero .hero-img {
+        max-width: 450px;
+        position: absolute;
+        right: 50px;
+        top: 0; } }
     @media (min-width: 992px) and (max-width: 1100px) {
-      .hero .hero-content {
-        max-width: 440px; } }
-    .hero .hero-content h1 {
-      color: white;
-      font-size: 60px;
-      font-weight: 400;
-      line-height: 83px;
-      text-transform: uppercase;
-      margin: 0; }
-      .hero .hero-content h1 span {
-        font-weight: 800;
-        font-size: 100px; }
-  .hero .hero-img img {
-    width: 100%;
-    max-width: 540px;
-    display: block;
-    margin: auto; }
-  @media screen and (min-width: 992px) {
-    .hero .hero-img {
-      max-width: 450px;
-      position: absolute;
-      right: 50px;
-      top: 0; } }
-  @media (min-width: 992px) and (max-width: 1100px) {
-    .hero .hero-img {
-      max-width: 375px;
-      top: 50px; } }
+      .hero-container .hero .hero-img {
+        max-width: 375px;
+        top: 50px; } }
 
-/* MAIN CONTENT */
-body.home-page .main {
-  background-color: #263557;
-  color: white; }
-
-.main {
-  margin-top: 65px;
-  padding: 130px 30px 20px 30px; }
-
-/* COURSE CONTENT */
-.course-img {
-  background-color: #FAFBFB;
-  padding: 20px;
-  position: relative;
-  margin-bottom: 70px; }
-  .course-img:after {
-    position: absolute;
-    content: '';
-    width: 90%;
-    height: 50px;
-    right: -32px;
-    bottom: -27px;
-    background-color: #F4CE6E; }
-  .course-img:before {
-    position: absolute;
-    content: '';
-    width: 28px;
-    height: 105%;
-    right: -16px;
-    top: 16px;
-    background-color: #ED583F; }
-
-/* CHALLENGES SECTION */
-.challenge-info .challenge-imgs {
-  text-align: center; }
-  .challenge-info .challenge-imgs .challenge-img {
-    width: 150px;
-    margin-bottom: 10px;
-    z-index: 1;
-    position: relative;
-    display: inline-block; }
-    @media screen and (min-width: 662px) {
-      .challenge-info .challenge-imgs .challenge-img {
-        width: 250px;
-        display: inline-block; } }
-    .challenge-info .challenge-imgs .challenge-img:after {
-      position: absolute;
-      content: '';
-      height: 150px;
-      width: 150px;
-      z-index: -1; }
-      @media screen and (max-width: 662px) {
-        .challenge-info .challenge-imgs .challenge-img:after {
-          height: 100px;
-          width: 100px; } }
-  .challenge-info .challenge-imgs .challenge-img:first-child:after {
-    background-color: #ED583F;
-    top: -20px;
-    left: -20px; }
-    @media screen and (max-width: 662px) {
-      .challenge-info .challenge-imgs .challenge-img:first-child:after {
-        top: -10px; } }
-  .challenge-info .challenge-imgs .challenge-img:first-child:hover:after {
-    top: -30px; }
-  .challenge-info .challenge-imgs .challenge-img:nth-child(2):after {
-    background-color: #CBC715;
-    top: -20px;
-    right: -28px; }
-    @media screen and (max-width: 662px) {
-      .challenge-info .challenge-imgs .challenge-img:nth-child(2):after {
-        top: -10px; } }
-  .challenge-info .challenge-imgs .challenge-img:nth-child(2):hover:after {
-    top: -10px; }
-  .challenge-info .challenge-imgs .challenge-img:nth-child(3):after {
-    background-color: #22AFBF;
-    bottom: -20px;
-    right: -20px; }
-    @media screen and (max-width: 662px) {
-      .challenge-info .challenge-imgs .challenge-img:nth-child(3):after {
-        bottom: -10px; } }
-  .challenge-info .challenge-imgs .challenge-img:nth-child(3):hover:after {
-    bottom: -10px; }
-  .challenge-info .challenge-imgs .challenge-img:not(last-child) {
-    margin-right: 50px; }
-  .challenge-info .challenge-imgs img {
-    width: 100%; }
-
-/* CLIENT SECTION */
-.client-info img {
-  max-width: 400px; }
-  @media screen and (max-width: 425px) {
-    .client-info img {
-      max-width: 265px; } }
-
-/* BONUS CONTENT */
-.bonus-info .playlist-info {
-  text-align: center; }
-  .bonus-info .playlist-info .playlist-image {
-    width: 100%;
-    max-width: 500px; }
-  .bonus-info .playlist-info .playlist-info-content {
-    margin: auto;
-    background-color: white;
-    color: #263557;
-    padding: 20px;
-    max-width: 500px; }
-    .bonus-info .playlist-info .playlist-info-content p {
-      margin-bottom: 15px;
-      margin-top: 0; }
-
-body.home-page footer {
-  background-color: #263557; }
-
-/* FOOTER SIGNUP FORM */
+/* ------------------  
+    FOOTER
+   ------------------ */
 footer {
   padding: 40px;
   position: relative; }
-  footer .footer-form {
+  footer .footer-container .footer-form {
     background-color: white;
     padding: 20px 30px; }
-  footer .footer-links {
+  footer .footer-container .footer-links {
     padding: 40px 0;
     text-align: center; }
-    footer .footer-links .logo-links {
+    footer .footer-container .footer-links .logo-links {
       border-radius: 50%;
       height: 60px;
       width: 60px;
@@ -401,24 +317,143 @@ footer {
       border: 3px solid white;
       transition: .2s;
       margin-right: 15px; }
-      footer .footer-links .logo-links:hover {
+      footer .footer-container .footer-links .logo-links:hover {
         transition: .2s;
         transform: translateY(-10px); }
-    footer .footer-links .logo-links:first-child {
+    footer .footer-container .footer-links .logo-links:first-child {
       background-color: #ED583F;
       padding: 7px 10px 10px 13px; }
-    footer .footer-links .logo-links:nth-child(2) {
+    footer .footer-container .footer-links .logo-links:nth-child(2) {
       background-color: #22AFBF;
       padding: 7px 11px 7px 13px; }
-    footer .footer-links .logo-links:nth-child(3) {
+    footer .footer-container .footer-links .logo-links:nth-child(3) {
       background-color: #CBC715;
       margin-right: 0;
       padding: 7px 14px 10px 13px; }
-  footer .footer-legal-links {
+  footer .footer-container .footer-legal-links {
     text-align: center; }
-    footer .footer-legal-links a {
+    footer .footer-container .footer-legal-links a {
       color: white; }
-      footer .footer-legal-links a:hover {
+      footer .footer-container .footer-legal-links a:hover {
+        color: #F4CE6E; }
+
+/* ==============================
+   ------------------------------
+    HOMEPAGE
+   ------------------------------
+   ============================== */
+body.home-page .hero-content {
+  background-color: #22AFBF; }
+body.home-page .main {
+  background-color: #263557;
+  color: white; }
+body.home-page .challenge-info .challenge-imgs {
+  text-align: center; }
+  body.home-page .challenge-info .challenge-imgs .challenge-img {
+    width: 150px;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    display: inline-block; }
+    @media screen and (min-width: 662px) {
+      body.home-page .challenge-info .challenge-imgs .challenge-img {
+        width: 250px;
+        display: inline-block; } }
+    body.home-page .challenge-info .challenge-imgs .challenge-img:after {
+      position: absolute;
+      content: '';
+      height: 150px;
+      width: 150px;
+      z-index: -1; }
+      @media screen and (max-width: 662px) {
+        body.home-page .challenge-info .challenge-imgs .challenge-img:after {
+          height: 100px;
+          width: 100px; } }
+  body.home-page .challenge-info .challenge-imgs .challenge-img:first-child:after {
+    background-color: #ED583F;
+    top: -20px;
+    left: -20px; }
+    @media screen and (max-width: 662px) {
+      body.home-page .challenge-info .challenge-imgs .challenge-img:first-child:after {
+        top: -10px; } }
+  body.home-page .challenge-info .challenge-imgs .challenge-img:first-child:hover:after {
+    top: -30px; }
+  body.home-page .challenge-info .challenge-imgs .challenge-img:nth-child(2):after {
+    background-color: #CBC715;
+    top: -20px;
+    right: -28px; }
+    @media screen and (max-width: 662px) {
+      body.home-page .challenge-info .challenge-imgs .challenge-img:nth-child(2):after {
+        top: -10px; } }
+  body.home-page .challenge-info .challenge-imgs .challenge-img:nth-child(2):hover:after {
+    top: -10px; }
+  body.home-page .challenge-info .challenge-imgs .challenge-img:nth-child(3):after {
+    background-color: #22AFBF;
+    bottom: -20px;
+    right: -20px; }
+    @media screen and (max-width: 662px) {
+      body.home-page .challenge-info .challenge-imgs .challenge-img:nth-child(3):after {
+        bottom: -10px; } }
+  body.home-page .challenge-info .challenge-imgs .challenge-img:nth-child(3):hover:after {
+    bottom: -10px; }
+  body.home-page .challenge-info .challenge-imgs .challenge-img:not(last-child) {
+    margin-right: 50px; }
+  body.home-page .challenge-info .challenge-imgs img {
+    width: 100%; }
+body.home-page .course-info .course-img {
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 70px; }
+  body.home-page .course-info .course-img:after {
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 50px;
+    right: -32px;
+    bottom: -27px;
+    background-color: #F4CE6E; }
+  body.home-page .course-info .course-img:before {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 105%;
+    right: -16px;
+    top: 16px;
+    background-color: #ED583F; }
+body.home-page .client-info img {
+  max-width: 400px; }
+  @media screen and (max-width: 425px) {
+    body.home-page .client-info img {
+      max-width: 265px; } }
+body.home-page .bonus-info .playlist-info {
+  text-align: center; }
+  body.home-page .bonus-info .playlist-info .playlist-image {
+    width: 100%;
+    max-width: 500px; }
+  body.home-page .bonus-info .playlist-info .playlist-info-content {
+    margin: auto;
+    background-color: white;
+    color: #263557;
+    padding: 20px;
+    max-width: 500px; }
+    body.home-page .bonus-info .playlist-info .playlist-info-content p {
+      margin-bottom: 15px;
+      margin-top: 0; }
+body.home-page .intro-text, body.home-page .challenge-info, body.home-page .course-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px; }
+body.home-page footer {
+  background-color: #263557; }
+  body.home-page footer .footer-container .footer-links .logo-links {
+    color: white;
+    border: 3px solid white; }
+  body.home-page footer .footer-container .footer-legal-links {
+    text-align: center; }
+    body.home-page footer .footer-container .footer-legal-links a {
+      color: white; }
+      body.home-page footer .footer-container .footer-legal-links a:hover {
         color: #F4CE6E; }
 
 /* ==============================
@@ -426,11 +461,20 @@ footer {
     COURSE PAGE
    ------------------------------
    ============================== */
-body.course-page footer {
-  padding: 0; }
-  body.course-page footer .footer-form p {
-    color: #263557;
-    text-align: center; }
+body.course-page .hero-content {
+  background-color: #F4CE6E; }
+body.course-page .main {
+  background-color: #263557;
+  color: #FAFBFB; }
+body.course-page footer .footer-container .footer-links .logo-links {
+  color: white;
+  border: 3px solid white; }
+body.course-page footer .footer-container .footer-legal-links {
+  text-align: center; }
+  body.course-page footer .footer-container .footer-legal-links a {
+    color: white; }
+    body.course-page footer .footer-container .footer-legal-links a:hover {
+      color: #F4CE6E; }
 
 .course-section h3 {
   font-size: 30px;
@@ -641,11 +685,22 @@ body.course-page footer {
     ABOUT PAGE
    ------------------------------
    ============================== */
+body.about-page .hero-content {
+  background-color: #ED583F; }
 body.about-page .main {
   background-color: #E5EFED;
   color: #263557; }
 body.about-page footer {
   background-color: #E5EFED; }
+  body.about-page footer .footer-container .footer-links .logo-links {
+    color: white;
+    border: 3px solid #263557; }
+  body.about-page footer .footer-container .footer-legal-links {
+    text-align: center; }
+    body.about-page footer .footer-container .footer-legal-links a {
+      color: #263557; }
+      body.about-page footer .footer-container .footer-legal-links a:hover {
+        color: #F4CE6E; }
 
 /* ==============================
    ------------------------------

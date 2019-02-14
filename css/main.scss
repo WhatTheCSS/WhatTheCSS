@@ -56,13 +56,69 @@ p {
   margin-top: 0;
 }
 
+.main {
+  margin-top: 65px;
+  padding: 130px 30px 20px 30px;
+}
+
+.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.two-third-grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-column-gap: 50px;
+}
+
+.half-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.two-third-grid-container, .half-grid-container {
+  @media screen and (max-width: 992px){
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (-ms-high-contrast:none) { 
+  .two-third-grid-container, .half-grid-container {
+    @media screen and (max-width: 992px){
+      -ms-grid-template-columns: 2fr 1fr;
+    }
+  }
+}
+
+@media all and (-ms-high-contrast:none) {
+  .two-third-grid {
+    display: -ms-grid;
+    -ms-grid-columns: 2fr 1fr;
+    -ms-grid-rows: 1fr;
+    -ms-align-items: center;
+    -ms-grid-column-gap: 20px;
+  }
+  .half-grid-container {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+  }
+}
+
 /* ------------------  
     BUTTONS
    ------------------ */
 
 a.btn {
   display: block;
-  min-width: 200px;
+  min-width: 300px;
   padding: 15px;
   text-decoration: none;
   text-align: center;
@@ -74,6 +130,7 @@ a.btn {
   transition: .2s;
   position: relative;
   z-index: 1;
+  max-height: 61px;
   &:hover {
     transform: translateY(-10px);
     transition: .2s;
@@ -146,45 +203,28 @@ a.btn {
   @media screen and (max-width: 425px){
     background-size: cover;
   }
-
 }
 
-.footer-container {
-  
+.half-confetti-layer {
+  background-image: url('../imgs/other/half-confetti.svg');
+  min-height: 200px;
+  background-repeat: no-repeat;
 }
 
-.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-    position: absolute !important;
-    height: 1px; width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-}
+/* ------------------  
+    NAVIGATION
+   ------------------ */
 
-
-/* ==============================
-   ------------------------------
-    HOMEPAGE
-   ------------------------------
-   ============================== */
-
-.intro-text, .challenge-info, .course-info, .client-info, .bonus-info, .footer-container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
-}
-
-
-/* HERO SECTION */
-
-.hero-container {
-  // padding: 20px;
-  position: relative;
-}
-
-// Navigation
 nav {
   padding: 20px;
+  z-index: 9999;
+  @media screen and (min-width: 992px){
+    display: inline-block;
+    width: 185px;
+    position: absolute;
+    left: 20px;
+    top: -30px;
+  }
   .logo {
     height: 200px;
     @media screen and (max-width: 991px){ 
@@ -265,9 +305,11 @@ nav {
       margin-right: 0;
     }
   }
-}
+}   
 
-// Hero
+/* ------------------  
+    HERO
+   ------------------ */
 
 .hero-container {
   position: relative;
@@ -275,298 +317,311 @@ nav {
   @media screen and (min-width: 425px){
     margin-top: 50px;
   }
-  nav {
-    z-index: 9999;
+  .hero {
+    padding: 0 30px;
     @media screen and (min-width: 992px){
-      display: inline-block;
-      width: 185px;
-      position: absolute;
-      left: 20px;
-      top: -30px;
-    }
-  }
-}
-
-.hero {
-  padding: 0 30px;
-  @media screen and (min-width: 992px){
-    padding: 100px 40px 100px 100px;
-    position: relative;
-    max-width: 1200px;
-    margin: auto;
-  }
-  .hero-content {
-    background-color: $teal;
-    text-align: center;
-    padding: 50px 20px;
-    @media screen and (min-width: 667px){
-      max-width: 540px;
-      // margin: auto;
-    }
-    @media screen and (max-width: 992px){
+      padding: 100px 40px 100px 100px;
+      position: relative;
+      max-width: 1200px;
       margin: auto;
     }
-    @media screen and (min-width: 992px){
-      margin-left: 100px;
+    .hero-content {
+      text-align: center;
+      padding: 50px 20px;
+      @media screen and (min-width: 667px){
+        max-width: 540px;
+      }
+      @media screen and (max-width: 992px){
+        margin: auto;
+      }
+      @media screen and (min-width: 992px){
+        margin-left: 100px;
+      }
+      @media (min-width: 992px) and (max-width: 1100px){
+        max-width: 440px;
+      }
+      h1 {
+        color: white;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 83px;
+        text-transform: uppercase;
+        margin: 0;
+        span {
+          font-weight: 800;
+          font-size: 100px;
+        }
+      }
     }
-    @media (min-width: 992px) and (max-width: 1100px){
-      max-width: 440px;
-    }
-    h1 {
-      color: white;
-      font-size: 60px;
-      font-weight: 400;
-      line-height: 83px;
-      text-transform: uppercase;
-      margin: 0;
-      span {
-        font-weight: 800;
-        font-size: 100px;
+    .hero-img {
+      img {
+        width: 100%;
+        max-width: 540px;
+        display: block;
+        margin: auto;
+      }
+      @media screen and (min-width: 992px){
+        max-width: 450px;
+        position: absolute;
+        right: 50px;
+        top: 0;
+      }
+      @media (min-width: 992px) and (max-width: 1100px){
+        max-width: 375px;
+        top: 50px;
       }
     }
   }
-  .hero-img {
-    img {
-      width: 100%;
-      max-width: 540px;
-      display: block;
-      margin: auto;
+}
+
+/* ------------------  
+    FOOTER
+   ------------------ */
+footer {
+  padding: 40px;
+  position: relative;
+  .footer-container {
+    .footer-form {
+      background-color: white;
+      padding: 20px 30px;
     }
-    @media screen and (min-width: 992px){
-      max-width: 450px;
-      position: absolute;
-      right: 50px;
-      top: 0;
+    .footer-links {
+      padding: 40px 0;
+      text-align: center;
+      .logo-links {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+        font-size: 30px;
+        color: white;
+        border: 3px solid white;
+        transition: .2s;
+        margin-right: 15px;
+        &:hover {
+          transition: .2s;
+          transform: translateY(-10px);
+        }
+      }
+      .logo-links:first-child {
+        background-color: $red;
+        padding: 7px 10px 10px 13px;
+      }
+      .logo-links:nth-child(2) {
+        background-color: $teal;
+        padding: 7px 11px 7px 13px;
+      }
+      .logo-links:nth-child(3) {
+        background-color: $green;
+        margin-right: 0;
+        padding: 7px 14px 10px 13px;
+      }
     }
-    @media (min-width: 992px) and (max-width: 1100px){
-      max-width: 375px;
-      top: 50px;
+    .footer-legal-links {
+      text-align: center;
+      a {
+        color: white;
+        &:hover {
+          color: $yellow;
+        }
+      }
     }
   }
 }
 
-
-/* MAIN CONTENT */
+/* ==============================
+   ------------------------------
+    HOMEPAGE
+   ------------------------------
+   ============================== */
 
 body.home-page {
+  
+  .hero-content {
+      background-color: $teal;
+  }
+
   .main {
       background-color: $blue;
       color: white;
   }
-}
 
-.main {
-  margin-top: 65px;
-  padding: 130px 30px 20px 30px;
-}
-
-/* COURSE CONTENT */
-
-.course-img {
-  background-color: $white;
-  padding: 20px;
-  position: relative;
-  margin-bottom: 70px;
-  &:after {
-    position: absolute;
-    content: '';
-    width: 90%;
-    height: 50px;
-    right: -32px;
-    bottom: -27px;
-    background-color: $yellow;
+  .intro-text {
+    
   }
-  &:before {
-    position: absolute;
-    content: '';
-    width: 28px;
-    height: 105%;
-    right: -16px;
-    top: 16px;
-    background-color: $red;
-  }
-}
-
-/* CHALLENGES SECTION */
-
-.challenge-info {
-  .challenge-imgs {
-    text-align: center;
-    .challenge-img {
-      width: 150px;
-      margin-bottom: 10px;
-      z-index: 1;
-      position: relative;
-      display: inline-block;
-      @extend %easeanimation;
-      @media screen and (min-width: 662px){
-        width: 250px;
+ 
+  .challenge-info {
+    .challenge-imgs {
+      text-align: center;
+      .challenge-img {
+        width: 150px;
+        margin-bottom: 10px;
+        z-index: 1;
+        position: relative;
         display: inline-block;
+        @extend %easeanimation;
+        @media screen and (min-width: 662px){
+          width: 250px;
+          display: inline-block;
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          height: 150px;
+          width: 150px;
+          z-index: -1;
+          @extend %easeanimation;
+          @media screen and (max-width: 662px){
+            height: 100px;
+            width: 100px;
+          }
+        }
+        &:hover {
+          &:after {
+            @extend %easeanimation;
+          }
+        }
       }
+      .challenge-img:first-child{
+        &:after {
+          background-color: $red;
+          top: -20px;
+          left: -20px;
+          @media screen and (max-width: 662px){ 
+            top: -10px;
+          }
+        }
+        &:hover {
+          &:after {
+            top: -30px;
+          }
+        }
+      }
+      .challenge-img:nth-child(2){
+        &:after {
+          background-color: $green;
+          top: -20px;
+          right: -28px;
+          @media screen and (max-width: 662px){ 
+            top: -10px;
+          }
+        }
+        &:hover {
+          &:after {
+            top: -10px;
+          }
+        }
+      }
+      .challenge-img:nth-child(3){
+        &:after {
+          background-color: $teal;
+          bottom: -20px;
+          right: -20px;
+          @media screen and (max-width: 662px){ 
+            bottom: -10px;
+          }
+        }
+        &:hover {
+          &:after {
+            bottom: -10px;
+          }
+        }
+      }
+      .challenge-img:not(last-child){
+        margin-right: 50px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .course-info {
+    .course-img {
+      background-color: white;
+      padding: 20px;
+      position: relative;
+      margin-bottom: 70px;
       &:after {
         position: absolute;
         content: '';
-        height: 150px;
-        width: 150px;
-        z-index: -1;
-        @extend %easeanimation;
-        @media screen and (max-width: 662px){
-          height: 100px;
-          width: 100px;
-        }
+        width: 90%;
+        height: 50px;
+        right: -32px;
+        bottom: -27px;
+        background-color: $yellow;
       }
-    }
-    .challenge-img:first-child{
-      &:after {
+      &:before {
+        position: absolute;
+        content: '';
+        width: 28px;
+        height: 105%;
+        right: -16px;
+        top: 16px;
         background-color: $red;
-        top: -20px;
-        left: -20px;
-        @media screen and (max-width: 662px){ 
-          top: -10px;
-        }
-      }
-      &:hover {
-        &:after {
-          top: -30px;
-          @extend %easeanimation;
-        }
       }
     }
-    .challenge-img:nth-child(2){
-      &:after {
-        background-color: $green;
-        top: -20px;
-        right: -28px;
-        @media screen and (max-width: 662px){ 
-          top: -10px;
-        }
-      }
-      &:hover {
-        &:after {
-          top: -10px;
-          @extend %easeanimation;
-        }
-      }
-    }
-    .challenge-img:nth-child(3){
-      &:after {
-        background-color: $teal;
-        bottom: -20px;
-        right: -20px;
-        @media screen and (max-width: 662px){ 
-          bottom: -10px;
-        }
-      }
-      &:hover {
-        &:after {
-          bottom: -10px;
-          @extend %easeanimation;
-        }
-      }
-    }
-    .challenge-img:not(last-child){
-      margin-right: 50px;
-    }
+  }
+
+  .client-info {
     img {
-      width: 100%;
+      @media screen and (max-width: 425px){
+        max-width: 265px;
+      }
+      max-width: 400px;
     }
-    // img:first-child {
-    //   margin-right: 15px;
-    // }
   }
-}
 
-/* CLIENT SECTION */
-
-.client-info {
-  img {
-    @media screen and (max-width: 425px){
-      max-width: 265px;
-    }
-    max-width: 400px;
-  }
-}
-
-/* BONUS CONTENT */
-
-.bonus-info {
-  .playlist-info {
-    text-align: center;
-    .playlist-image {
-      width: 100%;
-      max-width: 500px;
-    }
-    .playlist-info-content {
-      margin: auto;
-      background-color: white;
-      color: $blue;
-      padding: 20px;
-      max-width: 500px;
-      p {
-        margin-bottom: 15px;
-        margin-top: 0;
+  .bonus-info {
+    .playlist-info {
+      text-align: center;
+      .playlist-image {
+        width: 100%;
+        max-width: 500px;
+      }
+      .playlist-info-content {
+        margin: auto;
+        background-color: white;
+        color: $blue;
+        padding: 20px;
+        max-width: 500px;
+        p {
+          margin-bottom: 15px;
+          margin-top: 0;
+        }
       }
     }
   }
-}
 
-body.home-page {
+  .intro-text, .challenge-info, .course-info, .client-info, .bonus-info, .footer-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+  }
+ 
   footer {
-      background-color: $blue;
-  }
-}
-
-/* FOOTER SIGNUP FORM */
-
-footer {
-  padding: 40px;
-  position: relative;
-  .footer-form {
-    background-color: white;
-    padding: 20px 30px;
-  }
-  .footer-links {
-    padding: 40px 0;
-    text-align: center;
-    .logo-links {
-      border-radius: 50%;
-      height: 60px;
-      width: 60px;
-      display: inline-block;
-      font-size: 30px;
-      color: white;
-      border: 3px solid white;
-      transition: .2s;
-      margin-right: 15px;
-      &:hover {
-        transition: .2s;
-        transform: translateY(-10px);
+    background-color: $blue;
+    .footer-container {
+      .footer-links {
+        .logo-links {
+          color: white;
+          border: 3px solid white;
+        }
       }
-    }
-    .logo-links:first-child {
-      background-color: $red;
-      padding: 7px 10px 10px 13px;
-    }
-    .logo-links:nth-child(2) {
-      background-color: $teal;
-      padding: 7px 11px 7px 13px;
-    }
-    .logo-links:nth-child(3) {
-      background-color: $green;
-      margin-right: 0;
-      padding: 7px 14px 10px 13px;
-    }
-  }
-  .footer-legal-links {
-    text-align: center;
-    a {
-      color: white;
-      &:hover {
-        color: $yellow;
+      .footer-legal-links {
+        text-align: center;
+        a {
+          color: white;
+          &:hover {
+            color: $yellow;
+          }
+        }
       }
     }
   }
+
 }
+
 
 /* ==============================
    ------------------------------
@@ -575,12 +630,29 @@ footer {
    ============================== */
 
  body.course-page {
+  .hero-content {
+      background-color: $yellow;
+  }
+  .main {
+    background-color: $blue;
+    color: $white;
+  }
   footer {
-    padding: 0;
-    .footer-form {
-      p {
-        color: $blue;
+    .footer-container {
+      .footer-links {
+        .logo-links {
+          color: white;
+          border: 3px solid white;
+        }
+      }
+      .footer-legal-links {
         text-align: center;
+        a {
+          color: white;
+          &:hover {
+            color: $yellow;
+          }
+        }
       }
     }
   }
@@ -685,66 +757,26 @@ footer {
     &.fox-client {
       .client-personality {
         background-color: $tan;
-        // li {
-        //   color: darken($tan,30%);
-        //   border: 3px solid darken($tan,30%);
-        // }
-        // li.negative-trait {
-        //   background-color: darken($tan,5%);
-         
-        // }
       }
     }
     &.bunny-client {
       .client-personality {
         background-color: $purple;
-        // li {
-        //   color: darken($purple,30%);
-        //   border: 1px solid darken($purple,30%);
-        // }
-        // li.negative-trait {
-        //   background-color: darken($purple,5%);
-        //   color: darken($purple,30%);
-        // }
       }
     }
     &.cat-client {
       .client-personality {
         background-color: $green;
-        // li {
-        //   color: darken($green,30%);
-        //   border: 1px solid darken($green,30%);
-        // }
-        // li.negative-trait {
-        //   background-color: darken($green,5%);
-        //   color: darken($green,30%);
-        // }
       }
     }
     &.bulldog-client {
       .client-personality {
         background-color: $red;
-        // li {
-        //   color: darken($red,30%);
-        //   border: 1px solid darken($red,30%);
-        // }
-        // li.negative-trait {
-        //   background-color: darken($red,5%);
-        //   color: darken($red,30%);
-        // }
       }
     }
     &.flamingo-client {
       .client-personality {
         background-color: $teal;
-        // li {
-        //   color: darken($teal,30%);
-        //   border: 1px solid darken($teal,30%);
-        // }
-        // li.negative-trait {
-        //   background-color: darken($teal,5%);
-        //   color: darken($teal,30%);
-        // }
       }
     }
   }
@@ -917,12 +949,32 @@ footer {
    ============================== */
 
 body.about-page {
+  .hero-content {
+      background-color: $red;
+  }
   .main {
     background-color: $light-blue;
     color: $blue;
   }
   footer {
     background-color: $light-blue;
+    .footer-container {
+      .footer-links {
+        .logo-links {
+          color: white;
+          border: 3px solid $blue;
+        }
+      }
+      .footer-legal-links {
+        text-align: center;
+        a {
+          color: $blue;
+          &:hover {
+            color: $yellow;
+          }
+        }
+      }
+    }
   }
 }
 
