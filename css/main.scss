@@ -1,4 +1,6 @@
-/* COLORS */
+/* ==============================
+   VARIABLES, MIXINS, ETC 
+   ============================== */
 
 $blue: #263557;
 $teal: #22AFBF;
@@ -20,7 +22,9 @@ $light-blue: #E5EFED;
 }
 
 
-/* GENERAL STYLES */
+/* ==============================
+   GENERAL GLOBAL STYLES
+   ============================== */
 
 * {
   box-sizing: border-box;
@@ -51,6 +55,10 @@ p {
   font-size: 21px;
   margin-top: 0;
 }
+
+/* ------------------  
+    BUTTONS
+   ------------------ */
 
 a.btn {
   display: block;
@@ -116,6 +124,35 @@ a.btn {
   }
 }
 
+/* ------------------  
+  CONFETTI DIVIDERS
+  ------------------ */
+
+.top-confetti-layer {
+  background-size: contain;
+  background-repeat: repeat-x;
+  min-height: 200px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  background-image: url('../imgs/other/top-confetti.svg');
+  bottom: -170px;
+  background-position: center;
+  @media screen and (min-width: 667px){
+    bottom: -200px;
+    background-position: top;
+    min-height: 300px;
+  }
+  @media screen and (max-width: 425px){
+    background-size: cover;
+  }
+
+}
+
+.footer-container {
+  
+}
+
 .visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
     position: absolute !important;
     height: 1px; width: 1px;
@@ -123,6 +160,13 @@ a.btn {
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
 }
+
+
+/* ==============================
+   ------------------------------
+    HOMEPAGE
+   ------------------------------
+   ============================== */
 
 .intro-text, .challenge-info, .course-info, .client-info, .bonus-info, .footer-container {
     max-width: 1000px;
@@ -301,37 +345,19 @@ nav {
   }
 }
 
-/* CONFETTI DIVIDERS */
-
-.top-confetti-layer {
-  background-size: contain;
-  background-repeat: repeat-x;
-  min-height: 200px;
-  position: absolute;
-  width: 100%;
-  z-index: 999;
-  background-image: url('../imgs/other/top-confetti.svg');
-  bottom: -170px;
-  background-position: center;
-  @media screen and (min-width: 667px){
-    bottom: -200px;
-    background-position: top;
-    min-height: 300px;
-  }
-  @media screen and (max-width: 425px){
-    background-size: cover;
-  }
-
-}
-
 
 /* MAIN CONTENT */
 
-main {
+body.home-page {
+  .main {
+      background-color: $blue;
+      color: white;
+  }
+}
+
+.main {
   margin-top: 65px;
   padding: 130px 30px 20px 30px;
-  background-color: $blue;
-  color: white;
 }
 
 /* COURSE CONTENT */
@@ -537,13 +563,13 @@ footer {
   }
 }
 
-/* ===========
-   COURSE PAGE 
-   ============ */
+/* ==============================
+   ------------------------------
+    COURSE PAGE
+   ------------------------------
+   ============================== */
 
-   // change color of header
-
- .course-page {
+ body.course-page {
   footer {
     padding: 0;
     .footer-form {
@@ -878,3 +904,26 @@ footer {
   }
 
 }
+
+/* ==============================
+   ------------------------------
+    ABOUT PAGE
+   ------------------------------
+   ============================== */
+
+body.about-page {
+  .main {
+    background-color: $light-blue;
+    color: $blue;
+  }
+}
+
+/* ==============================
+   ------------------------------
+    INSIGHTS PAGE
+   ------------------------------
+   ============================== */
+
+   body.insights-page {
+    
+   }

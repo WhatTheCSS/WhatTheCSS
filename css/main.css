@@ -1,11 +1,15 @@
-/* COLORS */
+/* ==============================
+   VARIABLES, MIXINS, ETC 
+   ============================== */
 .challenge-info .challenge-imgs .challenge-img, .challenge-info .challenge-imgs .challenge-img:after, .challenge-info .challenge-imgs .challenge-img:first-child:hover:after, .challenge-info .challenge-imgs .challenge-img:nth-child(2):hover:after, .challenge-info .challenge-imgs .challenge-img:nth-child(3):hover:after {
   transition: all 0.2s ease-in-out !important;
   -moz-transition: all 0.2s ease-in-out !important;
   -webkit-transition: all 0.2s ease-in-out !important;
   -o-transition: all 0.2s ease-in-out !important; }
 
-/* GENERAL STYLES */
+/* ==============================
+   GENERAL GLOBAL STYLES
+   ============================== */
 * {
   box-sizing: border-box; }
 
@@ -30,6 +34,9 @@ p {
   font-size: 21px;
   margin-top: 0; }
 
+/* ------------------  
+    BUTTONS
+   ------------------ */
 a.btn {
   display: block;
   min-width: 200px;
@@ -81,6 +88,28 @@ a.btn {
       transition: .2s;
       box-shadow: 5px 5px #F4CE6E; }
 
+/* ------------------  
+  CONFETTI DIVIDERS
+  ------------------ */
+.top-confetti-layer {
+  background-size: contain;
+  background-repeat: repeat-x;
+  min-height: 200px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  background-image: url("../imgs/other/top-confetti.svg");
+  bottom: -170px;
+  background-position: center; }
+  @media screen and (min-width: 667px) {
+    .top-confetti-layer {
+      bottom: -200px;
+      background-position: top;
+      min-height: 300px; } }
+  @media screen and (max-width: 425px) {
+    .top-confetti-layer {
+      background-size: cover; } }
+
 .visually-hidden {
   /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
   position: absolute !important;
@@ -91,6 +120,11 @@ a.btn {
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
+/* ==============================
+   ------------------------------
+    HOMEPAGE
+   ------------------------------
+   ============================== */
 .intro-text, .challenge-info, .course-info, .client-info, .bonus-info, .footer-container {
   max-width: 1000px;
   margin: auto;
@@ -234,32 +268,14 @@ nav {
       max-width: 375px;
       top: 50px; } }
 
-/* CONFETTI DIVIDERS */
-.top-confetti-layer {
-  background-size: contain;
-  background-repeat: repeat-x;
-  min-height: 200px;
-  position: absolute;
-  width: 100%;
-  z-index: 999;
-  background-image: url("../imgs/other/top-confetti.svg");
-  bottom: -170px;
-  background-position: center; }
-  @media screen and (min-width: 667px) {
-    .top-confetti-layer {
-      bottom: -200px;
-      background-position: top;
-      min-height: 300px; } }
-  @media screen and (max-width: 425px) {
-    .top-confetti-layer {
-      background-size: cover; } }
-
 /* MAIN CONTENT */
-main {
-  margin-top: 65px;
-  padding: 130px 30px 20px 30px;
+body.home-page .main {
   background-color: #263557;
   color: white; }
+
+.main {
+  margin-top: 65px;
+  padding: 130px 30px 20px 30px; }
 
 /* COURSE CONTENT */
 .course-img {
@@ -403,12 +419,14 @@ footer {
       footer .footer-legal-links a:hover {
         color: #F4CE6E; }
 
-/* ===========
-   COURSE PAGE 
-   ============ */
-.course-page footer {
+/* ==============================
+   ------------------------------
+    COURSE PAGE
+   ------------------------------
+   ============================== */
+body.course-page footer {
   padding: 0; }
-  .course-page footer .footer-form p {
+  body.course-page footer .footer-form p {
     color: #263557;
     text-align: center; }
 
@@ -616,5 +634,19 @@ footer {
     -ms-transform: translateY(0px);
     -webkit-transform: translateY(0px);
     transform: translateY(0px); } }
+/* ==============================
+   ------------------------------
+    ABOUT PAGE
+   ------------------------------
+   ============================== */
+body.about-page .main {
+  background-color: #E5EFED;
+  color: #263557; }
+
+/* ==============================
+   ------------------------------
+    INSIGHTS PAGE
+   ------------------------------
+   ============================== */
 
 /*# sourceMappingURL=main.css.map */
