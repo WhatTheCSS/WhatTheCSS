@@ -510,12 +510,17 @@ body.home-page {
   }
 }
 
+body.home-page {
+  footer {
+      background-color: $blue;
+  }
+}
+
 /* FOOTER SIGNUP FORM */
 
 footer {
   padding: 40px;
   position: relative;
-  background-color: $blue;
   .footer-form {
     background-color: white;
     padding: 20px 30px;
@@ -916,6 +921,9 @@ body.about-page {
     background-color: $light-blue;
     color: $blue;
   }
+  footer {
+    background-color: $light-blue;
+  }
 }
 
 /* ==============================
@@ -925,5 +933,5 @@ body.about-page {
    ============================== */
 
    body.insights-page {
-    
+
    }

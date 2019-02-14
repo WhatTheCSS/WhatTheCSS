@@ -378,11 +378,13 @@ body.home-page .main {
       margin-bottom: 15px;
       margin-top: 0; }
 
+body.home-page footer {
+  background-color: #263557; }
+
 /* FOOTER SIGNUP FORM */
 footer {
   padding: 40px;
-  position: relative;
-  background-color: #263557; }
+  position: relative; }
   footer .footer-form {
     background-color: white;
     padding: 20px 30px; }
@@ -642,6 +644,8 @@ body.course-page footer {
 body.about-page .main {
   background-color: #E5EFED;
   color: #263557; }
+body.about-page footer {
+  background-color: #E5EFED; }
 
 /* ==============================
    ------------------------------
