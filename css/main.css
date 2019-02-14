@@ -431,15 +431,9 @@ body.home-page .bonus-info .playlist-info {
   body.home-page .bonus-info .playlist-info .playlist-image {
     width: 100%;
     max-width: 500px; }
-  body.home-page .bonus-info .playlist-info .playlist-info-content {
-    margin: auto;
-    background-color: white;
-    color: #263557;
-    padding: 20px;
-    max-width: 500px; }
-    body.home-page .bonus-info .playlist-info .playlist-info-content p {
-      margin-bottom: 15px;
-      margin-top: 0; }
+    @media screen and (min-width: 992px) {
+      body.home-page .bonus-info .playlist-info .playlist-image {
+        margin-top: -50px; } }
 body.home-page .intro-text, body.home-page .challenge-info, body.home-page .course-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container {
   max-width: 1000px;
   margin: auto;
@@ -455,6 +449,32 @@ body.home-page footer {
       color: white; }
       body.home-page footer .footer-container .footer-legal-links a:hover {
         color: #F4CE6E; }
+  body.home-page footer .footer-container .footer-form {
+    position: relative; }
+    body.home-page footer .footer-container .footer-form img {
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      height: 350px; }
+    body.home-page footer .footer-container .footer-form .footer-form-content {
+      margin-left: 230px; }
+      body.home-page footer .footer-container .footer-form .footer-form-content a {
+        margin: 40px 0; }
+      body.home-page footer .footer-container .footer-form .footer-form-content h2 {
+        color: #263557;
+        margin-top: 20px;
+        margin-bottom: 0; }
+    @media screen and (max-width: 662px) {
+      body.home-page footer .footer-container .footer-form img {
+        position: relative;
+        display: block;
+        margin: auto;
+        height: 300px;
+        left: 0;
+        margin-top: -100px; }
+      body.home-page footer .footer-container .footer-form .footer-form-content {
+        margin-left: 0;
+        text-align: center; } }
 
 /* ==============================
    ------------------------------

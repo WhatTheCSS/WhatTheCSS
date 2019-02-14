@@ -578,16 +578,8 @@ body.home-page {
       .playlist-image {
         width: 100%;
         max-width: 500px;
-      }
-      .playlist-info-content {
-        margin: auto;
-        background-color: white;
-        color: $blue;
-        padding: 20px;
-        max-width: 500px;
-        p {
-          margin-bottom: 15px;
-          margin-top: 0;
+        @media screen and (min-width: 992px){
+          margin-top: -50px;
         }
       }
     }
@@ -615,6 +607,40 @@ body.home-page {
           &:hover {
             color: $yellow;
           }
+        }
+      }
+      .footer-form {
+        position: relative;
+        img {
+          position: absolute;
+          bottom: 0;
+          left: 15px;
+          height: 350px;
+        }
+        .footer-form-content {
+          margin-left: 230px;
+          a {
+            margin: 40px 0;
+          }
+          h2 {
+            color: $blue;
+            margin-top: 20px;
+            margin-bottom: 0;
+          }
+        }
+        @media screen and (max-width: 662px){
+            img {
+              position: relative;
+              display: block;
+              margin: auto;
+              height: 300px;
+              left: 0;
+              margin-top: -100px;
+            }
+            .footer-form-content {
+              margin-left: 0;
+              text-align: center;
+            }
         }
       }
     }
@@ -1021,5 +1047,5 @@ body.about-page {
         }
       }
     } 
-       
+
    }
