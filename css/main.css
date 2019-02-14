@@ -466,132 +466,69 @@ body.course-page .hero-content {
 body.course-page .main {
   background-color: #263557;
   color: #FAFBFB; }
-body.course-page footer .footer-container .footer-links .logo-links {
-  color: white;
-  border: 3px solid white; }
-body.course-page footer .footer-container .footer-legal-links {
-  text-align: center; }
-  body.course-page footer .footer-container .footer-legal-links a {
-    color: white; }
-    body.course-page footer .footer-container .footer-legal-links a:hover {
-      color: #F4CE6E; }
-
-.course-section h3 {
+body.course-page .course-section h3 {
   font-size: 30px;
   margin-bottom: 10px; }
-.course-section ul {
+body.course-page .course-section ul {
   list-style: none;
   padding: 0; }
-  .course-section ul li {
+  body.course-page .course-section ul li {
     display: inline-block;
     position: relative;
     margin: 7px;
     font-size: 21px;
     padding-left: 10px; }
-    .course-section ul li:before {
+    body.course-page .course-section ul li:before {
       content: "*";
       position: absolute;
       top: 4px;
       left: -10px;
       color: #F4CE6E; }
-    .course-section ul li:first-child:after {
+    body.course-page .course-section ul li:first-child:after {
       content: ''; }
-    .course-section ul li li:last-child {
+    body.course-page .course-section ul li li:last-child {
       margin-right: 0; }
-    .course-section ul li li:first-child {
+    body.course-page .course-section ul li li:first-child {
       margin-left: 0; }
-  .course-section ul li:nth-child(2n):before {
+  body.course-page .course-section ul li:nth-child(2n):before {
     color: #ED583F; }
-  .course-section ul li:nth-child(4n):before {
+  body.course-page .course-section ul li:nth-child(4n):before {
     color: #22AFBF; }
-
-.clients {
-  margin: auto;
-  text-align: center; }
-  .clients .client {
-    width: 100%;
-    max-width: 350px;
-    display: inline-block;
-    text-align: center;
-    margin: 0 auto 50px auto;
-    vertical-align: top; }
-    @media screen and (min-width: 425px) {
-      .clients .client {
-        margin: 0 10px 50px 10px; } }
-    .clients .client .mascot-client-image {
-      width: 150px; }
-    .clients .client .mascot-rep-image {
-      width: 100%;
-      background-color: red; }
-    .clients .client .client-personality {
-      padding: 50px 15px 40px 15px;
-      margin-top: -70px;
-      color: #263557; }
-      .clients .client .client-personality h3 {
-        font-size: 21px;
-        margin-bottom: 0; }
-      .clients .client .client-personality p {
-        margin-top: 0; }
-      .clients .client .client-personality ul {
-        padding: 0;
-        margin: auto;
-        display: inline-block; }
-        .clients .client .client-personality ul li {
-          text-align: left;
-          font-size: 18px;
-          display: inline-block;
-          position: relative;
-          margin: 5px;
-          border: 3px solid white;
-          padding: 5px 10px;
-          color: #263557; }
-    .clients .client.fox-client .client-personality {
-      background-color: #F9E1A9; }
-    .clients .client.bunny-client .client-personality {
-      background-color: #8C83A0; }
-    .clients .client.cat-client .client-personality {
-      background-color: #CBC715; }
-    .clients .client.bulldog-client .client-personality {
-      background-color: #ED583F; }
-    .clients .client.flamingo-client .client-personality {
-      background-color: #22AFBF; }
-
-/* COURSE ANIMATION */
-.course-board .cls-26 {
+body.course-page .course-board .cls-26 {
   stroke-dasharray: 59px;
   stroke-dashoffset: 59px;
   animation: offset 3s forwards infinite ease-out; }
-.course-board .flamingo-hand {
+body.course-page .course-board .flamingo-hand {
   -webkit-transform: translateY(15px);
   -ms-transform: translateY(15px);
   transform: translateY(15px);
   animation: hand 5s infinite; }
-.course-board .centering-pink-left {
+body.course-page .course-board .centering-pink-left {
   animation: centering-left 5s infinite;
   animation-delay: 1s; }
-.course-board .centering-pink-right {
+body.course-page .course-board .centering-pink-right {
   animation: centering-right 5s infinite;
   animation-delay: 1s; }
-.course-board .animation-circle-left {
+body.course-page .course-board .animation-circle-left {
   animation: animate-up 5s infinite; }
-.course-board .animation-circle-right {
+body.course-page .course-board .animation-circle-right {
   animation: animate-down 5s infinite; }
-.course-board .cls-14.colors-bar, .course-board .cls-21.colors-bar, .course-board .cls-22.colors-bar, .course-board .cls-15.colors-bar, .course-board .cls-20.colors-bar {
+body.course-page .course-board .cls-14.colors-bar, body.course-page .course-board .cls-21.colors-bar, body.course-page .course-board .cls-22.colors-bar, body.course-page .course-board .cls-15.colors-bar, body.course-page .course-board .cls-20.colors-bar {
   opacity: 0; }
-.course-board .cls-13 {
+body.course-page .course-board .cls-13 {
   fill: white; }
-.course-board .cls-14.colors-bar {
+body.course-page .course-board .cls-14.colors-bar {
   animation: colors 2s infinite backwards; }
-.course-board .cls-21.colors-bar {
+body.course-page .course-board .cls-21.colors-bar {
   animation: colors 3s infinite;
   animation-delay: 1s; }
-.course-board .cls-22.colors-bar {
+body.course-page .course-board .cls-22.colors-bar {
   animation: colors 4s infinite;
   animation-delay: 2s; }
-.course-board .cls-15.colors-bar {
+body.course-page .course-board .cls-15.colors-bar {
   animation: colors 5s infinite;
   animation-delay: 3s; }
-.course-board .cls-20.colors-bar {
+body.course-page .course-board .cls-20.colors-bar {
   animation: colors 6s infinite;
   animation-delay: 4s; }
 @keyframes offset {
@@ -680,6 +617,66 @@ body.course-page footer .footer-container .footer-legal-links {
     -ms-transform: translateY(0px);
     -webkit-transform: translateY(0px);
     transform: translateY(0px); } }
+body.course-page .clients {
+  margin: auto;
+  text-align: center; }
+  body.course-page .clients .client {
+    width: 100%;
+    max-width: 350px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    vertical-align: top; }
+    @media screen and (min-width: 425px) {
+      body.course-page .clients .client {
+        margin: 0 10px 50px 10px; } }
+    body.course-page .clients .client .mascot-client-image {
+      width: 150px; }
+    body.course-page .clients .client .mascot-rep-image {
+      width: 100%;
+      background-color: red; }
+    body.course-page .clients .client .client-personality {
+      padding: 50px 15px 40px 15px;
+      margin-top: -70px;
+      color: #263557; }
+      body.course-page .clients .client .client-personality h3 {
+        font-size: 21px;
+        margin-bottom: 0; }
+      body.course-page .clients .client .client-personality p {
+        margin-top: 0; }
+      body.course-page .clients .client .client-personality ul {
+        padding: 0;
+        margin: auto;
+        display: inline-block; }
+        body.course-page .clients .client .client-personality ul li {
+          text-align: left;
+          font-size: 18px;
+          display: inline-block;
+          position: relative;
+          margin: 5px;
+          border: 3px solid white;
+          padding: 5px 10px;
+          color: #263557; }
+    body.course-page .clients .client.fox-client .client-personality {
+      background-color: #F9E1A9; }
+    body.course-page .clients .client.bunny-client .client-personality {
+      background-color: #8C83A0; }
+    body.course-page .clients .client.cat-client .client-personality {
+      background-color: #CBC715; }
+    body.course-page .clients .client.bulldog-client .client-personality {
+      background-color: #ED583F; }
+    body.course-page .clients .client.flamingo-client .client-personality {
+      background-color: #22AFBF; }
+body.course-page footer .footer-container .footer-links .logo-links {
+  color: white;
+  border: 3px solid white; }
+body.course-page footer .footer-container .footer-legal-links {
+  text-align: center; }
+  body.course-page footer .footer-container .footer-legal-links a {
+    color: white; }
+    body.course-page footer .footer-container .footer-legal-links a:hover {
+      color: #F4CE6E; }
+
 /* ==============================
    ------------------------------
     ABOUT PAGE
@@ -707,5 +704,20 @@ body.about-page footer {
     INSIGHTS PAGE
    ------------------------------
    ============================== */
+body.insights-page .hero-content {
+  background-color: #CBC715; }
+body.insights-page .main {
+  background-color: #E5EFED; }
+body.insights-page footer {
+  background-color: #E5EFED; }
+  body.insights-page footer .footer-container .footer-links .logo-links {
+    color: white;
+    border: 3px solid #263557; }
+  body.insights-page footer .footer-container .footer-legal-links {
+    text-align: center; }
+    body.insights-page footer .footer-container .footer-legal-links a {
+      color: #263557; }
+      body.insights-page footer .footer-container .footer-legal-links a:hover {
+        color: #F4CE6E; }
 
 /*# sourceMappingURL=main.css.map */
