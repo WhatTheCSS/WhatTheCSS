@@ -206,9 +206,27 @@ a.btn {
 }
 
 .half-confetti-layer {
-  background-image: url('../imgs/other/half-confetti.svg');
-  min-height: 200px;
-  background-repeat: no-repeat;
+  position: relative;
+  height: 200px;
+  img {
+    max-width: 700px;
+    position: absolute;
+    @media screen and (max-width: 662px){
+      max-width: 500px;
+    }
+  }
+}
+
+.right-confetti {
+  img {
+    right: -90px;
+  }
+}
+
+.left-confetti {
+  img {
+    left: -90px;
+  }
 }
 
 /* ------------------  
@@ -589,6 +607,11 @@ body.home-page {
     max-width: 1000px;
     margin: auto;
     padding: 40px;
+  }
+
+  .challenge-content, .course-content {
+    max-width: 700px;
+    margin: auto;
   }
  
   footer {
