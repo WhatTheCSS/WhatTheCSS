@@ -157,7 +157,7 @@ a.btn {
   position: relative;
   height: 200px; }
   .half-confetti-layer img {
-    max-width: 700px;
+    max-width: 500px;
     position: absolute; }
     @media screen and (max-width: 662px) {
       .half-confetti-layer img {
@@ -576,11 +576,41 @@ body.home-page .course-info {
         bottom: -14px; }
       body.home-page .course-info .course-content {
         padding: 0 20px 20px 20px; } }
-body.home-page .client-info img {
-  max-width: 400px; }
-  @media screen and (max-width: 425px) {
-    body.home-page .client-info img {
-      max-width: 265px; } }
+body.home-page .client-image-container {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 50px;
+  max-width: 300px;
+  width: 100%; }
+  body.home-page .client-image-container img {
+    width: 100%; }
+  body.home-page .client-image-container:before, body.home-page .client-image-container:after {
+    position: absolute;
+    content: ''; }
+  body.home-page .client-image-container:before {
+    background-color: #CBC715;
+    height: 379px;
+    width: 80px;
+    top: -5%;
+    right: 29%;
+    z-index: -1;
+    transform: rotate(45deg); }
+    @media screen and (min-width: 992px) {
+      body.home-page .client-image-container:before {
+        height: 416px;
+        right: 32%; } }
+  body.home-page .client-image-container:after {
+    background-color: #22AFBF;
+    height: 268px;
+    width: 100px;
+    top: 19%;
+    z-index: -2; }
+    @media screen and (min-width: 992px) {
+      body.home-page .client-image-container:after {
+        height: 286px; } }
+  @media screen and (min-width: 768px) {
+    body.home-page .client-image-container {
+      margin: auto; } }
 body.home-page .bonus-info .playlist-info {
   text-align: center; }
   body.home-page .bonus-info .playlist-info .playlist-image {

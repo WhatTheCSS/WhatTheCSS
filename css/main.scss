@@ -212,7 +212,7 @@ a.btn {
     // overflow: hidden;
   }
   img {
-    max-width: 700px;
+    max-width: 500px;
     position: absolute;
     @media screen and (max-width: 662px){
       max-width: 100%;
@@ -767,12 +767,44 @@ body.home-page {
     }
   }
 
-  .client-info {
+  .client-image-container {
+    z-index: 2;
+    position: relative;
+    margin-bottom: 50px;
+    max-width: 300px;
+    width: 100%;
     img {
-      @media screen and (max-width: 425px){
-        max-width: 265px;
+      width: 100%;
+    }
+    &:before, &:after {
+      position: absolute;
+      content: '';
+    }
+    &:before {
+      background-color: $green;
+      height: 379px;
+      width: 80px;
+      top: -5%;
+      right: 29%;
+      z-index: -1;
+      transform: rotate(45deg);
+      @media screen and (min-width: 992px){
+        height: 416px;
+        right: 32%;
       }
-      max-width: 400px;
+    }
+    &:after {
+      background-color: $teal;
+      height: 268px;
+      width: 100px;
+      top: 19%;
+      z-index: -2;
+      @media screen and (min-width: 992px){
+        height: 286px;
+      }
+    }
+    @media screen and (min-width: 768px){
+      margin: auto;
     }
   }
 
