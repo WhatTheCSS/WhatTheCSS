@@ -183,7 +183,9 @@ nav {
       left: 20px;
       top: -30px; } }
   nav .logo {
-    height: 200px; }
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white; }
     @media screen and (max-width: 991px) {
       nav .logo {
         height: 120px;
@@ -485,6 +487,8 @@ footer {
     HOMEPAGE
    ------------------------------
    ============================== */
+body.home-page .logo:hover {
+  border-color: #22AFBF; }
 body.home-page .hero-content {
   background-color: #22AFBF; }
 body.home-page .main {
@@ -675,6 +679,8 @@ body.home-page footer {
     COURSE PAGE
    ------------------------------
    ============================== */
+body.course-page .logo:hover {
+  border-color: #F4CE6E; }
 body.course-page .hero-content {
   background-color: #F4CE6E; }
 body.course-page .main {
@@ -773,6 +779,8 @@ body.course-page footer .footer-container .footer-legal-links {
     ABOUT PAGE
    ------------------------------
    ============================== */
+body.about-page .logo:hover {
+  border-color: #ED583F; }
 body.about-page .hero-content {
   background-color: #ED583F; }
 body.about-page .main {
@@ -795,6 +803,8 @@ body.about-page footer {
     INSIGHTS PAGE
    ------------------------------
    ============================== */
+body.insights-page .logo:hover {
+  border-color: #CBC715; }
 body.insights-page .hero-content {
   background-color: #CBC715; }
 body.insights-page .main {

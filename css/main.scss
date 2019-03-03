@@ -248,6 +248,8 @@ nav {
   }
   .logo {
     height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
     @media screen and (max-width: 991px){ 
       height: 120px;
       display: block;
@@ -625,6 +627,12 @@ footer {
    ============================== */
 
 body.home-page {
+
+  .logo {
+    &:hover {
+      border-color: $teal;
+    }
+  }
   
   .hero-content {
       background-color: $teal;
@@ -904,6 +912,12 @@ body.home-page {
 
  body.course-page {
 
+  .logo {
+    &:hover {
+      border-color: $yellow;
+    }
+  }
+
   .hero-content {
       background-color: $yellow;
   }
@@ -1067,6 +1081,12 @@ body.home-page {
 
 body.about-page {
 
+  .logo {
+    &:hover {
+      border-color: $red;
+    }
+  }
+
   .hero-content {
       background-color: $red;
   }
@@ -1106,6 +1126,12 @@ body.about-page {
    ============================== */
 
    body.insights-page {
+
+    .logo {
+      &:hover {
+        border-color: $green;
+      }
+    }
 
     .hero-content {
       background-color: $green;
