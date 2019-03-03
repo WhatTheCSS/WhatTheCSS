@@ -611,6 +611,7 @@ body.home-page .client-image-container {
     height: 268px;
     width: 100px;
     top: 19%;
+    left: -5%;
     z-index: -2; }
     @media screen and (min-width: 992px) {
       body.home-page .client-image-container:after {
