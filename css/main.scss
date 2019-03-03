@@ -13,6 +13,7 @@ $black: #525050;
 $purple: #8C83A0;
 $tan: #F9E1A9;
 $light-blue: #E5EFED;
+$light-gray: #F3F3F4;
 
 %easeanimation {
      transition: all 0.2s ease-in-out !important;
@@ -623,6 +624,68 @@ footer {
   }
 }
 
+body.home-page, body.course-page {
+  footer {
+    background-color: $blue;
+    .footer-container {
+      .footer-links {
+        .logo-links {
+          color: white;
+          border: 3px solid white;
+        }
+      }
+      .footer-legal-links {
+        text-align: center;
+        a {
+          color: white;
+          &:hover {
+            color: $yellow;
+          }
+        }
+      }
+      .footer-form {
+        max-width: 700px;
+        margin: auto;
+        position: relative;
+        img {
+          position: absolute;
+          bottom: 0;
+          height: 350px;
+        }
+        .footer-form-content {
+          margin-left: 230px;
+          max-width: 500px;
+          a {
+            margin: 40px 0;
+          }
+          h2 {
+            color: $blue;
+            margin-top: 20px;
+            margin-bottom: 0;
+          }
+          p {
+            color: $blue;
+          }
+        }
+        @media screen and (max-width: 662px){
+            img {
+              position: relative;
+              display: block;
+              margin: auto;
+              height: 300px;
+              left: 0;
+              margin-top: -100px;
+            }
+            .footer-form-content {
+              margin-left: 0;
+              text-align: center;
+            }
+        }
+      }
+    }
+  }
+}
+
 /* ==============================
    ------------------------------
     HOMEPAGE
@@ -846,61 +909,10 @@ body.home-page {
     max-width: 700px;
     margin: auto;
   }
- 
   footer {
-    background-color: $blue;
     .footer-container {
-      .footer-links {
-        .logo-links {
-          color: white;
-          border: 3px solid white;
-        }
-      }
-      .footer-legal-links {
-        text-align: center;
-        a {
-          color: white;
-          &:hover {
-            color: $yellow;
-          }
-        }
-      }
-      .footer-form {
-        max-width: 700px;
-        margin: auto;
-        position: relative;
-        img {
-          position: absolute;
-          bottom: 0;
-          left: 15px;
-          height: 350px;
-        }
-        .footer-form-content {
-          margin-left: 230px;
-          max-width: 500px;
-          a {
-            margin: 40px 0;
-          }
-          h2 {
-            color: $blue;
-            margin-top: 20px;
-            margin-bottom: 0;
-          }
-        }
-        @media screen and (max-width: 662px){
-            img {
-              position: relative;
-              display: block;
-              margin: auto;
-              height: 300px;
-              left: 0;
-              margin-top: -100px;
-            }
-            .footer-form-content {
-              margin-left: 0;
-              text-align: center;
-            }
-        }
+      img {
+        left: 15px;
       }
     }
   }
@@ -929,6 +941,12 @@ body.home-page {
   .main {
     background-color: $blue;
     color: $white;
+  }
+
+  .course-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
   }
 
   .course-section {
@@ -977,81 +995,27 @@ body.home-page {
       }       
     }
   }  
-  .clients {
-    margin: auto;
-    text-align: center;
-    .client {
+  .client-days-banner {
+    position: relative;
+    z-index: 0;
+    &:before {
+      position: absolute;
+      content: '';
       width: 100%;
-      max-width: 350px;
-      display: inline-block;
-      text-align: center;
-      margin: 0 auto 50px auto;
-      @media screen and (min-width: 425px){
-        margin: 0 10px 50px 10px;
-      }
-      vertical-align: top;
-      .mascot-client-image {
-        width: 150px;
-      }
-      .mascot-rep-image {
-        width: 100%;
-        background-color: red;
-      }
-      .client-personality {
-        padding: 50px 15px 40px 15px;
-        margin-top: -70px;
-        color: $blue;
-        h3 {
-          font-size: 21px;
-          margin-bottom: 0;
-        }
-        p {
-          margin-top: 0;
-        }
-        ul {
-          padding: 0;
-          margin: auto;
-          display: inline-block;
-          li {
-            text-align: left;
-            font-size: 18px;
-            display: inline-block;
-            position: relative;
-            margin: 5px;
-            border: 3px solid white;
-            padding: 5px 10px;
-            color: $blue;
-          }
-          li.negative-trait {
-          }
-        }
-      }
-      &.fox-client {
-        .client-personality {
-          background-color: $tan;
-        }
-      }
-      &.bunny-client {
-        .client-personality {
-          background-color: $purple;
-        }
-      }
-      &.cat-client {
-        .client-personality {
-          background-color: $green;
-        }
-      }
-      &.bulldog-client {
-        .client-personality {
-          background-color: $red;
-        }
-      }
-      &.flamingo-client {
-        .client-personality {
-          background-color: $teal;
-        }
-      }
+      bottom: -.5px;
+      height: 200px;
+      left: 0;
+      background-color: $light-blue;
+      z-index: -1;
     }
+    img {
+      max-height: 300px;
+      display: block;
+      margin: auto;
+    }
+  }
+  .client-days-content {
+
   }
 
   footer {
@@ -1071,10 +1035,14 @@ body.home-page {
           }
         }
       }
+      img {
+        left: -35px;
+      }
     }
   }
 
  }
+
 
 
 /* ==============================

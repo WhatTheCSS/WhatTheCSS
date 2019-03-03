@@ -485,6 +485,48 @@ footer {
       footer .footer-container .footer-legal-links a:hover {
         color: #F4CE6E; }
 
+body.home-page footer, body.course-page footer {
+  background-color: #263557; }
+  body.home-page footer .footer-container .footer-links .logo-links, body.course-page footer .footer-container .footer-links .logo-links {
+    color: white;
+    border: 3px solid white; }
+  body.home-page footer .footer-container .footer-legal-links, body.course-page footer .footer-container .footer-legal-links {
+    text-align: center; }
+    body.home-page footer .footer-container .footer-legal-links a, body.course-page footer .footer-container .footer-legal-links a {
+      color: white; }
+      body.home-page footer .footer-container .footer-legal-links a:hover, body.course-page footer .footer-container .footer-legal-links a:hover {
+        color: #F4CE6E; }
+  body.home-page footer .footer-container .footer-form, body.course-page footer .footer-container .footer-form {
+    max-width: 700px;
+    margin: auto;
+    position: relative; }
+    body.home-page footer .footer-container .footer-form img, body.course-page footer .footer-container .footer-form img {
+      position: absolute;
+      bottom: 0;
+      height: 350px; }
+    body.home-page footer .footer-container .footer-form .footer-form-content, body.course-page footer .footer-container .footer-form .footer-form-content {
+      margin-left: 230px;
+      max-width: 500px; }
+      body.home-page footer .footer-container .footer-form .footer-form-content a, body.course-page footer .footer-container .footer-form .footer-form-content a {
+        margin: 40px 0; }
+      body.home-page footer .footer-container .footer-form .footer-form-content h2, body.course-page footer .footer-container .footer-form .footer-form-content h2 {
+        color: #263557;
+        margin-top: 20px;
+        margin-bottom: 0; }
+      body.home-page footer .footer-container .footer-form .footer-form-content p, body.course-page footer .footer-container .footer-form .footer-form-content p {
+        color: #263557; }
+    @media screen and (max-width: 662px) {
+      body.home-page footer .footer-container .footer-form img, body.course-page footer .footer-container .footer-form img {
+        position: relative;
+        display: block;
+        margin: auto;
+        height: 300px;
+        left: 0;
+        margin-top: -100px; }
+      body.home-page footer .footer-container .footer-form .footer-form-content, body.course-page footer .footer-container .footer-form .footer-form-content {
+        margin-left: 0;
+        text-align: center; } }
+
 /* ==============================
    ------------------------------
     HOMEPAGE
@@ -637,46 +679,8 @@ body.home-page .intro-text, body.home-page .challenge-info, body.home-page .clie
 body.home-page .challenge-content, body.home-page .course-content {
   max-width: 700px;
   margin: auto; }
-body.home-page footer {
-  background-color: #263557; }
-  body.home-page footer .footer-container .footer-links .logo-links {
-    color: white;
-    border: 3px solid white; }
-  body.home-page footer .footer-container .footer-legal-links {
-    text-align: center; }
-    body.home-page footer .footer-container .footer-legal-links a {
-      color: white; }
-      body.home-page footer .footer-container .footer-legal-links a:hover {
-        color: #F4CE6E; }
-  body.home-page footer .footer-container .footer-form {
-    max-width: 700px;
-    margin: auto;
-    position: relative; }
-    body.home-page footer .footer-container .footer-form img {
-      position: absolute;
-      bottom: 0;
-      left: 15px;
-      height: 350px; }
-    body.home-page footer .footer-container .footer-form .footer-form-content {
-      margin-left: 230px;
-      max-width: 500px; }
-      body.home-page footer .footer-container .footer-form .footer-form-content a {
-        margin: 40px 0; }
-      body.home-page footer .footer-container .footer-form .footer-form-content h2 {
-        color: #263557;
-        margin-top: 20px;
-        margin-bottom: 0; }
-    @media screen and (max-width: 662px) {
-      body.home-page footer .footer-container .footer-form img {
-        position: relative;
-        display: block;
-        margin: auto;
-        height: 300px;
-        left: 0;
-        margin-top: -100px; }
-      body.home-page footer .footer-container .footer-form .footer-form-content {
-        margin-left: 0;
-        text-align: center; } }
+body.home-page footer .footer-container img {
+  left: 15px; }
 
 /* ==============================
    ------------------------------
@@ -690,6 +694,10 @@ body.course-page .hero-content {
 body.course-page .main {
   background-color: #263557;
   color: #FAFBFB; }
+body.course-page .course-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px; }
 body.course-page .course-section h3 {
   font-size: 30px;
   margin-bottom: 10px; }
@@ -718,56 +726,22 @@ body.course-page .course-section ul {
     color: #ED583F; }
   body.course-page .course-section ul li:nth-child(4n):before {
     color: #22AFBF; }
-body.course-page .clients {
-  margin: auto;
-  text-align: center; }
-  body.course-page .clients .client {
+body.course-page .client-days-banner {
+  position: relative;
+  z-index: 0; }
+  body.course-page .client-days-banner:before {
+    position: absolute;
+    content: '';
     width: 100%;
-    max-width: 350px;
-    display: inline-block;
-    text-align: center;
-    margin: 0 auto 50px auto;
-    vertical-align: top; }
-    @media screen and (min-width: 425px) {
-      body.course-page .clients .client {
-        margin: 0 10px 50px 10px; } }
-    body.course-page .clients .client .mascot-client-image {
-      width: 150px; }
-    body.course-page .clients .client .mascot-rep-image {
-      width: 100%;
-      background-color: red; }
-    body.course-page .clients .client .client-personality {
-      padding: 50px 15px 40px 15px;
-      margin-top: -70px;
-      color: #263557; }
-      body.course-page .clients .client .client-personality h3 {
-        font-size: 21px;
-        margin-bottom: 0; }
-      body.course-page .clients .client .client-personality p {
-        margin-top: 0; }
-      body.course-page .clients .client .client-personality ul {
-        padding: 0;
-        margin: auto;
-        display: inline-block; }
-        body.course-page .clients .client .client-personality ul li {
-          text-align: left;
-          font-size: 18px;
-          display: inline-block;
-          position: relative;
-          margin: 5px;
-          border: 3px solid white;
-          padding: 5px 10px;
-          color: #263557; }
-    body.course-page .clients .client.fox-client .client-personality {
-      background-color: #F9E1A9; }
-    body.course-page .clients .client.bunny-client .client-personality {
-      background-color: #8C83A0; }
-    body.course-page .clients .client.cat-client .client-personality {
-      background-color: #CBC715; }
-    body.course-page .clients .client.bulldog-client .client-personality {
-      background-color: #ED583F; }
-    body.course-page .clients .client.flamingo-client .client-personality {
-      background-color: #22AFBF; }
+    bottom: -.5px;
+    height: 200px;
+    left: 0;
+    background-color: #E5EFED;
+    z-index: -1; }
+  body.course-page .client-days-banner img {
+    max-height: 300px;
+    display: block;
+    margin: auto; }
 body.course-page footer .footer-container .footer-links .logo-links {
   color: white;
   border: 3px solid white; }
@@ -777,6 +751,8 @@ body.course-page footer .footer-container .footer-legal-links {
     color: white; }
     body.course-page footer .footer-container .footer-legal-links a:hover {
       color: #F4CE6E; }
+body.course-page footer .footer-container img {
+  left: -35px; }
 
 /* ==============================
    ------------------------------
