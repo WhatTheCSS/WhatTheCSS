@@ -194,7 +194,7 @@ a.btn.blue-btn:hover, a.btn.blue-btn:focus, a.btn.blue-btn:active {
 
 .half-confetti-layer {
   position: relative;
-  height: 200px;
+  height: 135px;
 }
 .half-confetti-layer img {
   max-width: 500px;
@@ -375,6 +375,11 @@ nav .navigation-links .nav-link:last-child a {
   line-height: 83px;
   text-transform: uppercase;
   margin: 0;
+}
+@media screen and (min-width: 992px) {
+  .hero-container .hero .hero-content h1 {
+    padding-right: 20px;
+  }
 }
 .hero-container .hero .hero-content h1 span {
   font-weight: 800;
@@ -797,6 +802,7 @@ body.home-page .client-image-container:after {
   height: 268px;
   width: 100px;
   top: 19%;
+  left: -5%;
   z-index: -2;
 }
 @media screen and (min-width: 992px) {

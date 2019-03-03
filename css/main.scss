@@ -207,7 +207,7 @@ a.btn {
 
 .half-confetti-layer {
   position: relative;
-  height: 200px;
+  height: 135px;
   @media screen and (max-width: 662px){
     // overflow: hidden;
   }
@@ -370,6 +370,9 @@ nav {
         line-height: 83px;
         text-transform: uppercase;
         margin: 0;
+        @media screen and (min-width: 992px){
+          padding-right: 20px;
+        }
         span {
           font-weight: 800;
           font-size: 100px;
@@ -806,6 +809,7 @@ body.home-page {
       height: 268px;
       width: 100px;
       top: 19%;
+      left: -5%;
       z-index: -2;
       @media screen and (min-width: 992px){
         height: 286px;
