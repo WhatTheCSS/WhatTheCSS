@@ -155,7 +155,7 @@ a.btn {
 
 .half-confetti-layer {
   position: relative;
-  height: 200px; }
+  height: 135px; }
   .half-confetti-layer img {
     max-width: 500px;
     position: absolute; }
@@ -289,6 +289,9 @@ nav {
         line-height: 83px;
         text-transform: uppercase;
         margin: 0; }
+        @media screen and (min-width: 992px) {
+          .hero-container .hero .hero-content h1 {
+            padding-right: 20px; } }
         .hero-container .hero .hero-content h1 span {
           font-weight: 800;
           font-size: 100px; }
