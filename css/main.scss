@@ -1087,9 +1087,73 @@ body.about-page {
     }
   }
 
-  .hero-content {
-      background-color: $red;
+  .hero-container {
+
+    .hero {
+      display: flex;
+      justify-content: center;
+
+      @media screen and (max-width: 992px){
+        margin-bottom: 50px;
+      }
+
+      .hero-content-container {
+        
+        .hero-content {
+            background-color: $red;
+            max-width: 60%;
+            
+            p {
+              max-width: 95%;
+            }
+
+            @media screen and (min-width: 992px){
+              margin-left: 80px;
+            }
+
+            @media screen and (max-width: 992px){
+              max-width: 540px;
+            }
+        }
+      
+        .hero-img {
+          margin-top: 80px;
+          max-width: 30%;
+          max-height: 320px;
+          background-color: $gray;
+          // @media (min-width: 662px) and (max-width: 1100px){
+          //   max-width: 375px;
+          // }
+  
+          img {
+            width: 70%;
+            display: block;
+            margin: auto;
+            padding: 15px;
+          }
+
+          @media screen and (max-width: 1100px){
+            margin-top: 40px;
+          }
+
+          @media screen and (max-width: 992px){
+            max-width: 540px;
+            margin: auto;
+            margin-top: -15px;
+
+            img {
+              max-width: 50%;
+              max-height: 40%;
+              display: block;
+              margin: 15px auto;
+            }
+          }
+          
+        }
+      }
+    }    
   }
+
 
   .main {
     background-color: $light-blue;
