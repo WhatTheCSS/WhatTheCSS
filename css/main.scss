@@ -62,14 +62,6 @@ p {
   padding: 130px 30px 20px 30px;
 }
 
-.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-    position: absolute !important;
-    height: 1px; width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-}
-
 .two-third-grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1015,7 +1007,34 @@ body.home-page {
     }
   }
   .client-days-content {
-
+    margin: auto;
+    text-align: center;
+      .client-days-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+      .single-client-day {
+        display: inline-block;
+        padding: 20px;
+        background-color: $light-gray;
+        color: $blue;
+        vertical-align: top;
+        border-radius: 5px;
+        h3, h4, p {
+          margin: 0;
+        }
+        img {
+          width: 100px;
+        }
+      }
+      .single-client-day:last-child {
+        img {
+          width: 40px;
+        }
+      }
   }
 
   footer {

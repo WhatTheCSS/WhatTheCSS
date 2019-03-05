@@ -38,16 +38,6 @@ p {
   margin-top: 65px;
   padding: 130px 30px 20px 30px; }
 
-.visually-hidden {
-  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px); }
-
 .two-third-grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -742,6 +732,28 @@ body.course-page .client-days-banner {
     max-height: 300px;
     display: block;
     margin: auto; }
+body.course-page .client-days-content {
+  margin: auto;
+  text-align: center; }
+  body.course-page .client-days-content .client-days-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    column-gap: 20px; }
+  body.course-page .client-days-content .single-client-day {
+    display: inline-block;
+    padding: 20px;
+    background-color: #F3F3F4;
+    color: #263557;
+    vertical-align: top;
+    border-radius: 5px; }
+    body.course-page .client-days-content .single-client-day h3, body.course-page .client-days-content .single-client-day h4, body.course-page .client-days-content .single-client-day p {
+      margin: 0; }
+    body.course-page .client-days-content .single-client-day img {
+      width: 100px; }
+  body.course-page .client-days-content .single-client-day:last-child img {
+    width: 40px; }
 body.course-page footer .footer-container .footer-links .logo-links {
   color: white;
   border: 3px solid white; }
