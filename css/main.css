@@ -1064,7 +1064,7 @@ body.about-page .hero-container .hero .hero-content-container .hero-content p {
 body.about-page .hero-container .hero .hero-content-container .hero-img {
   margin-top: 80px;
   max-width: 30%;
-  max-height: 320px;
+  min-width: 340px;
   background-color: #D5D5D5;
 }
 body.about-page .hero-container .hero .hero-content-container .hero-img img {
@@ -1072,6 +1072,11 @@ body.about-page .hero-container .hero .hero-content-container .hero-img img {
   display: block;
   margin: auto;
   padding: 15px;
+}
+@media screen and (min-width: 1100px) and (max-width: 1180px) {
+  body.about-page .hero-container .hero .hero-content-container .hero-img {
+    margin-top: 90px;
+  }
 }
 @media screen and (max-width: 1100px) {
   body.about-page .hero-container .hero .hero-content-container .hero-img {
@@ -1094,6 +1099,52 @@ body.about-page .hero-container .hero .hero-content-container .hero-img img {
 body.about-page .main {
   background-color: #E5EFED;
   color: #263557;
+}
+body.about-page .main .about-content, body.about-page .main .about-beginning, body.about-page .main .about-middle, body.about-page .main .about-present {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 40px;
+}
+body.about-page .main .about-content .about-profiles {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 662px) {
+  body.about-page .main .about-content .about-profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body.about-page .main .about-content .about-profiles .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 20%;
+}
+@media screen and (max-width: 662px) {
+  body.about-page .main .about-content .about-profiles .profile {
+    width: 100%;
+  }
+}
+body.about-page .main .about-content .about-profiles .profile .profile-img-container {
+  margin: 0 auto;
+  height: 120px;
+}
+body.about-page .main .about-content .about-profiles .profile .profile-img-container img {
+  max-height: 120px;
+  vertical-align: middle;
+}
+body.about-page .main .about-content .about-profiles .profile .profile-name {
+  font-size: 22px;
+  text-align: center;
+}
+body.about-page .main .about-content .about-profiles .profile .profile-title {
+  font-size: 16px;
+  text-align: center;
+}
+body.about-page .main .about-content .about-profiles .profile .profile-bio {
+  font-size: 12px;
 }
 body.about-page footer {
   background-color: #E5EFED;

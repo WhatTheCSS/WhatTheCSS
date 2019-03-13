@@ -1123,7 +1123,7 @@ body.about-page {
         .hero-img {
           margin-top: 80px;
           max-width: 30%;
-          max-height: 320px;
+          min-width: 340px;
           background-color: $gray;
   
           img {
@@ -1131,6 +1131,10 @@ body.about-page {
             display: block;
             margin: auto;
             padding: 15px;
+          }
+
+          @media screen and (min-width: 1100px) and (max-width: 1180px){
+            margin-top: 90px;
           }
 
           @media screen and (max-width: 1100px){
@@ -1159,7 +1163,64 @@ body.about-page {
   .main {
     background-color: $light-blue;
     color: $blue;
+
+    .about-content, .about-beginning, .about-middle, .about-present {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 40px;
+    }
+
+    .about-content {
+
+      .about-profiles {
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: 662px){
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .profile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          width: 20%;
+          
+          @media screen and (max-width: 662px){
+            width: 100%;
+          }
+          
+          .profile-img-container {
+            margin: 0 auto;
+            height: 120px;
+
+            img {
+              max-height: 120px;
+              vertical-align: middle;
+            }
+          }
+
+          .profile-name {
+            font-size: 22px;
+            text-align: center;
+          }
+
+          .profile-title {
+            font-size: 16px;
+            text-align: center;
+          }
+
+          .profile-bio {
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
+
+
 
   footer {
     background-color: $light-blue;
