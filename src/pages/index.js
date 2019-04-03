@@ -1,10 +1,33 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import { css, Global } from "@emotion/core"
+
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+
+  const globalStyles = css`
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Roboto Light", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    }
+  `
+  const main = css`
+    font-size: 1.5em;
+    color: #ff79c6;
+    margin-bottom: 0.5em;
+  `
+
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,11 +37,15 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+      <Global styles={globalStyles} />
         <SEO
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
+        <main  css={main}>
+          This is a main
+        </main>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
