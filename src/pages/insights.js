@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 
 import { css, Global } from "@emotion/core"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -42,7 +41,6 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio />
         <main  css={main}>
           This is a main
         </main>
