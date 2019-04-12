@@ -6,6 +6,7 @@ $blue: #263557;
 $teal: #22AFBF;
 $green: #CBC715;
 $red: #ED583F;
+$orange: #F58020;
 $yellow: #F4CE6E;
 $gray: #D5D5D5; 
 $white: #FAFBFB;
@@ -215,13 +216,19 @@ a.btn {
 
 .right-confetti {
   img {
-    right: -30px;
+    width: 80%;
+    max-width: 750px;
+    position: absolute;
+    right: 0;
   }
 }
 
 .left-confetti {
   img {
-    left: -30px;
+    width: 80%;
+    max-width: 750px;
+    position: absolute;
+    left: 0x;
   }
 }
 
@@ -1140,8 +1147,10 @@ body.about-page {
       .hero-content-container {
         
         .hero-content {
+            position: relative;
             background-color: $red;
             max-width: 60%;
+            height: 300px;
             
             p {
               max-width: 95%;
@@ -1154,38 +1163,15 @@ body.about-page {
             @media screen and (max-width: 992px){
               max-width: 540px;
             }
-        }
-      
-        .hero-img {
-          margin-top: 80px;
-          max-width: 30%;
-          max-height: 320px;
-          background-color: $gray;
-  
-          img {
-            width: 70%;
-            display: block;
-            margin: auto;
-            padding: 15px;
-          }
 
-          @media screen and (max-width: 1100px){
-            margin-top: 40px;
-          }
-
-          @media screen and (max-width: 992px){
-            max-width: 540px;
-            margin: auto;
-            margin-top: -15px;
-
-            img {
-              max-width: 50%;
-              max-height: 40%;
-              display: block;
-              margin: 15px auto;
+            .about-img {
+              position: absolute;
+              bottom: -10%;
+              right: -15%;
+              width: 30%;
+              min-width: 100px;
+              transform: rotate(15deg);
             }
-          }
-          
         }
       }
     }    
@@ -1195,7 +1181,375 @@ body.about-page {
   .main {
     background-color: $light-blue;
     color: $blue;
+
+    .about-content, .about-beginning, .about-middle, .about-present {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 40px;
+    }
+
+    .about-content {
+
+      h1 {
+        margin-bottom: 20px;
+        
+        @media screen and (max-width: 992px) {
+          text-align: center;
+          margin-bottom: 40px;
+        } 
+      }
+
+      .about-profiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 30px;
+
+        @media screen and (max-width: 992px) {
+          grid-template-columns: 1fr 1fr;
+        } 
+
+        @media screen and (max-width: 662px){
+          grid-template-columns: 1fr;
+        }
+
+        .profile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          width: 100%;
+
+          @media screen and (max-width: 992px) {
+            margin-bottom: 40px;
+          } 
+          
+          @media screen and (max-width: 662px){
+            width: 100%;
+          }
+          
+          .profile-img-container {
+            margin: 0 auto;
+            height: 120px;
+
+            img {
+              max-height: 120px;
+              vertical-align: middle;
+            }
+          }
+
+          .profile-name {
+            font-size: 22px;
+            text-align: center;
+          }
+
+          .profile-title {
+            font-size: 15px;
+            text-align: center;
+          }
+
+          .profile-bio {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+
+          .profile-icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 75%;
+          }
+        }
+
+        .brittany-profile > .profile-icons > a{
+          background-color: $teal;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          padding: 6px 10px;
+
+          i {
+            color: white;
+          }
+
+          &:last-child i{
+            padding-left: 1px;
+          }
+        }
+
+        .devon-profile > .profile-icons > a{
+          background-color: $orange;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          padding: 6px 10px;
+
+          i {
+            color: white;
+          }
+
+          &:last-child i{
+            padding-left: 1px;
+          }
+        }
+
+        .rebecca-profile > .profile-icons > a{
+          background-color: $red;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          padding: 6px 10px;
+
+          i {
+            color: white;
+          }
+
+          &:last-child i{
+            padding-left: 1px;
+          }
+        }
+
+        .nathan-profile > .profile-icons > a{
+          background-color: $purple;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          padding: 6px 10px;
+
+          i {
+            color: white;
+          }
+
+          &:last-child i{
+            padding-left: 1px;
+          }
+        }
+      }
+    }
+
+    .about-beginning {
+      position: relative;
+  
+      .about-beginning-story {
+        margin-top: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+  
+        @media screen and (max-width: 992px){
+            flex-direction: column;
+        }
+    
+        .about-our-story-text {
+          order: 1;
+          width: 50%;
+  
+          @media screen and (max-width: 992px){
+            width: 100%;
+          }
+  
+          h2 {
+            margin-bottom: 40px;
+          }
+        }
+    
+        .about-beginning-images {
+          position: relative;
+          order: 2;
+          width: 60%;
+          min-width: 600px;
+          height: 480px;
+          align-self: center;
+          margin-bottom: 80px;
+  
+          @media screen and (max-width: 662px){
+            width: 300px;
+            height: 250px;
+            min-width: 80px;
+          }
+    
+          img {
+            max-width: 35%
+          }
+  
+          img:first-of-type {
+            position: absolute;
+            top: 5%;
+            left: 20%;
+          }
+  
+          img:nth-of-type(2) {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+          }
+          img:nth-of-type(3) {
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+          }
+        }
+      }
+
+      .about-creating-the-course {
+        margin-top: 250px;
+        width: 100%;
+        min-height: 600px;
+
+        .about-creating-the-course-text {
+          order: 1;
+        }
+  
+        .about-creating-the-course-images {
+          position: relative;
+          width: 100%;
+          order: 2;
+          align-self: center;
+          
+          img {
+            max-width: 25%;
+          }
+
+          img:first-of-type {
+            position: absolute;
+            top: 0;
+            left: 2.5%;
+            padding-top: 10%;
+            z-index: 5;
+          }
+          
+          img:nth-of-type(2) {
+            position: absolute;
+            max-width: 50%;
+            left: 20%;
+            top: 0;
+            padding-top: 5%;
+          }
+
+          img:nth-of-type(3) {
+            position: absolute;
+            max-width: 25%;
+            right: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+    .about-collaborations {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-top: 100px;
+
+      @media screen and (max-width: 992px){
+        flex-direction: column;
+        margin-top: -80px;
+      }
+
+      .about-collaborations-text {
+        order: 2;
+        width: 40%;
+        margin-left: 50px;
+
+        @media screen and (max-width: 992px){
+          order: 1;
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+
+      .about-collaborations-images {
+        position: relative;
+        order: 1;
+        width: 500px;
+        height: 480px;
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 992px){
+          order: 2;
+          margin: 0 auto;
+          margin-bottom: 100px;
+        }
+
+        @media screen and (max-width: 662px){
+          max-width: 90%;
+        }
+
+        img:first-of-type {
+          position: absolute;
+          max-width: 80%;
+          top: 0;
+          left: 5%;
+        }
+
+        img:nth-of-type(2) {
+          position: absolute;
+          max-width: 42%;
+          bottom: 0;
+          left: 5%;
+        }
+
+        img:nth-of-type(3) {
+          position: absolute;
+          max-width: 42%;
+          bottom: 0;
+          right: 5%;
+        }
+      }
+    }
+
+    .about-present {
+
+      .about-the-end {
+        margin-top: 250px;
+
+        .about-the-end-images {
+          display: flex;
+          justify-content: space-between;
+          max-width: 100%;
+  
+          img {
+            max-width: 38%;
+          }
+        }
+      }
+
+      .about-our-brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+
+        @media screen and (max-width: 992px){
+          flex-direction: column;
+        }
+
+        .about-our-brand-text {
+          order: 1;
+          width: 40%;
+
+          @media screen and (max-width: 992px){
+            width: 100%;
+          }
+        }
+
+        img {
+          order: 2;
+          width: 50%;
+          transform: rotate(5deg);
+          z-index: 5;
+
+          @media screen and (max-width: 992px){
+            width: 80%;
+            margin-top: 5%;
+          }
+        }
+      }
+    }
   }
+
+
 
   footer {
     background-color: $light-blue;
