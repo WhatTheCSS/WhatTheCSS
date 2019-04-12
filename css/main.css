@@ -1076,7 +1076,7 @@ body.about-page .main {
   color: #263557;
 }
 body.about-page .main .about-content, body.about-page .main .about-beginning, body.about-page .main .about-middle, body.about-page .main .about-present {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 40px;
 }
@@ -1207,19 +1207,56 @@ body.about-page .about-beginning .about-beginning-story {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 992px) {
+  body.about-page .about-beginning .about-beginning-story {
+    flex-direction: column;
+  }
+}
 body.about-page .about-beginning .about-beginning-story .about-beginning-text {
   order: 1;
-  width: 60%;
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  body.about-page .about-beginning .about-beginning-story .about-beginning-text {
+    width: 100%;
+  }
 }
 body.about-page .about-beginning .about-beginning-story .about-beginning-text h2 {
   margin-bottom: 40px;
 }
 body.about-page .about-beginning .about-beginning-story .about-beginning-images {
+  position: relative;
   order: 2;
-  max-width: 30%;
+  width: 60%;
+  min-width: 600px;
+  height: 480px;
+  border: 1px solid red;
+  align-self: center;
+}
+@media screen and (max-width: 662px) {
+  body.about-page .about-beginning .about-beginning-story .about-beginning-images {
+    width: 300px;
+    height: 250px;
+    min-width: 80px;
+  }
 }
 body.about-page .about-beginning .about-beginning-story .about-beginning-images img {
-  max-width: 50%;
+  max-width: 35%;
+}
+body.about-page .about-beginning .about-beginning-story .about-beginning-images img:first-of-type {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+}
+body.about-page .about-beginning .about-beginning-story .about-beginning-images img:nth-of-type(2) {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+body.about-page .about-beginning .about-beginning-story .about-beginning-images img:nth-of-type(3) {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
 }
 body.about-page footer {
   background-color: #E5EFED;
