@@ -228,7 +228,7 @@ a.btn {
     width: 80%;
     max-width: 750px;
     position: absolute;
-    left: 0x;
+    left: -22vw;
   }
 }
 
@@ -1182,7 +1182,7 @@ body.about-page {
     background-color: $light-blue;
     color: $blue;
 
-    .about-content, .about-beginning, .about-middle, .about-present {
+    .about-content, .about-beginning, .about-collaborations, .about-present {
       max-width: 1200px;
       margin: auto;
       padding: 0 40px;
@@ -1455,7 +1455,7 @@ body.about-page {
         @media screen and (max-width: 992px){
           order: 1;
           width: 100%;
-          margin-left: 0;
+          margin: 0;
         }
       }
 
@@ -1474,6 +1474,7 @@ body.about-page {
 
         @media screen and (max-width: 662px){
           max-width: 90%;
+          max-height: 300px;
         }
 
         img:first-of-type {
@@ -1510,7 +1511,12 @@ body.about-page {
           max-width: 100%;
   
           img {
-            max-width: 38%;
+            max-width: 35%;
+
+            @media screen and (max-width: 662px){
+              max-width: 30%;
+              max-height: 200px;
+            }
           }
         }
       }
