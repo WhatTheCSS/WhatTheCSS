@@ -207,11 +207,17 @@ a.btn.blue-btn:hover, a.btn.blue-btn:focus, a.btn.blue-btn:active {
 }
 
 .right-confetti img {
-  right: -30px;
+  width: 80%;
+  max-width: 750px;
+  position: absolute;
+  right: 0;
 }
 
 .left-confetti img {
-  left: -30px;
+  width: 80%;
+  max-width: 750px;
+  position: absolute;
+  left: 0x;
 }
 
 /* ------------------  
@@ -1201,62 +1207,154 @@ body.about-page .main .about-content .about-profiles .nathan-profile > .profile-
 body.about-page .main .about-content .about-profiles .nathan-profile > .profile-icons > a:last-child i {
   padding-left: 1px;
 }
-body.about-page .about-beginning .about-beginning-story {
+body.about-page .main .about-beginning {
+  position: relative;
+}
+body.about-page .main .about-beginning .about-beginning-story {
   margin-top: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 992px) {
-  body.about-page .about-beginning .about-beginning-story {
+  body.about-page .main .about-beginning .about-beginning-story {
     flex-direction: column;
   }
 }
-body.about-page .about-beginning .about-beginning-story .about-beginning-text {
+body.about-page .main .about-beginning .about-beginning-story .about-our-story-text {
   order: 1;
   width: 50%;
 }
 @media screen and (max-width: 992px) {
-  body.about-page .about-beginning .about-beginning-story .about-beginning-text {
+  body.about-page .main .about-beginning .about-beginning-story .about-our-story-text {
     width: 100%;
   }
 }
-body.about-page .about-beginning .about-beginning-story .about-beginning-text h2 {
+body.about-page .main .about-beginning .about-beginning-story .about-our-story-text h2 {
   margin-bottom: 40px;
 }
-body.about-page .about-beginning .about-beginning-story .about-beginning-images {
+body.about-page .main .about-beginning .about-beginning-story .about-beginning-images {
   position: relative;
   order: 2;
   width: 60%;
   min-width: 600px;
   height: 480px;
-  border: 1px solid red;
   align-self: center;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 662px) {
-  body.about-page .about-beginning .about-beginning-story .about-beginning-images {
+  body.about-page .main .about-beginning .about-beginning-story .about-beginning-images {
     width: 300px;
     height: 250px;
     min-width: 80px;
   }
 }
-body.about-page .about-beginning .about-beginning-story .about-beginning-images img {
+body.about-page .main .about-beginning .about-beginning-story .about-beginning-images img {
   max-width: 35%;
 }
-body.about-page .about-beginning .about-beginning-story .about-beginning-images img:first-of-type {
+body.about-page .main .about-beginning .about-beginning-story .about-beginning-images img:first-of-type {
   position: absolute;
   top: 5%;
   left: 20%;
 }
-body.about-page .about-beginning .about-beginning-story .about-beginning-images img:nth-of-type(2) {
+body.about-page .main .about-beginning .about-beginning-story .about-beginning-images img:nth-of-type(2) {
   position: absolute;
   top: 20%;
   right: 10%;
 }
-body.about-page .about-beginning .about-beginning-story .about-beginning-images img:nth-of-type(3) {
+body.about-page .main .about-beginning .about-beginning-story .about-beginning-images img:nth-of-type(3) {
   position: absolute;
   bottom: 0;
   left: 20%;
+}
+body.about-page .main .about-beginning .about-creating-the-course {
+  margin-top: 250px;
+  width: 100%;
+  min-height: 600px;
+}
+body.about-page .main .about-beginning .about-creating-the-course .about-creating-the-course-text {
+  order: 1;
+}
+body.about-page .main .about-beginning .about-creating-the-course .about-creating-the-course-images {
+  position: relative;
+  width: 100%;
+  order: 2;
+  align-self: center;
+}
+body.about-page .main .about-beginning .about-creating-the-course .about-creating-the-course-images img {
+  max-width: 25%;
+}
+body.about-page .main .about-beginning .about-creating-the-course .about-creating-the-course-images img:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 2.5%;
+  padding-top: 10%;
+  z-index: 5;
+}
+body.about-page .main .about-beginning .about-creating-the-course .about-creating-the-course-images img:nth-of-type(2) {
+  position: absolute;
+  max-width: 50%;
+  left: 20%;
+  top: 0;
+  padding-top: 5%;
+}
+body.about-page .main .about-beginning .about-creating-the-course .about-creating-the-course-images img:nth-of-type(3) {
+  position: absolute;
+  max-width: 25%;
+  right: 0;
+  top: 0;
+}
+body.about-page .main .about-collaborations {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  body.about-page .main .about-collaborations {
+    flex-direction: column;
+  }
+}
+body.about-page .main .about-collaborations .about-collaborations-text {
+  order: 2;
+  width: 40%;
+  margin-left: 50px;
+}
+@media screen and (max-width: 992px) {
+  body.about-page .main .about-collaborations .about-collaborations-text {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+body.about-page .main .about-collaborations .about-collaborations-images {
+  position: relative;
+  order: 1;
+  width: 500px;
+  height: 480px;
+}
+@media screen and (max-width: 992px) {
+  body.about-page .main .about-collaborations .about-collaborations-images {
+    order: 2;
+    margin: 0 auto;
+  }
+}
+body.about-page .main .about-collaborations .about-collaborations-images img:first-of-type {
+  position: absolute;
+  max-width: 80%;
+  top: 0;
+  left: 5%;
+}
+body.about-page .main .about-collaborations .about-collaborations-images img:nth-of-type(2) {
+  position: absolute;
+  max-width: 42%;
+  bottom: 0;
+  left: 5%;
+}
+body.about-page .main .about-collaborations .about-collaborations-images img:nth-of-type(3) {
+  position: absolute;
+  max-width: 42%;
+  bottom: 0;
+  right: 5%;
 }
 body.about-page footer {
   background-color: #E5EFED;
