@@ -1308,10 +1308,12 @@ body.about-page .main .about-collaborations {
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 100px;
 }
 @media screen and (max-width: 992px) {
   body.about-page .main .about-collaborations {
     flex-direction: column;
+    margin-top: -80px;
   }
 }
 body.about-page .main .about-collaborations .about-collaborations-text {
@@ -1331,11 +1333,18 @@ body.about-page .main .about-collaborations .about-collaborations-images {
   order: 1;
   width: 500px;
   height: 480px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 992px) {
   body.about-page .main .about-collaborations .about-collaborations-images {
     order: 2;
     margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 662px) {
+  body.about-page .main .about-collaborations .about-collaborations-images {
+    max-width: 90%;
   }
 }
 body.about-page .main .about-collaborations .about-collaborations-images img:first-of-type {
@@ -1355,6 +1364,49 @@ body.about-page .main .about-collaborations .about-collaborations-images img:nth
   max-width: 42%;
   bottom: 0;
   right: 5%;
+}
+body.about-page .main .about-present .about-the-end {
+  margin-top: 250px;
+}
+body.about-page .main .about-present .about-the-end .about-the-end-images {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+body.about-page .main .about-present .about-the-end .about-the-end-images img {
+  max-width: 38%;
+}
+body.about-page .main .about-present .about-our-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+@media screen and (max-width: 992px) {
+  body.about-page .main .about-present .about-our-brand {
+    flex-direction: column;
+  }
+}
+body.about-page .main .about-present .about-our-brand .about-our-brand-text {
+  order: 1;
+  width: 40%;
+}
+@media screen and (max-width: 992px) {
+  body.about-page .main .about-present .about-our-brand .about-our-brand-text {
+    width: 100%;
+  }
+}
+body.about-page .main .about-present .about-our-brand img {
+  order: 2;
+  width: 50%;
+  transform: rotate(5deg);
+  z-index: 5;
+}
+@media screen and (max-width: 992px) {
+  body.about-page .main .about-present .about-our-brand img {
+    width: 80%;
+    margin-top: 5%;
+  }
 }
 body.about-page footer {
   background-color: #E5EFED;
