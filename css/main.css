@@ -1,7 +1,7 @@
 /* ==============================
    VARIABLES, MIXINS, ETC 
    ============================== */
-body.home-page .challenge-info .challenge-imgs .challenge-img, body.home-page .challenge-info .challenge-imgs .challenge-img:after, body.home-page .challenge-info .challenge-imgs .challenge-img:hover:after {
+body.home-page .challenge-info .challenge-imgs .challenge-img, body.home-page .challenge-info .challenge-imgs .challenge-img:after, body.home-page .challenge-info .challenge-imgs .challenge-img:hover:after, .terms a {
   transition: all 0.2s ease-in-out !important;
   -moz-transition: all 0.2s ease-in-out !important;
   -webkit-transition: all 0.2s ease-in-out !important;
@@ -1122,5 +1122,21 @@ body.insights-page footer {
       color: #263557; }
       body.insights-page footer .footer-container .footer-legal-links a:hover {
         color: #F4CE6E; }
+
+/* ==============================
+   ------------------------------
+    TERMS PAGE
+   ------------------------------
+   ============================== */
+.terms {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px; }
+  .terms a {
+    color: #F4CE6E; }
+    .terms a:hover {
+      color: #22AFBF; }
+  .terms li {
+    font-size: 21px; }
 
 /*# sourceMappingURL=main.css.map */

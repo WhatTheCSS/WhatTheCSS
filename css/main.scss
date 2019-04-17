@@ -1624,3 +1624,27 @@ body.about-page {
     } 
 
    }
+
+
+/* ==============================
+   ------------------------------
+    TERMS PAGE
+   ------------------------------
+   ============================== */
+ 
+
+  .terms {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;  
+    a {
+      color: $yellow;
+      @extend %easeanimation;
+      &:hover {
+        color: $teal;
+      }
+    }
+    li {
+      font-size: 21px;
+    }
+  }
