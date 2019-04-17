@@ -269,7 +269,7 @@ nav {
       margin-left: 30px;
     }
     .nav-link {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       display: inline-block;
       margin-right: 10px;
     }
@@ -281,10 +281,10 @@ nav {
       background-color: $yellow;
     }
     .nav-link:nth-child(3) a:after {
-      background-color: $green;
+      background-color: $red;
     }
     .nav-link:nth-child(4) a:after {
-      background-color: $red;
+      background-color: $green;
     }
     .nav-link:last-child {
       margin-right: 0;
@@ -317,11 +317,14 @@ nav {
         position: absolute;
         content: '';
         height: 12px;
-        width: 120%;
-        left: -10%;
-        bottom: 1px;
+        width: 100%;
+        left: 0;
         z-index: -1;
-        transition: .2s;        
+        bottom: -10px;
+        transition: .2s;  
+        @media screen and (min-width: 992px){ 
+          bottom: -10px;
+        }      
       }
     }
     .nav-link:last-child a {
