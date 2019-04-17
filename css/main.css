@@ -770,24 +770,46 @@ body.course-page .client-days-banner {
 body.course-page .client-days-content {
   margin: auto;
   text-align: center; }
-  body.course-page .client-days-content .client-days-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 20px;
-    column-gap: 20px; }
+  @media screen and (min-width: 776px) {
+    body.course-page .client-days-content .client-days-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      row-gap: 20px;
+      column-gap: 20px; } }
   body.course-page .client-days-content .single-client-day {
     display: inline-block;
-    padding: 20px;
-    background-color: #F3F3F4;
+    background-color: #E5EFED;
     color: #263557;
-    vertical-align: top; }
+    vertical-align: top;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px; }
+    body.course-page .client-days-content .single-client-day .single-client-day-content img {
+      width: 60px;
+      margin: 20px auto 0 auto; }
+    body.course-page .client-days-content .single-client-day .single-client-day-content h4 {
+      text-decoration: underline; }
+    body.course-page .client-days-content .single-client-day .single-client-day-content p {
+      font-size: 18px;
+      margin-bottom: 15px; }
     body.course-page .client-days-content .single-client-day h3, body.course-page .client-days-content .single-client-day h4, body.course-page .client-days-content .single-client-day p {
       margin: 0; }
-    body.course-page .client-days-content .single-client-day img {
-      width: 100px; }
-  body.course-page .client-days-content .single-client-day:last-child img {
-    width: 40px; }
+    body.course-page .client-days-content .single-client-day h3 {
+      padding: 10px;
+      color: white; }
+  body.course-page .client-days-content .single-client-day:first-child h3 {
+    background-color: #22AFBF; }
+  body.course-page .client-days-content .single-client-day:nth-child(2) h3 {
+    background-color: #ED583F; }
+  body.course-page .client-days-content .single-client-day:nth-child(3) h3 {
+    background-color: #F58020; }
+  body.course-page .client-days-content .single-client-day:nth-child(4) h3 {
+    background-color: #8C83A0; }
+  body.course-page .client-days-content .single-client-day:nth-child(5) h3 {
+    background-color: #CBC715; }
+  body.course-page .client-days-content .single-client-day:last-child h3 {
+    background-color: #F4CE6E; }
 body.course-page footer .footer-container .footer-links .logo-links {
   color: white;
   border: 3px solid white; }

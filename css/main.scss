@@ -1067,30 +1067,79 @@ body.home-page {
     margin: auto;
     text-align: center;
       .client-days-cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        row-gap: 20px;
-        column-gap: 20px;
+        @media screen and (min-width: 776px){
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          row-gap: 20px;
+          column-gap: 20px;
+        }
       }
       .single-client-day {
         display: inline-block;
-        padding: 20px;
-        background-color: $light-gray;
+        background-color: $light-blue;
         color: $blue;
         vertical-align: top;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 350px;
+        @media screen and (min-width: 992px){
+
+        }
+        .single-client-day-content {
+          img {
+            width: 60px;
+            margin: 20px auto 0 auto;
+          }
+
+          h4 {
+            text-decoration: underline;
+          }
+
+          p {
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+        }
         h3, h4, p {
           margin: 0;
         }
-        img {
-          width: 100px;
+        
+        h3 {
+           padding: 10px;
+          color: white;
         }
       }
+      .single-client-day:first-child {
+        h3 {
+          background-color: $teal;
+        }
+      } 
+      .single-client-day:nth-child(2) {
+        h3 {
+          background-color: $red;
+        }
+      } 
+      .single-client-day:nth-child(3) {
+        h3 {
+          background-color: $orange;
+        }
+      }   
+      .single-client-day:nth-child(4) {
+        h3 {
+          background-color: $purple;
+        }
+      }   
+      .single-client-day:nth-child(5) {
+        h3 {
+          background-color: $green;
+        }
+      } 
       .single-client-day:last-child {
-        img {
-          width: 40px;
+        h3 {
+          background-color: $yellow;
         }
-      }
+      }                                 
   }
 
   footer {
