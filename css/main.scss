@@ -1198,6 +1198,28 @@ body.about-page {
           margin-bottom: 40px;
         } 
       }
+      .about-imgs {
+        img {
+          width: 100%;
+          max-width: 350px;
+          display: inline-block;
+          margin: 10px auto;
+          @media screen and (min-width: 992px){
+            margin: 20px;
+            width: 28%;
+            max-width: auto;
+          }
+        }
+        img:first-child {
+          box-shadow: -10px -10px 0 $red;
+        }
+        img:nth-child(2) {
+          box-shadow: -10px 10px 0 $yellow;
+        }
+        img:nth-child(3) {
+          box-shadow: 10px 10px 0 $teal;
+        }
+      }
 
       .about-profiles {
         display: grid;

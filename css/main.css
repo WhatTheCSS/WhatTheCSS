@@ -846,6 +846,22 @@ body.about-page .main {
       body.about-page .main .about-content h1 {
         text-align: center;
         margin-bottom: 40px; } }
+  body.about-page .main .about-content .about-imgs img {
+    width: 100%;
+    max-width: 350px;
+    display: inline-block;
+    margin: 10px auto; }
+    @media screen and (min-width: 992px) {
+      body.about-page .main .about-content .about-imgs img {
+        margin: 20px;
+        width: 28%;
+        max-width: auto; } }
+  body.about-page .main .about-content .about-imgs img:first-child {
+    box-shadow: -10px -10px 0 #ED583F; }
+  body.about-page .main .about-content .about-imgs img:nth-child(2) {
+    box-shadow: -10px 10px 0 #F4CE6E; }
+  body.about-page .main .about-content .about-imgs img:nth-child(3) {
+    box-shadow: 10px 10px 0 #22AFBF; }
   body.about-page .main .about-content .about-profiles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
