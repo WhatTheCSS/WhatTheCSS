@@ -219,7 +219,7 @@ a.btn {
     width: 80%;
     max-width: 750px;
     position: absolute;
-    right: 0;
+    right: -30px;
   }
 }
 
@@ -716,11 +716,12 @@ body.home-page {
     .challenge-imgs {
       text-align: center;
       .challenge-img {
-        width: 150px;
-        margin-bottom: 10px;
+        width: 100%;
+        margin-bottom: 15px;
         z-index: 1;
         position: relative;
         display: inline-block;
+        max-width: 250px;
         @extend %easeanimation;
         @media screen and (min-width: 662px){
           width: 250px;
@@ -734,8 +735,8 @@ body.home-page {
           z-index: -1;
           @extend %easeanimation;
           @media screen and (max-width: 662px){
-            height: 100px;
-            width: 100px;
+            height: 160px;
+            width: 160px;
           }
         }
         &:hover {
@@ -868,13 +869,14 @@ body.home-page {
     }
     &:after {
       background-color: $teal;
-      height: 268px;
+      height: 300px;
       width: 100px;
       top: 19%;
-      left: -5%;
+      left: -10%;
       z-index: -2;
       @media screen and (min-width: 992px){
         height: 286px;
+        left: -5%;
       }
     }
     @media screen and (min-width: 768px){
@@ -900,7 +902,7 @@ body.home-page {
     margin: auto;
     padding: 40px;
     @media screen and (max-width: 662px){
-      padding: 20px;
+      padding: 40px 20px;
     }
   }
 

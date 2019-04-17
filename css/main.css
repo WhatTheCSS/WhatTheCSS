@@ -157,7 +157,7 @@ a.btn {
   width: 80%;
   max-width: 750px;
   position: absolute;
-  right: 0; }
+  right: -30px; }
 
 .left-confetti img {
   width: 80%;
@@ -538,11 +538,12 @@ body.home-page .main {
 body.home-page .challenge-info .challenge-imgs {
   text-align: center; }
   body.home-page .challenge-info .challenge-imgs .challenge-img {
-    width: 150px;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 15px;
     z-index: 1;
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    max-width: 250px; }
     @media screen and (min-width: 662px) {
       body.home-page .challenge-info .challenge-imgs .challenge-img {
         width: 250px;
@@ -555,8 +556,8 @@ body.home-page .challenge-info .challenge-imgs {
       z-index: -1; }
       @media screen and (max-width: 662px) {
         body.home-page .challenge-info .challenge-imgs .challenge-img:after {
-          height: 100px;
-          width: 100px; } }
+          height: 160px;
+          width: 160px; } }
   body.home-page .challenge-info .challenge-imgs .challenge-img:first-child:after {
     background-color: #ED583F;
     top: -20px;
@@ -646,14 +647,15 @@ body.home-page .client-image-container {
         right: 32%; } }
   body.home-page .client-image-container:after {
     background-color: #22AFBF;
-    height: 268px;
+    height: 300px;
     width: 100px;
     top: 19%;
-    left: -5%;
+    left: -10%;
     z-index: -2; }
     @media screen and (min-width: 992px) {
       body.home-page .client-image-container:after {
-        height: 286px; } }
+        height: 286px;
+        left: -5%; } }
   @media screen and (min-width: 768px) {
     body.home-page .client-image-container {
       margin: auto; } }
@@ -671,7 +673,7 @@ body.home-page .intro-text, body.home-page .challenge-info, body.home-page .clie
   padding: 40px; }
   @media screen and (max-width: 662px) {
     body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container {
-      padding: 20px; } }
+      padding: 40px 20px; } }
 body.home-page .challenge-content, body.home-page .course-content {
   max-width: 700px;
   margin: auto; }
