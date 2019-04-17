@@ -219,7 +219,11 @@ a.btn {
     width: 80%;
     max-width: 750px;
     position: absolute;
-    right: -30px;
+    right: -15vw;
+    @media screen and (min-width: 662px){
+        height: 151px;
+        top: 0;
+    }
   }
 }
 
@@ -228,7 +232,11 @@ a.btn {
     width: 80%;
     max-width: 750px;
     position: absolute;
-    left: -22vw;
+    left: -15vw;
+    @media screen and (min-width: 662px){
+        height: 151px;
+        top: 0;
+    }
   }
 }
 
@@ -900,7 +908,7 @@ body.home-page {
     }
   }
 
-  .intro-text, .challenge-info, .client-info, .bonus-info, .footer-container {
+  .intro-text, .challenge-info, .client-info, .bonus-info, .footer-container, .terms {
     max-width: 1000px;
     margin: auto;
     padding: 40px;
@@ -1710,9 +1718,6 @@ body.about-page {
  
 
   .terms {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;  
     a {
       color: $yellow;
       @extend %easeanimation;

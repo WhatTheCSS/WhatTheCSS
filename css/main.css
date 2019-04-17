@@ -157,13 +157,21 @@ a.btn {
   width: 80%;
   max-width: 750px;
   position: absolute;
-  right: -30px; }
+  right: -15vw; }
+  @media screen and (min-width: 662px) {
+    .right-confetti img {
+      height: 151px;
+      top: 0; } }
 
 .left-confetti img {
   width: 80%;
   max-width: 750px;
   position: absolute;
-  left: -22vw; }
+  left: -15vw; }
+  @media screen and (min-width: 662px) {
+    .left-confetti img {
+      height: 151px;
+      top: 0; } }
 
 /* ------------------  
     NAVIGATION
@@ -670,12 +678,12 @@ body.home-page .bonus-info .playlist-info {
     @media screen and (min-width: 992px) {
       body.home-page .bonus-info .playlist-info .playlist-image {
         margin-top: -50px; } }
-body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container {
+body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container, body.home-page .terms {
   max-width: 1000px;
   margin: auto;
   padding: 40px; }
   @media screen and (max-width: 662px) {
-    body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container {
+    body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container, body.home-page .terms {
       padding: 40px 20px; } }
 body.home-page .challenge-content, body.home-page .course-content {
   max-width: 700px;
@@ -1171,15 +1179,11 @@ body.insights-page footer {
     TERMS PAGE
    ------------------------------
    ============================== */
-.terms {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px; }
-  .terms a {
-    color: #F4CE6E; }
-    .terms a:hover {
-      color: #22AFBF; }
-  .terms li {
-    font-size: 21px; }
+.terms a {
+  color: #F4CE6E; }
+  .terms a:hover {
+    color: #22AFBF; }
+.terms li {
+  font-size: 21px; }
 
 /*# sourceMappingURL=main.css.map */
