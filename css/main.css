@@ -215,9 +215,9 @@ nav {
         text-align: left;
         margin-left: 30px; } }
     nav .navigation-links .nav-link {
-      margin-bottom: 10px;
       display: inline-block;
-      margin-right: 10px; }
+      margin-right: 10px;
+      margin-bottom: 20px; }
     nav .navigation-links .nav-link:first-child a:after {
       background-color: #22AFBF;
       transition: .2s; }
@@ -550,6 +550,9 @@ body.home-page .logo:hover {
   border-color: #22AFBF; }
 body.home-page .hero-content {
   background-color: #22AFBF; }
+@media screen and (min-width: 992px) {
+  body.home-page .hero-img {
+    transform: rotate(7deg); } }
 body.home-page .main {
   background-color: #263557;
   color: white; }
@@ -715,6 +718,9 @@ body.course-page .hero-container .hero .hero-content-container .hero-content {
     font-weight: 800;
     font-size: 100px;
     display: block; }
+    @media screen and (max-width: 667px) {
+      body.course-page .hero-container .hero .hero-content-container .hero-content h1 span {
+        font-size: 80px; } }
 body.course-page .hero-container .hero .hero-content-container .hero-img {
   margin-top: 80px;
   width: 100%;
@@ -849,7 +855,7 @@ body.course-page .client-days-content {
   body.course-page .client-days-content .single-client-day:nth-child(5) h3 {
     background-color: #CBC715; }
   body.course-page .client-days-content .single-client-day:last-child h3 {
-    background-color: #F4CE6E; }
+    background-color: #4d6bb0; }
 body.course-page footer .footer-container .footer-links .logo-links {
   color: white;
   border: 3px solid white; }
@@ -960,7 +966,7 @@ body.about-page .main {
         font-size: 15px;
         text-align: center; }
       body.about-page .main .about-content .about-profiles .profile .profile-bio {
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
         margin-bottom: 10px; }
       body.about-page .main .about-content .about-profiles .profile .profile-icons {

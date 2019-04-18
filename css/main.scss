@@ -285,9 +285,9 @@ nav {
       margin-left: 30px;
     }
     .nav-link {
-      margin-bottom: 10px;
       display: inline-block;
       margin-right: 10px;
+      margin-bottom: 20px;
     }
     .nav-link:first-child a:after {
       background-color: $teal;
@@ -722,6 +722,12 @@ body.home-page {
       background-color: $teal;
   }
 
+  .hero-img {
+    @media screen and (min-width: 992px){
+      transform: rotate(7deg);
+    }
+  }
+
   .main {
       background-color: $blue;
       color: white;
@@ -960,6 +966,8 @@ body.home-page {
       // display: flex;
       // justify-content: center;
 
+
+
       @media screen and (max-width: 992px){
         margin-bottom: 100px;
       }
@@ -974,6 +982,9 @@ body.home-page {
                 font-weight: 800;
                 font-size: 100px;
                 display: block;
+                @media screen and (max-width: 667px){
+                  font-size: 80px;
+                }
               }
             }
       
@@ -1188,7 +1199,7 @@ body.home-page {
       } 
       .single-client-day:last-child {
         h3 {
-          background-color: $yellow;
+          background-color: lighten($blue, 25%);
         }
       }                                 
   }
@@ -1371,7 +1382,7 @@ body.about-page {
           }
 
           .profile-bio {
-            font-size: 14px;
+            font-size: 13px;
             text-align: center;
             margin-bottom: 10px;
           }
