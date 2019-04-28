@@ -736,7 +736,8 @@ body.course-page .hero-container .hero .hero-content-container .hero-img {
       margin-top: 40px;
       max-width: 400px;
       right: 8%;
-      top: 28px; } }
+      top: 28px;
+      transform: rotate(-5deg); } }
   @media screen and (max-width: 992px) {
     body.course-page .hero-container .hero .hero-content-container .hero-img {
       margin: auto;
