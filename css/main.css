@@ -905,9 +905,14 @@ body.about-page .main {
   background-color: #E5EFED;
   color: #263557; }
   body.about-page .main .about-content, body.about-page .main .about-beginning, body.about-page .main .about-collaborations, body.about-page .main .about-present {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
-    padding: 0 40px; }
+    padding: 40px; }
+  body.about-page .main .about-content h2 {
+    text-align: center;
+    margin: 50px auto 30px auto; }
+  body.about-page .main .about-content .btn {
+    margin-bottom: 40px; }
   body.about-page .main .about-content h1 {
     margin-bottom: 20px; }
     @media screen and (max-width: 992px) {
@@ -931,22 +936,18 @@ body.about-page .main {
   body.about-page .main .about-content .about-imgs img:nth-child(3) {
     box-shadow: 10px 10px 0 #22AFBF; }
   body.about-page .main .about-content .about-profiles {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 30px; }
-    @media screen and (max-width: 992px) {
-      body.about-page .main .about-content .about-profiles {
-        grid-template-columns: 1fr 1fr; } }
-    @media screen and (max-width: 662px) {
-      body.about-page .main .about-content .about-profiles {
-        grid-template-columns: 1fr; } }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
     body.about-page .main .about-content .about-profiles .profile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      text-align: center;
       margin: 0;
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 25px;
+      flex: 0 0 calc(24.66%); }
+      @media screen and (max-width: 992px) {
+        body.about-page .main .about-content .about-profiles .profile {
+          flex: 0 0 100%; } }
       @media screen and (max-width: 992px) {
         body.about-page .main .about-content .about-profiles .profile {
           margin-bottom: 40px; } }
@@ -955,25 +956,32 @@ body.about-page .main {
           width: 100%; } }
       body.about-page .main .about-content .about-profiles .profile .profile-img-container {
         margin: 0 auto;
-        height: 120px; }
+        height: 160px; }
         body.about-page .main .about-content .about-profiles .profile .profile-img-container img {
-          max-height: 120px;
+          max-height: 160px;
           vertical-align: middle; }
       body.about-page .main .about-content .about-profiles .profile .profile-name {
         font-size: 22px;
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 0; }
       body.about-page .main .about-content .about-profiles .profile .profile-title {
         font-size: 15px;
         text-align: center; }
       body.about-page .main .about-content .about-profiles .profile .profile-bio {
         font-size: 13px;
         text-align: center;
-        margin-bottom: 10px; }
+        margin-bottom: 20px;
+        font-style: italic; }
+        body.about-page .main .about-content .about-profiles .profile .profile-bio img {
+          height: 20px;
+          margin-left: 5px; }
       body.about-page .main .about-content .about-profiles .profile .profile-icons {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 75%; }
+        text-align: center;
+        margin: auto; }
+        body.about-page .main .about-content .about-profiles .profile .profile-icons a {
+          margin-right: 10px; }
+        body.about-page .main .about-content .about-profiles .profile .profile-icons a:last-child {
+          margin-right: 0; }
     body.about-page .main .about-content .about-profiles .brittany-profile > .profile-icons > a {
       background-color: #22AFBF;
       width: 35px;
