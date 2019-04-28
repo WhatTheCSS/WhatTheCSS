@@ -499,45 +499,45 @@ footer {
       footer .footer-container .footer-legal-links a:hover {
         color: #F4CE6E; }
 
-body.home-page footer, body.course-page footer {
+body.home-page footer, body.course-page footer, body.about-page footer {
   background-color: #263557; }
-  body.home-page footer .footer-container .footer-links .logo-links, body.course-page footer .footer-container .footer-links .logo-links {
+  body.home-page footer .footer-container .footer-links .logo-links, body.course-page footer .footer-container .footer-links .logo-links, body.about-page footer .footer-container .footer-links .logo-links {
     color: white;
     border: 3px solid white; }
-  body.home-page footer .footer-container .footer-legal-links, body.course-page footer .footer-container .footer-legal-links {
+  body.home-page footer .footer-container .footer-legal-links, body.course-page footer .footer-container .footer-legal-links, body.about-page footer .footer-container .footer-legal-links {
     text-align: center; }
-    body.home-page footer .footer-container .footer-legal-links a, body.course-page footer .footer-container .footer-legal-links a {
+    body.home-page footer .footer-container .footer-legal-links a, body.course-page footer .footer-container .footer-legal-links a, body.about-page footer .footer-container .footer-legal-links a {
       color: white; }
-      body.home-page footer .footer-container .footer-legal-links a:hover, body.course-page footer .footer-container .footer-legal-links a:hover {
+      body.home-page footer .footer-container .footer-legal-links a:hover, body.course-page footer .footer-container .footer-legal-links a:hover, body.about-page footer .footer-container .footer-legal-links a:hover {
         color: #F4CE6E; }
-  body.home-page footer .footer-container .footer-form, body.course-page footer .footer-container .footer-form {
+  body.home-page footer .footer-container .footer-form, body.course-page footer .footer-container .footer-form, body.about-page footer .footer-container .footer-form {
     max-width: 700px;
     margin: auto;
     position: relative; }
-    body.home-page footer .footer-container .footer-form img, body.course-page footer .footer-container .footer-form img {
+    body.home-page footer .footer-container .footer-form img, body.course-page footer .footer-container .footer-form img, body.about-page footer .footer-container .footer-form img {
       position: absolute;
       bottom: 0;
       height: 350px; }
-    body.home-page footer .footer-container .footer-form .footer-form-content, body.course-page footer .footer-container .footer-form .footer-form-content {
+    body.home-page footer .footer-container .footer-form .footer-form-content, body.course-page footer .footer-container .footer-form .footer-form-content, body.about-page footer .footer-container .footer-form .footer-form-content {
       margin-left: 230px;
       max-width: 500px; }
-      body.home-page footer .footer-container .footer-form .footer-form-content a, body.course-page footer .footer-container .footer-form .footer-form-content a {
+      body.home-page footer .footer-container .footer-form .footer-form-content a, body.course-page footer .footer-container .footer-form .footer-form-content a, body.about-page footer .footer-container .footer-form .footer-form-content a {
         margin: 40px 0; }
-      body.home-page footer .footer-container .footer-form .footer-form-content h2, body.course-page footer .footer-container .footer-form .footer-form-content h2 {
+      body.home-page footer .footer-container .footer-form .footer-form-content h2, body.course-page footer .footer-container .footer-form .footer-form-content h2, body.about-page footer .footer-container .footer-form .footer-form-content h2 {
         color: #263557;
         margin-top: 20px;
         margin-bottom: 0; }
-      body.home-page footer .footer-container .footer-form .footer-form-content p, body.course-page footer .footer-container .footer-form .footer-form-content p {
+      body.home-page footer .footer-container .footer-form .footer-form-content p, body.course-page footer .footer-container .footer-form .footer-form-content p, body.about-page footer .footer-container .footer-form .footer-form-content p {
         color: #263557; }
     @media screen and (max-width: 662px) {
-      body.home-page footer .footer-container .footer-form img, body.course-page footer .footer-container .footer-form img {
+      body.home-page footer .footer-container .footer-form img, body.course-page footer .footer-container .footer-form img, body.about-page footer .footer-container .footer-form img {
         position: relative;
         display: block;
         margin: auto;
         height: 300px;
         left: 0;
         margin-top: -100px; }
-      body.home-page footer .footer-container .footer-form .footer-form-content, body.course-page footer .footer-container .footer-form .footer-form-content {
+      body.home-page footer .footer-container .footer-form .footer-form-content, body.course-page footer .footer-container .footer-form .footer-form-content, body.about-page footer .footer-container .footer-form .footer-form-content {
         margin-left: 0;
         text-align: center; } }
 
@@ -875,32 +875,46 @@ body.course-page footer .footer-container img {
    ============================== */
 body.about-page .logo:hover {
   border-color: #ED583F; }
-body.about-page .hero-container .hero {
-  display: flex;
-  justify-content: center; }
+@media screen and (max-width: 992px) {
+  body.about-page .hero-container .hero {
+    margin-bottom: 100px; } }
+body.about-page .hero-container .hero .hero-content-container .hero-content {
+  background-color: #ED583F;
+  max-width: 540px; }
+  body.about-page .hero-container .hero .hero-content-container .hero-content h1 span {
+    font-weight: 800;
+    font-size: 100px;
+    display: block; }
+    @media screen and (max-width: 667px) {
+      body.about-page .hero-container .hero .hero-content-container .hero-content h1 span {
+        font-size: 80px; } }
+body.about-page .hero-container .hero .hero-content-container .hero-img {
+  margin-top: 80px;
+  width: 100%;
+  max-width: 450px;
+  background-color: #263557; }
+  body.about-page .hero-container .hero .hero-content-container .hero-img img {
+    width: 46%;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    padding-left: 25px; }
+  @media screen and (min-width: 992px) {
+    body.about-page .hero-container .hero .hero-content-container .hero-img {
+      margin-top: 40px;
+      right: 8%;
+      top: 28px;
+      transform: rotate(-5deg); } }
   @media screen and (max-width: 992px) {
-    body.about-page .hero-container .hero {
-      margin-bottom: 50px; } }
-  body.about-page .hero-container .hero .hero-content-container .hero-content {
-    position: relative;
-    background-color: #ED583F;
-    max-width: 60%;
-    height: 300px; }
-    body.about-page .hero-container .hero .hero-content-container .hero-content p {
-      max-width: 95%; }
-    @media screen and (min-width: 992px) {
-      body.about-page .hero-container .hero .hero-content-container .hero-content {
-        margin-left: 80px; } }
-    @media screen and (max-width: 992px) {
-      body.about-page .hero-container .hero .hero-content-container .hero-content {
-        max-width: 540px; } }
-    body.about-page .hero-container .hero .hero-content-container .hero-content .about-img {
-      position: absolute;
-      bottom: -10%;
-      right: -15%;
-      width: 30%;
-      min-width: 100px;
-      transform: rotate(15deg); }
+    body.about-page .hero-container .hero .hero-content-container .hero-img {
+      margin: auto;
+      margin-top: -15px;
+      max-width: 540px; }
+      body.about-page .hero-container .hero .hero-content-container .hero-img img {
+        max-width: 50%;
+        max-height: 40%;
+        display: block;
+        margin: 15px auto; } }
 body.about-page .main {
   background-color: #E5EFED;
   color: #263557; }
@@ -914,27 +928,40 @@ body.about-page .main {
   body.about-page .main .about-content .btn {
     margin-bottom: 40px; }
   body.about-page .main .about-content h1 {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
     @media screen and (max-width: 992px) {
       body.about-page .main .about-content h1 {
         text-align: center;
         margin-bottom: 40px; } }
-  body.about-page .main .about-content .about-imgs img {
-    width: 100%;
-    max-width: 350px;
-    display: inline-block;
-    margin: 10px auto; }
-    @media screen and (min-width: 992px) {
-      body.about-page .main .about-content .about-imgs img {
-        margin: 20px;
-        width: 28%;
-        max-width: auto; } }
-  body.about-page .main .about-content .about-imgs img:first-child {
-    box-shadow: -10px -10px 0 #ED583F; }
-  body.about-page .main .about-content .about-imgs img:nth-child(2) {
-    box-shadow: -10px 10px 0 #F4CE6E; }
-  body.about-page .main .about-content .about-imgs img:nth-child(3) {
-    box-shadow: 10px 10px 0 #22AFBF; }
+  body.about-page .main .about-content .about-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 40px; }
+    @media screen and (max-width: 992px) {
+      body.about-page .main .about-content .about-imgs {
+        grid-template-columns: 1fr; } }
+    body.about-page .main .about-content .about-imgs img {
+      width: 100%;
+      max-width: 350px;
+      display: inline-block;
+      margin: 10px auto 30px auto; }
+      @media screen and (min-width: 992px) {
+        body.about-page .main .about-content .about-imgs img {
+          margin: 20px;
+          width: 100%;
+          max-width: auto; } }
+    body.about-page .main .about-content .about-imgs img:first-child {
+      box-shadow: -10px -10px 0 #ED583F; }
+    body.about-page .main .about-content .about-imgs img:nth-child(2) {
+      max-width: 300px;
+      box-shadow: -10px 10px 0 #F4CE6E;
+      max-width: 250px; }
+    body.about-page .main .about-content .about-imgs img:nth-child(3) {
+      box-shadow: 10px 10px 0 #22AFBF; }
   body.about-page .main .about-content .about-profiles {
     display: flex;
     flex-wrap: wrap;
@@ -943,7 +970,7 @@ body.about-page .main {
       text-align: center;
       margin: 0;
       width: 100%;
-      margin-bottom: 25px;
+      margin-bottom: 70px;
       flex: 0 0 calc(24.66%); }
       @media screen and (max-width: 992px) {
         body.about-page .main .about-content .about-profiles .profile {
@@ -964,6 +991,9 @@ body.about-page .main {
         font-size: 22px;
         text-align: center;
         margin-bottom: 0; }
+      body.about-page .main .about-content .about-profiles .profile .profile-pronouns {
+        font-size: 16px;
+        margin: 0 auto; }
       body.about-page .main .about-content .about-profiles .profile .profile-title {
         font-size: 15px;
         text-align: center; }
@@ -1191,6 +1221,8 @@ body.about-page footer {
       color: #263557; }
       body.about-page footer .footer-container .footer-legal-links a:hover {
         color: #F4CE6E; }
+  body.about-page footer .footer-container .footer-form .footer-form-content {
+    margin-left: 278px; }
 
 /* ==============================
    ------------------------------

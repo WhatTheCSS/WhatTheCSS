@@ -642,7 +642,7 @@ footer {
   }
 }
 
-body.home-page, body.course-page {
+body.home-page, body.course-page, body.about-page {
   footer {
     background-color: $blue;
     .footer-container {
@@ -1248,41 +1248,67 @@ body.about-page {
   .hero-container {
 
     .hero {
-      display: flex;
-      justify-content: center;
+      // display: flex;
+      // justify-content: center;
+
+
 
       @media screen and (max-width: 992px){
-        margin-bottom: 50px;
+        margin-bottom: 100px;
       }
 
       .hero-content-container {
         
         .hero-content {
-            position: relative;
             background-color: $red;
-            max-width: 60%;
-            height: 300px;
+            max-width: 540px;
             
-            p {
-              max-width: 95%;
+              h1 span {
+                font-weight: 800;
+                font-size: 100px;
+                display: block;
+                @media screen and (max-width: 667px){
+                  font-size: 80px;
+                }
+              }
             }
+      
+        .hero-img {
+          margin-top: 80px;
+          // max-width: 30%;
+          width: 100%;
+          max-width: 450px;
+          // max-height: 320px;
+          background-color: $blue;
+  
+          img {
+            width: 46%;
+            display: block;
+            margin: auto;
+            padding: 15px;
+            padding-left: 25px;
+          }
 
-            @media screen and (min-width: 992px){
-              margin-left: 80px;
-            }
+          @media screen and (min-width: 992px){
+            margin-top: 40px;
+            right: 8%;
+            top: 28px;
+            transform: rotate(-5deg);
+          }
 
-            @media screen and (max-width: 992px){
-              max-width: 540px;
-            }
+          @media screen and (max-width: 992px){
+            margin: auto;
+            margin-top: -15px;
+            max-width: 540px;
 
-            .about-img {
-              position: absolute;
-              bottom: -10%;
-              right: -15%;
-              width: 30%;
-              min-width: 100px;
-              transform: rotate(15deg);
+            img {
+              max-width: 50%;
+              max-height: 40%;
+              display: block;
+              margin: 15px auto;
             }
+          }
+          
         }
       }
     }    
@@ -1312,6 +1338,7 @@ body.about-page {
 
       h1 {
         margin-bottom: 20px;
+        text-align: center;
         
         @media screen and (max-width: 992px) {
           text-align: center;
@@ -1319,14 +1346,24 @@ body.about-page {
         } 
       }
       .about-imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 40px;
+        @media screen and (max-width: 992px){
+          grid-template-columns: 1fr;
+        }
         img {
           width: 100%;
           max-width: 350px;
           display: inline-block;
-          margin: 10px auto;
+          margin: 10px auto 30px auto;
+
           @media screen and (min-width: 992px){
             margin: 20px;
-            width: 28%;
+            width: 100%;
             max-width: auto;
           }
         }
@@ -1334,7 +1371,9 @@ body.about-page {
           box-shadow: -10px -10px 0 $red;
         }
         img:nth-child(2) {
+          max-width: 300px;
           box-shadow: -10px 10px 0 $yellow;
+          max-width: 250px;
         }
         img:nth-child(3) {
           box-shadow: 10px 10px 0 $teal;
@@ -1350,7 +1389,7 @@ body.about-page {
           text-align: center;
           margin: 0;
           width: 100%;
-          margin-bottom: 25px;
+          margin-bottom: 70px;
           flex: 0 0 calc(24.66%);
 
           @media screen and (max-width: 992px) {
@@ -1379,6 +1418,11 @@ body.about-page {
             font-size: 22px;
             text-align: center;
             margin-bottom: 0;
+          }
+
+          .profile-pronouns {
+            font-size: 16px;
+            margin: 0 auto;
           }
 
           .profile-title {
@@ -1724,6 +1768,11 @@ body.about-page {
           &:hover {
             color: $yellow;
           }
+        }
+      }
+      .footer-form {
+        .footer-form-content {
+          margin-left: 278px;
         }
       }
     }
