@@ -56,6 +56,9 @@ p {
   font-weight: 300;
   font-size: 21px;
   margin-top: 0;
+  @media screen and (max-width: 425px){
+    font-size: 16px;
+  }
 }
 
 .main {
@@ -140,7 +143,6 @@ a.btn {
   transition: .2s;
   position: relative;
   z-index: 1;
-  max-height: 61px;
   &:hover {
     transform: translateY(-10px);
     transition: .2s;
@@ -232,28 +234,30 @@ a.btn {
 
 .right-confetti {
   img {
-    width: 80%;
+    width: 100%;
     max-width: 750px;
     position: absolute;
-    right: -30px;
+    right: -45px;
     @media screen and (min-width: 662px){
         height: 151px;
         top: 0;
         right: -15vw;
+        width: 80%;
     }
   }
 }
 
 .left-confetti {
   img {
-    width: 80%;
+    width: 100%;
     max-width: 750px;
     position: absolute;
-    left: -30px;
+    left: -45px;
     @media screen and (min-width: 662px){
         height: 151px;
         top: 0;
         left: -15vw;
+        width: 80%;
     }
   }
 }
@@ -1273,16 +1277,15 @@ body.about-page {
   .hero-container {
 
     .hero {
-      // display: flex;
-      // justify-content: center;
-
-
-
       @media screen and (max-width: 992px){
         margin-bottom: 100px;
       }
 
       .hero-content-container {
+        position: relative;
+        @media screen and (max-width: 425px){
+          padding: 0 20px;
+        }
         
         .hero-content {
             background-color: $red;
@@ -1296,6 +1299,9 @@ body.about-page {
                 @media screen and (max-width: 667px){
                   font-size: 80px;
                 }
+              }
+              @media screen and (max-width: 425px){
+                padding-top: 20px;
               }
             }
       
@@ -1312,6 +1318,15 @@ body.about-page {
             margin: auto;
             padding: 15px;
             padding-left: 25px;
+            @media screen and (max-width: 425px){
+              position: absolute;
+              bottom: -72px;
+              left: -86px;
+              height: 198px;
+              width: 100%;
+              max-height: none;
+              transform: rotate(-14deg);
+            }
           }
 
           @media screen and (min-width: 992px){
@@ -1319,21 +1334,7 @@ body.about-page {
             right: 8%;
             top: 28px;
             transform: rotate(-5deg);
-          }
-
-          @media screen and (max-width: 992px){
-            margin: auto;
-            margin-top: -15px;
-            max-width: 540px;
-
-            img {
-              max-width: 50%;
-              max-height: 40%;
-              display: block;
-              margin: 15px auto;
-            }
-          }
-          
+          } 
         }
       }
     }    
@@ -1354,7 +1355,7 @@ body.about-page {
 
       h2 {
         text-align: center;
-        margin: 50px auto 30px auto;
+        margin: 0 auto 30px auto;
       }
 
       .btn {
@@ -1409,6 +1410,7 @@ body.about-page {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 100px;
 
         .profile {
           text-align: center;
@@ -1443,6 +1445,7 @@ body.about-page {
             font-size: 22px;
             text-align: center;
             margin-bottom: 0;
+            margin-top: 20px;
           }
 
           .profile-pronouns {
@@ -1482,8 +1485,7 @@ body.about-page {
           }
         }
 
-        .brittany-profile > .profile-icons > a{
-          background-color: $teal;
+        .profile > .profile-icons > a {
           width: 35px;
           height: 35px;
           border-radius: 50%;
@@ -1496,54 +1498,22 @@ body.about-page {
           &:last-child i{
             padding-left: 1px;
           }
+        }
+
+        .brittany-profile > .profile-icons > a{
+          background-color: $teal;
         }
 
         .devon-profile > .profile-icons > a{
           background-color: $orange;
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-          padding: 6px 10px;
-
-          i {
-            color: white;
-          }
-
-          &:last-child i{
-            padding-left: 1px;
-          }
         }
 
         .rebecca-profile > .profile-icons > a{
           background-color: $red;
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-          padding: 6px 10px;
-
-          i {
-            color: white;
-          }
-
-          &:last-child i{
-            padding-left: 1px;
-          }
         }
 
         .nathan-profile > .profile-icons > a{
           background-color: $purple;
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-          padding: 6px 10px;
-
-          i {
-            color: white;
-          }
-
-          &:last-child i{
-            padding-left: 1px;
-          }
         }
       }
     }
@@ -1780,6 +1750,9 @@ body.about-page {
   footer {
     background-color: $light-blue;
     .footer-container {
+      @media screen and (max-width: 662px){
+        padding: 40px 20px;
+      }
       .footer-links {
         .logo-links {
           color: white;
@@ -1798,6 +1771,9 @@ body.about-page {
       .footer-form {
         .footer-form-content {
           margin-left: 278px;
+          @media screen and (max-width: 662px){
+            margin-left: 0;
+          }
         }
       }
     }

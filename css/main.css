@@ -33,6 +33,9 @@ p {
   font-weight: 300;
   font-size: 21px;
   margin-top: 0; }
+  @media screen and (max-width: 425px) {
+    p {
+      font-size: 16px; } }
 
 .main {
   margin-top: 65px;
@@ -96,8 +99,7 @@ a.btn {
   transition-timing-function: ease-in-out;
   transition: .2s;
   position: relative;
-  z-index: 1;
-  max-height: 61px; }
+  z-index: 1; }
   a.btn:hover {
     transform: translateY(-10px);
     transition: .2s;
@@ -168,26 +170,28 @@ a.btn {
         max-width: 100%; } }
 
 .right-confetti img {
-  width: 80%;
+  width: 100%;
   max-width: 750px;
   position: absolute;
-  right: -30px; }
+  right: -45px; }
   @media screen and (min-width: 662px) {
     .right-confetti img {
       height: 151px;
       top: 0;
-      right: -15vw; } }
+      right: -15vw;
+      width: 80%; } }
 
 .left-confetti img {
-  width: 80%;
+  width: 100%;
   max-width: 750px;
   position: absolute;
-  left: -30px; }
+  left: -45px; }
   @media screen and (min-width: 662px) {
     .left-confetti img {
       height: 151px;
       top: 0;
-      left: -15vw; } }
+      left: -15vw;
+      width: 80%; } }
 
 /* ------------------  
     NAVIGATION
@@ -900,43 +904,50 @@ body.about-page .logo:hover {
 @media screen and (max-width: 992px) {
   body.about-page .hero-container .hero {
     margin-bottom: 100px; } }
-body.about-page .hero-container .hero .hero-content-container .hero-content {
-  background-color: #ED583F;
-  max-width: 540px;
-  margin: auto; }
-  body.about-page .hero-container .hero .hero-content-container .hero-content h1 span {
-    font-weight: 800;
-    font-size: 100px;
-    display: block; }
-    @media screen and (max-width: 667px) {
-      body.about-page .hero-container .hero .hero-content-container .hero-content h1 span {
-        font-size: 80px; } }
-body.about-page .hero-container .hero .hero-content-container .hero-img {
-  margin-top: 80px;
-  width: 100%;
-  max-width: 450px; }
-  body.about-page .hero-container .hero .hero-content-container .hero-img img {
-    width: 46%;
-    display: block;
-    margin: auto;
-    padding: 15px;
-    padding-left: 25px; }
-  @media screen and (min-width: 992px) {
-    body.about-page .hero-container .hero .hero-content-container .hero-img {
-      margin-top: 40px;
-      right: 8%;
-      top: 28px;
-      transform: rotate(-5deg); } }
-  @media screen and (max-width: 992px) {
-    body.about-page .hero-container .hero .hero-content-container .hero-img {
+body.about-page .hero-container .hero .hero-content-container {
+  position: relative; }
+  @media screen and (max-width: 425px) {
+    body.about-page .hero-container .hero .hero-content-container {
+      padding: 0 20px; } }
+  body.about-page .hero-container .hero .hero-content-container .hero-content {
+    background-color: #ED583F;
+    max-width: 540px;
+    margin: auto; }
+    body.about-page .hero-container .hero .hero-content-container .hero-content h1 span {
+      font-weight: 800;
+      font-size: 100px;
+      display: block; }
+      @media screen and (max-width: 667px) {
+        body.about-page .hero-container .hero .hero-content-container .hero-content h1 span {
+          font-size: 80px; } }
+    @media screen and (max-width: 425px) {
+      body.about-page .hero-container .hero .hero-content-container .hero-content {
+        padding-top: 20px; } }
+  body.about-page .hero-container .hero .hero-content-container .hero-img {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 450px; }
+    body.about-page .hero-container .hero .hero-content-container .hero-img img {
+      width: 46%;
+      display: block;
       margin: auto;
-      margin-top: -15px;
-      max-width: 540px; }
-      body.about-page .hero-container .hero .hero-content-container .hero-img img {
-        max-width: 50%;
-        max-height: 40%;
-        display: block;
-        margin: 15px auto; } }
+      padding: 15px;
+      padding-left: 25px; }
+      @media screen and (max-width: 425px) {
+        body.about-page .hero-container .hero .hero-content-container .hero-img img {
+          position: absolute;
+          bottom: -72px;
+          left: -86px;
+          height: 198px;
+          width: 100%;
+          max-height: none;
+          transform: rotate(-14deg); } }
+    @media screen and (min-width: 992px) {
+      body.about-page .hero-container .hero .hero-content-container .hero-img {
+        margin-top: 40px;
+        right: 8%;
+        top: 28px;
+        transform: rotate(-5deg); } }
 body.about-page .main {
   background-color: #E5EFED;
   color: #263557; }
@@ -946,7 +957,7 @@ body.about-page .main {
     padding: 40px; }
   body.about-page .main .about-content h2 {
     text-align: center;
-    margin: 50px auto 30px auto; }
+    margin: 0 auto 30px auto; }
   body.about-page .main .about-content .btn {
     margin-bottom: 40px; }
   body.about-page .main .about-content h1 {
@@ -987,7 +998,8 @@ body.about-page .main {
   body.about-page .main .about-content .about-profiles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 100px; }
     body.about-page .main .about-content .about-profiles .profile {
       text-align: center;
       margin: 0;
@@ -1012,7 +1024,8 @@ body.about-page .main {
       body.about-page .main .about-content .about-profiles .profile .profile-name {
         font-size: 22px;
         text-align: center;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        margin-top: 20px; }
       body.about-page .main .about-content .about-profiles .profile .profile-pronouns {
         font-size: 16px;
         margin: 0 auto; }
@@ -1034,46 +1047,23 @@ body.about-page .main {
           margin-right: 10px; }
         body.about-page .main .about-content .about-profiles .profile .profile-icons a:last-child {
           margin-right: 0; }
+    body.about-page .main .about-content .about-profiles .profile > .profile-icons > a {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      padding: 6px 10px; }
+      body.about-page .main .about-content .about-profiles .profile > .profile-icons > a i {
+        color: white; }
+      body.about-page .main .about-content .about-profiles .profile > .profile-icons > a:last-child i {
+        padding-left: 1px; }
     body.about-page .main .about-content .about-profiles .brittany-profile > .profile-icons > a {
-      background-color: #22AFBF;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      padding: 6px 10px; }
-      body.about-page .main .about-content .about-profiles .brittany-profile > .profile-icons > a i {
-        color: white; }
-      body.about-page .main .about-content .about-profiles .brittany-profile > .profile-icons > a:last-child i {
-        padding-left: 1px; }
+      background-color: #22AFBF; }
     body.about-page .main .about-content .about-profiles .devon-profile > .profile-icons > a {
-      background-color: #F58020;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      padding: 6px 10px; }
-      body.about-page .main .about-content .about-profiles .devon-profile > .profile-icons > a i {
-        color: white; }
-      body.about-page .main .about-content .about-profiles .devon-profile > .profile-icons > a:last-child i {
-        padding-left: 1px; }
+      background-color: #F58020; }
     body.about-page .main .about-content .about-profiles .rebecca-profile > .profile-icons > a {
-      background-color: #ED583F;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      padding: 6px 10px; }
-      body.about-page .main .about-content .about-profiles .rebecca-profile > .profile-icons > a i {
-        color: white; }
-      body.about-page .main .about-content .about-profiles .rebecca-profile > .profile-icons > a:last-child i {
-        padding-left: 1px; }
+      background-color: #ED583F; }
     body.about-page .main .about-content .about-profiles .nathan-profile > .profile-icons > a {
-      background-color: #8C83A0;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      padding: 6px 10px; }
-      body.about-page .main .about-content .about-profiles .nathan-profile > .profile-icons > a i {
-        color: white; }
-      body.about-page .main .about-content .about-profiles .nathan-profile > .profile-icons > a:last-child i {
-        padding-left: 1px; }
+      background-color: #8C83A0; }
   body.about-page .main .about-beginning {
     position: relative; }
     body.about-page .main .about-beginning .about-beginning-story {
@@ -1234,6 +1224,9 @@ body.about-page .main {
           margin-top: 5%; } }
 body.about-page footer {
   background-color: #E5EFED; }
+  @media screen and (max-width: 662px) {
+    body.about-page footer .footer-container {
+      padding: 40px 20px; } }
   body.about-page footer .footer-container .footer-links .logo-links {
     color: white;
     border: 3px solid #263557; }
@@ -1245,6 +1238,9 @@ body.about-page footer {
         color: #F4CE6E; }
   body.about-page footer .footer-container .footer-form .footer-form-content {
     margin-left: 278px; }
+    @media screen and (max-width: 662px) {
+      body.about-page footer .footer-container .footer-form .footer-form-content {
+        margin-left: 0; } }
 
 /* ==============================
    ------------------------------
