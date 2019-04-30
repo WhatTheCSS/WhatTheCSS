@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="731px" height="217px" viewBox="0 0 731 217" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>half-confetti-light</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="732" height="228"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="half-confetti-light" transform="translate(-1.000000, -11.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask" fill-rule="nonzero"></g>
+            <g mask="url(#mask-2)" id="Group_939">
+                <g transform="translate(-1.000000, -1.000000)">
+                    <g transform="translate(400.929000, 115.790000) rotate(180.000000) translate(-400.929000, -115.790000) translate(0.429000, 0.290000)">
+                        <rect id="Rectangle_25" fill="#F4CE6E" opacity="0.83" transform="translate(338.652119, 91.678977) rotate(139.989042) translate(-338.652119, -91.678977) " x="315.799277" y="55.1427321" width="45.7056841" height="73.0724888"></rect>
+                        <rect id="Rectangle_24" fill="#CBC715" opacity="0.895" transform="translate(108.648108, 85.041489) rotate(-87.000000) translate(-108.648108, -85.041489) " x="92.8916081" y="59.8504888" width="31.513" height="50.382"></rect>
+                        <rect id="Rectangle_22" fill="#ED583F" opacity="0.877" transform="translate(464.186921, 142.805648) rotate(-97.000000) translate(-464.186921, -142.805648) " x="451.643921" y="122.752648" width="25.086" height="40.106"></rect>
+                        <rect id="Rectangle_21" fill="#DFD8D2" opacity="0.944" transform="translate(264.023864, 151.512311) rotate(-156.996906) translate(-264.023864, -151.512311) " x="242.084066" y="116.43615" width="43.8795958" height="70.1523224"></rect>
+                        <circle id="Ellipse_22" fill="#F4CE6E" opacity="0.969" transform="translate(761.468682, 41.312576) rotate(-88.000000) translate(-761.468682, -41.312576) " cx="761.468682" cy="41.3125761" r="37.669"></circle>
+                        <circle id="Ellipse_14" fill="#2EAFBE" opacity="0.833" transform="translate(728.657744, 189.191446) rotate(123.007062) translate(-728.657744, -189.191446) " cx="728.657744" cy="189.191446" r="29.723049"></circle>
+                        <rect id="Rectangle_26" fill="#ED583F" opacity="0.854" transform="translate(39.612351, 75.059979) rotate(-51.000000) translate(-39.612351, -75.059979) " x="10.3003506" y="48.3999792" width="58.624" height="53.32"></rect>
+                        <rect id="Rectangle_23" fill="#ED583F" opacity="0.824" transform="translate(719.692888, 114.689419) rotate(-9.000000) translate(-719.692888, -114.689419) " x="701.658888" y="98.2869189" width="36.068" height="32.805"></rect>
+                        <circle id="Ellipse_13" fill="#CBC715" opacity="0.938" transform="translate(68.259620, 143.081640) rotate(-69.028289) translate(-68.259620, -143.081640) " cx="68.25962" cy="143.08164" r="28.9925351"></circle>
+                        <rect id="Rectangle_27" fill="#DFD8D2" opacity="0.985" transform="translate(486.955746, 59.082220) rotate(172.000000) translate(-486.955746, -59.082220) " x="446.510746" y="41.7307197" width="80.89" height="34.703"></rect>
+                        <circle id="Ellipse_18" fill="#2EAFBE" opacity="0.958" transform="translate(558.265663, 126.524262) rotate(158.000000) translate(-558.265663, -126.524262) " cx="558.265663" cy="126.524262" r="42.133"></circle>
+                        <g id="Ellipse_15" opacity="0.805" transform="translate(689.183841, 148.941668) rotate(-166.000000) translate(-689.183841, -148.941668) translate(664.683841, 124.441668)">
+                            <circle id="Oval" fill="#FFFFFF" cx="24.478" cy="24.478" r="24.478"></circle>
+                            <circle id="Oval" stroke="#707070" cx="24.478" cy="24.478" r="23.978"></circle>
+                        </g>
+                        <circle id="Ellipse_12" fill="#F4CE6E" opacity="0.892" transform="translate(217.570894, 65.516783) rotate(-167.000000) translate(-217.570894, -65.516783) " cx="217.570894" cy="65.5167829" r="37.684"></circle>
+                        <g id="Rectangle_28" opacity="0.812" transform="translate(520.581483, 28.122467) rotate(-60.000000) translate(-520.581483, -28.122467) translate(499.581483, 9.122467)">
+                            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="41.502" height="37.747"></rect>
+                            <rect id="Rectangle" stroke="#707070" x="0.5" y="0.5" width="40.502" height="36.747"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

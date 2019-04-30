@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.41 126.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dedee2;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #686868;
+        stroke-width: 1.5px;
+      }
+
+      .cls-1, .cls-10, .cls-11, .cls-12, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-11, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #74757b;
+      }
+
+      .cls-4 {
+        fill: #f0efef;
+      }
+
+      .cls-5 {
+        fill: #36adbd;
+      }
+
+      .cls-6 {
+        fill: #2d3c5b;
+      }
+
+      .cls-7 {
+        fill: #c7c22e;
+      }
+
+      .cls-8 {
+        fill: #f4d07d;
+      }
+
+      .cls-9 {
+        fill: #ed583f;
+      }
+
+      .cls-10 {
+        fill: #fff;
+      }
+
+      .cls-10, .cls-11, .cls-12 {
+        stroke: #fff;
+        stroke-width: 0.5px;
+      }
+
+      .cls-12 {
+        fill: #3954a5;
+      }
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect class="cls-1" x="9.62" y="0.75" width="184.51" height="115.88"/>
+        <rect class="cls-2" x="14.56" y="6.39" width="174.72" height="105.78"/>
+        <polygon class="cls-1" points="127.13 116.63 117.19 120.84 83.73 120.84 75.23 116.63 0.75 116.63 0.75 125.92 203.66 125.92 203.66 116.63 127.13 116.63"/>
+        <polygon class="cls-3" points="118.19 120.84 128.13 116.63 76.23 116.63 84.73 120.84 118.19 120.84"/>
+        <rect class="cls-4" x="15.63" y="7.9" width="172.79" height="102.57"/>
+        <rect class="cls-5" x="20.63" y="22.23" width="68.73" height="76.01"/>
+        <rect class="cls-6" x="84.55" y="26.56" width="87.97" height="50.16"/>
+        <rect class="cls-7" x="134.41" y="11.09" width="46.56" height="22.29"/>
+        <rect class="cls-8" x="39.7" y="30.83" width="31.45" height="5.6"/>
+        <rect class="cls-8" x="24.6" y="53.75" width="54.04" height="2.08"/>
+        <rect class="cls-8" x="24.6" y="49.95" width="54.04" height="2.08"/>
+        <rect class="cls-8" x="24.6" y="46.14" width="54.04" height="2.08"/>
+        <circle class="cls-9" cx="30.71" cy="33.37" r="6.11"/>
+        <line class="cls-10" x1="94.41" y1="64.18" x2="108.31" y2="50.29"/>
+        <line class="cls-11" x1="119.82" y1="57.26" x2="108.38" y2="50.22"/>
+        <line class="cls-12" x1="129.96" y1="42.27" x2="119.82" y2="57.26"/>
+        <line class="cls-11" x1="152.66" y1="64.98" x2="129.96" y2="42.27"/>
+        <circle class="cls-5" cx="93.65" cy="64.94" r="1.43"/>
+        <circle class="cls-8" cx="108.38" cy="50.22" r="1.43"/>
+        <circle class="cls-7" cx="119.82" cy="57.26" r="1.43"/>
+        <circle class="cls-9" cx="129.96" cy="42.27" r="1.43"/>
+        <circle class="cls-5" cx="152.66" cy="64.98" r="1.43"/>
+      </g>
+    </g>
+  </g>
+</svg>
