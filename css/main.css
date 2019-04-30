@@ -958,8 +958,8 @@ body.about-page .hero-container .hero .hero-content-container {
     @media screen and (min-width: 992px) {
       body.about-page .hero-container .hero .hero-content-container .hero-img {
         margin-top: 40px;
-        right: 8%;
-        top: 28px;
+        right: 2%;
+        top: -39px;
         transform: rotate(-5deg); } }
 body.about-page .main {
   background-color: #E5EFED;
@@ -970,7 +970,10 @@ body.about-page .main {
     padding: 40px; }
   body.about-page .main .about-content h2 {
     text-align: center;
-    margin: 0 auto 30px auto; }
+    margin-top: 70px; }
+    @media screen and (max-width: 425px) {
+      body.about-page .main .about-content h2 {
+        margin: 0 auto 30px auto; } }
   body.about-page .main .about-content .btn {
     margin-bottom: 40px; }
   body.about-page .main .about-content h1 {
@@ -1011,8 +1014,10 @@ body.about-page .main {
   body.about-page .main .about-content .about-profiles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 100px; }
+    justify-content: center; }
+    @media screen and (max-width: 425px) {
+      body.about-page .main .about-content .about-profiles {
+        margin-bottom: 100px; } }
     body.about-page .main .about-content .about-profiles .profile {
       text-align: center;
       margin: 0;

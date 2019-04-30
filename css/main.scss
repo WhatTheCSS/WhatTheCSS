@@ -1345,8 +1345,8 @@ body.about-page {
 
           @media screen and (min-width: 992px){
             margin-top: 40px;
-            right: 8%;
-            top: 28px;
+            right: 2%;
+            top: -39px;
             transform: rotate(-5deg);
           } 
         }
@@ -1369,7 +1369,10 @@ body.about-page {
 
       h2 {
         text-align: center;
-        margin: 0 auto 30px auto;
+        margin-top: 70px;
+        @media screen and (max-width: 425px){
+          margin: 0 auto 30px auto;
+        }
       }
 
       .btn {
@@ -1424,7 +1427,9 @@ body.about-page {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 100px;
+        @media screen and (max-width: 425px){
+          margin-bottom: 100px;
+        }
 
         .profile {
           text-align: center;
