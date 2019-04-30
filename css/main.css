@@ -946,7 +946,7 @@ body.about-page .hero-container .hero .hero-content-container {
       margin: auto;
       padding: 15px;
       padding-left: 25px; }
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 992px) {
         body.about-page .hero-container .hero .hero-content-container .hero-img img {
           position: absolute;
           bottom: -72px;
