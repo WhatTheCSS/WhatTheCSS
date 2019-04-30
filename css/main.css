@@ -35,7 +35,7 @@ p {
   margin-top: 0; }
   @media screen and (max-width: 425px) {
     p {
-      font-size: 16px; } }
+      font-size: 18px; } }
 
 .main {
   margin-top: 65px;
@@ -731,6 +731,9 @@ body.home-page footer .footer-container img {
    ============================== */
 body.course-page .logo:hover {
   border-color: #F4CE6E; }
+@media screen and (max-width: 425px) {
+  body.course-page .hero-container {
+    padding-bottom: 5px; } }
 @media screen and (max-width: 992px) {
   body.course-page .hero-container .hero {
     margin-bottom: 100px; } }
@@ -744,6 +747,9 @@ body.course-page .hero-container .hero .hero-content-container .hero-content {
     @media screen and (max-width: 667px) {
       body.course-page .hero-container .hero .hero-content-container .hero-content h1 span {
         font-size: 80px; } }
+    @media screen and (max-width: 425px) {
+      body.course-page .hero-container .hero .hero-content-container .hero-content h1 span {
+        font-size: 60px; } }
 body.course-page .hero-container .hero .hero-content-container .hero-img {
   margin-top: 80px;
   width: 100%;
@@ -789,6 +795,13 @@ body.course-page .course-type-section img {
   max-height: 170px; }
 body.course-page .course-type-section p {
   text-align: left; }
+@media screen and (max-width: 425px) {
+  body.course-page .course-type-section {
+    margin-bottom: 30px; }
+    body.course-page .course-type-section p, body.course-page .course-type-section h2 {
+      text-align: center; } }
+body.course-page .course-outline {
+  margin-top: 70px; }
 body.course-page .course-section {
   margin-bottom: 30px; }
   body.course-page .course-section img {

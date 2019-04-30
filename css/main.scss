@@ -57,7 +57,7 @@ p {
   font-size: 21px;
   margin-top: 0;
   @media screen and (max-width: 425px){
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -986,7 +986,9 @@ body.home-page {
   }
 
   .hero-container {
-
+        @media screen and (max-width: 425px){ 
+          padding-bottom: 5px;
+        }
     .hero {
       // display: flex;
       // justify-content: center;
@@ -998,7 +1000,6 @@ body.home-page {
       }
 
       .hero-content-container {
-        
         .hero-content {
             background-color: $yellow;
             max-width: 540px;
@@ -1009,6 +1010,9 @@ body.home-page {
                 display: block;
                 @media screen and (max-width: 667px){
                   font-size: 80px;
+                }
+                @media screen and (max-width: 425px){
+                  font-size: 60px;
                 }
               }
             }
@@ -1081,6 +1085,16 @@ body.home-page {
     p {
       text-align: left;
     }
+    @media screen and (max-width: 425px){ 
+      margin-bottom: 30px;
+      p, h2 {
+        text-align: center;
+      }
+    }
+  }
+
+  .course-outline {
+    margin-top: 70px;
   }
 
   .course-section {
