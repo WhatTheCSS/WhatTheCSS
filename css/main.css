@@ -23,7 +23,7 @@ h1 {
   margin-bottom: 0; }
   @media screen and (max-width: 425px) {
     h1 {
-      font-size: 41px; } }
+      font-size: 36px; } }
 
 h2 {
   font-size: 30px;
@@ -171,21 +171,23 @@ a.btn {
   width: 80%;
   max-width: 750px;
   position: absolute;
-  right: -15vw; }
+  right: -30px; }
   @media screen and (min-width: 662px) {
     .right-confetti img {
       height: 151px;
-      top: 0; } }
+      top: 0;
+      right: -15vw; } }
 
 .left-confetti img {
   width: 80%;
   max-width: 750px;
   position: absolute;
-  left: -15vw; }
+  left: -30px; }
   @media screen and (min-width: 662px) {
     .left-confetti img {
       height: 151px;
-      top: 0; } }
+      top: 0;
+      left: -15vw; } }
 
 /* ------------------  
     NAVIGATION
@@ -316,6 +318,11 @@ nav {
         .hero-container .hero .hero-content h1 span {
           font-weight: 800;
           font-size: 100px; }
+        @media screen and (max-width: 425px) {
+          .hero-container .hero .hero-content h1 {
+            font-size: 36px; }
+            .hero-container .hero .hero-content h1 span {
+              font-size: 90px; } }
     .hero-container .hero .hero-img img {
       width: 100%;
       max-width: 540px;
@@ -689,6 +696,13 @@ body.home-page .client-image-container {
   @media screen and (min-width: 768px) {
     body.home-page .client-image-container {
       margin: auto; } }
+body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container, body.home-page .terms {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px; }
+  @media screen and (max-width: 662px) {
+    body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container, body.home-page .terms {
+      padding: 40px 20px; } }
 body.home-page .bonus-info .playlist-info {
   text-align: center; }
   body.home-page .bonus-info .playlist-info .playlist-image {
@@ -697,13 +711,9 @@ body.home-page .bonus-info .playlist-info {
     @media screen and (min-width: 992px) {
       body.home-page .bonus-info .playlist-info .playlist-image {
         margin-top: -50px; } }
-body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container, body.home-page .terms {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px; }
-  @media screen and (max-width: 662px) {
-    body.home-page .intro-text, body.home-page .challenge-info, body.home-page .client-info, body.home-page .bonus-info, body.home-page .footer-container, body.home-page .terms {
-      padding: 40px 20px; } }
+@media screen and (max-width: 662px) {
+  body.home-page .bonus-info {
+    padding: 0 20px 40px 20px; } }
 body.home-page .challenge-content, body.home-page .course-content {
   max-width: 700px;
   margin: auto; }

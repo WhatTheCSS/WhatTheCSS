@@ -43,7 +43,7 @@ h1 {
   font-size: 45px;
   margin-bottom: 0;
   @media screen and (max-width: 425px){
-    font-size: 41px;
+    font-size: 36px;
   }
 }
 
@@ -235,10 +235,11 @@ a.btn {
     width: 80%;
     max-width: 750px;
     position: absolute;
-    right: -15vw;
+    right: -30px;
     @media screen and (min-width: 662px){
         height: 151px;
         top: 0;
+        right: -15vw;
     }
   }
 }
@@ -248,10 +249,11 @@ a.btn {
     width: 80%;
     max-width: 750px;
     position: absolute;
-    left: -15vw;
+    left: -30px;
     @media screen and (min-width: 662px){
         height: 151px;
         top: 0;
+        left: -15vw;
     }
   }
 }
@@ -403,6 +405,12 @@ nav {
         span {
           font-weight: 800;
           font-size: 100px;
+        }
+        @media screen and (max-width: 425px){
+          font-size: 36px;
+          span {
+           font-size: 90px;
+          }
         }
       }
     }
@@ -919,6 +927,15 @@ body.home-page {
     }
   }
 
+  .intro-text, .challenge-info, .client-info, .bonus-info, .footer-container, .terms {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    @media screen and (max-width: 662px){
+      padding: 40px 20px;
+    }
+  }
+
   .bonus-info {
     .playlist-info {
       text-align: center;
@@ -930,14 +947,8 @@ body.home-page {
         }
       }
     }
-  }
-
-  .intro-text, .challenge-info, .client-info, .bonus-info, .footer-container, .terms {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
     @media screen and (max-width: 662px){
-      padding: 40px 20px;
+      padding: 0 20px 40px 20px;
     }
   }
 
