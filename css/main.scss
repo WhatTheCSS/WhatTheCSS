@@ -63,6 +63,14 @@ p {
   padding: 130px 30px 20px 30px;
 }
 
+.coming-soon {
+  color: $yellow;
+  margin-bottom: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
 .two-third-grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -733,8 +741,10 @@ body.home-page {
       color: white;
   }
 
-  .intro-text {
-    
+  .intro-content {
+      h1 {
+        margin-top: 0;
+      }
   }
  
   .challenge-info {
@@ -1199,6 +1209,9 @@ body.home-page {
         }
       } 
       .single-client-day:last-child {
+        img {
+          width: 37px;
+        }
         h3 {
           background-color: lighten($blue, 25%);
         }
@@ -1263,6 +1276,7 @@ body.about-page {
         .hero-content {
             background-color: $red;
             max-width: 540px;
+            margin: auto;
             
               h1 span {
                 font-weight: 800;
@@ -1280,7 +1294,6 @@ body.about-page {
           width: 100%;
           max-width: 450px;
           // max-height: 320px;
-          background-color: $blue;
   
           img {
             width: 46%;

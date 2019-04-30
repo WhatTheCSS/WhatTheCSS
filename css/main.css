@@ -38,6 +38,13 @@ p {
   margin-top: 65px;
   padding: 130px 30px 20px 30px; }
 
+.coming-soon {
+  color: #F4CE6E;
+  margin-bottom: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.1px; }
+
 .two-third-grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -556,6 +563,8 @@ body.home-page .hero-content {
 body.home-page .main {
   background-color: #263557;
   color: white; }
+body.home-page .intro-content h1 {
+  margin-top: 0; }
 body.home-page .challenge-info .challenge-imgs {
   text-align: center; }
   body.home-page .challenge-info .challenge-imgs .challenge-img {
@@ -855,6 +864,8 @@ body.course-page .client-days-content {
     background-color: #8C83A0; }
   body.course-page .client-days-content .single-client-day:nth-child(5) h3 {
     background-color: #CBC715; }
+  body.course-page .client-days-content .single-client-day:last-child img {
+    width: 37px; }
   body.course-page .client-days-content .single-client-day:last-child h3 {
     background-color: #4d6bb0; }
 body.course-page footer .footer-container .footer-links .logo-links {
@@ -881,7 +892,8 @@ body.about-page .logo:hover {
     margin-bottom: 100px; } }
 body.about-page .hero-container .hero .hero-content-container .hero-content {
   background-color: #ED583F;
-  max-width: 540px; }
+  max-width: 540px;
+  margin: auto; }
   body.about-page .hero-container .hero .hero-content-container .hero-content h1 span {
     font-weight: 800;
     font-size: 100px;
@@ -892,8 +904,7 @@ body.about-page .hero-container .hero .hero-content-container .hero-content {
 body.about-page .hero-container .hero .hero-content-container .hero-img {
   margin-top: 80px;
   width: 100%;
-  max-width: 450px;
-  background-color: #263557; }
+  max-width: 450px; }
   body.about-page .hero-container .hero .hero-content-container .hero-img img {
     width: 46%;
     display: block;
