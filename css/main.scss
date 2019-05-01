@@ -57,7 +57,7 @@ p {
   font-size: 21px;
   margin-top: 0;
   @media screen and (max-width: 425px){
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -65,6 +65,9 @@ p {
   margin-top: 65px;
   padding: 130px 30px 20px 30px;
   overflow: hidden;
+  @media screen and (max-width: 425px){
+    padding: 100px 10px 20px 10px;
+  }
 }
 
 .coming-soon {
@@ -144,6 +147,9 @@ a.btn {
   transition: .2s;
   position: relative;
   z-index: 1;
+  @media screen and (max-width: 425px){
+    margin: 20px auto 0 auto;
+  }
   &:hover {
     transform: translateY(-10px);
     transition: .2s;
@@ -284,7 +290,7 @@ nav {
     @media screen and (max-width: 991px){ 
       height: 120px;
       display: block;
-      margin: 0 auto 30px auto;
+      margin: 0 auto;
     }
     @media screen and (min-width: 992px){
       width: 100%;
@@ -298,6 +304,10 @@ nav {
     @media screen and (min-width: 992px){
       text-align: left;
       margin-left: 30px;
+    }
+    @media screen and (max-width: 425px){
+      padding: 0;
+      margin: 16px 0 0 0;
     }
     .nav-link {
       display: inline-block;
@@ -385,6 +395,9 @@ nav {
     .hero-content {
       text-align: center;
       padding: 50px 20px;
+      @media screen and (max-width: 425px){
+        padding: 10px 20px;
+      }
       @media screen and (min-width: 667px){
         max-width: 540px;
       }
@@ -761,6 +774,11 @@ body.home-page {
   .intro-content {
       h1 {
         margin-top: 0;
+        @media screen and (max-width: 425px){
+          margin-bottom: 10px;
+          line-height: 1.2;
+          font-size: 42px;
+        }
       }
   }
  
@@ -775,75 +793,27 @@ body.home-page {
         display: inline-block;
         max-width: 250px;
         @extend %easeanimation;
-        @media screen and (min-width: 662px){
-          width: 250px;
-          display: inline-block;
-        }
-        &:after {
-          position: absolute;
-          content: '';
-          height: 150px;
-          width: 150px;
-          z-index: -1;
-          @extend %easeanimation;
-          @media screen and (max-width: 662px){
-            height: 160px;
-            width: 160px;
-          }
-        }
-        &:hover {
-          &:after {
-            @extend %easeanimation;
-          }
-        }
-      }
-      .challenge-img:first-child{
-        &:after {
-          background-color: $red;
-          top: -20px;
-          left: -20px;
-          @media screen and (max-width: 662px){ 
-            top: -10px;
-          }
-        }
-        &:hover {
-          &:after {
-            top: -30px;
-          }
-        }
-      }
-      .challenge-img:nth-child(2){
-        &:after {
-          background-color: $green;
-          top: -20px;
-          right: -28px;
-          @media screen and (max-width: 662px){ 
-            top: -10px;
-          }
-        }
-        &:hover {
-          &:after {
-            top: -10px;
-          }
-        }
-      }
-      .challenge-img:nth-child(3){
-        &:after {
-          background-color: $teal;
-          bottom: -20px;
-          right: -20px;
-          @media screen and (max-width: 662px){ 
-            bottom: -10px;
-          }
-        }
-        &:hover {
-          &:after {
-            bottom: -10px;
-          }
-        }
-      }
-      .challenge-img:not(last-child){
         margin-right: 50px;
+        @media screen and (max-width: 776px){
+            display: none;
+        }
+        @media screen and (min-width: 776px){
+          display: inline-block;
+          width: 250px;
+        }
+      }
+      .challenge-img:last-child {
+        margin-right: 0;
+      }
+      .mobile-challenge-img {
+        max-width: 300px;
+        margin: auto;
+        @media screen and (max-width: 776px){
+          display: block;
+        }
+        @media screen and (min-width: 776px){
+          display: none;
+        }
       }
       img {
         width: 100%;
