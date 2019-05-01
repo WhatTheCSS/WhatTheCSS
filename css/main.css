@@ -39,7 +39,8 @@ p {
 
 .main {
   margin-top: 65px;
-  padding: 130px 30px 20px 30px; }
+  padding: 130px 30px 20px 30px;
+  overflow: hidden; }
 
 .coming-soon {
   color: #F4CE6E;
@@ -92,9 +93,9 @@ a.btn {
   padding: 15px;
   text-decoration: none;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 21px;
-  margin: 40px auto;
+  margin: 40px auto 0 auto;
   max-width: 350px;
   transition-timing-function: ease-in-out;
   transition: .2s;
@@ -170,10 +171,10 @@ a.btn {
         max-width: 100%; } }
 
 .right-confetti img {
-  width: 100%;
+  width: 127%;
   max-width: 750px;
   position: absolute;
-  right: -45px; }
+  right: -31px; }
   @media screen and (min-width: 662px) {
     .right-confetti img {
       height: 151px;
@@ -182,10 +183,10 @@ a.btn {
       width: 80%; } }
 
 .left-confetti img {
-  width: 100%;
+  width: 127%;
   max-width: 750px;
   position: absolute;
-  left: -45px; }
+  left: -31px; }
   @media screen and (min-width: 662px) {
     .left-confetti img {
       height: 151px;
@@ -484,6 +485,8 @@ footer {
     @media screen and (max-width: 662px) {
       footer .footer-container .footer-form {
         padding: 20px; } }
+    footer .footer-container .footer-form .btn {
+      font-weight: 600; }
   footer .footer-container .footer-links {
     padding: 40px 0;
     text-align: center; }
@@ -540,7 +543,7 @@ body.home-page footer, body.course-page footer, body.about-page footer {
       margin-left: 230px;
       max-width: 500px; }
       body.home-page footer .footer-container .footer-form .footer-form-content a, body.course-page footer .footer-container .footer-form .footer-form-content a, body.about-page footer .footer-container .footer-form .footer-form-content a {
-        margin: 40px 0; }
+        margin: 40px 0 0 0; }
       body.home-page footer .footer-container .footer-form .footer-form-content h2, body.course-page footer .footer-container .footer-form .footer-form-content h2, body.about-page footer .footer-container .footer-form .footer-form-content h2 {
         color: #263557;
         margin-top: 20px;
@@ -800,6 +803,8 @@ body.course-page .course-type-section p {
     margin-bottom: 30px; }
     body.course-page .course-type-section p, body.course-page .course-type-section h2 {
       text-align: center; } }
+body.course-page .course-type-section:last-child {
+  margin-bottom: 0; }
 body.course-page .course-outline {
   margin-top: 70px; }
 body.course-page .course-section {
@@ -968,6 +973,12 @@ body.about-page .main {
     max-width: 1000px;
     margin: auto;
     padding: 40px; }
+  body.about-page .main .right-confetti img {
+    right: -30%; }
+    @media screen and (max-width: 425px) {
+      body.about-page .main .right-confetti img {
+        width: 173%;
+        right: -85px; } }
   body.about-page .main .about-content h2 {
     text-align: center;
     margin-top: 70px; }
@@ -1037,7 +1048,7 @@ body.about-page .main {
         margin: 0 auto;
         height: 160px; }
         body.about-page .main .about-content .about-profiles .profile .profile-img-container img {
-          max-height: 160px;
+          max-width: 160px;
           vertical-align: middle; }
       body.about-page .main .about-content .about-profiles .profile .profile-name {
         font-size: 22px;
@@ -1242,9 +1253,6 @@ body.about-page .main {
           margin-top: 5%; } }
 body.about-page footer {
   background-color: #E5EFED; }
-  @media screen and (max-width: 662px) {
-    body.about-page footer .footer-container {
-      padding: 40px 20px; } }
   body.about-page footer .footer-container .footer-links .logo-links {
     color: white;
     border: 3px solid #263557; }
