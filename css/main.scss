@@ -64,6 +64,7 @@ p {
 .main {
   margin-top: 65px;
   padding: 130px 30px 20px 30px;
+  overflow: hidden;
 }
 
 .coming-soon {
@@ -135,9 +136,9 @@ a.btn {
   padding: 15px;
   text-decoration: none;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 21px;
-  margin: 40px auto;
+  margin: 40px auto 0 auto;
   max-width: 350px;
   transition-timing-function: ease-in-out;
   transition: .2s;
@@ -234,10 +235,10 @@ a.btn {
 
 .right-confetti {
   img {
-    width: 100%;
+    width: 127%;
     max-width: 750px;
     position: absolute;
-    right: -45px;
+    right: -31px;
     @media screen and (min-width: 662px){
         height: 151px;
         top: 0;
@@ -249,10 +250,10 @@ a.btn {
 
 .left-confetti {
   img {
-    width: 100%;
+    width: 127%;
     max-width: 750px;
     position: absolute;
-    left: -45px;
+    left: -31px;
     @media screen and (min-width: 662px){
         height: 151px;
         top: 0;
@@ -617,6 +618,10 @@ footer {
       @media screen and (max-width: 662px){
         padding: 20px;
       }
+      .btn {
+        font-weight: 600;
+
+      }
     }
     .footer-links {
       padding: 40px 0;
@@ -694,7 +699,7 @@ body.home-page, body.course-page, body.about-page {
           margin-left: 230px;
           max-width: 500px;
           a {
-            margin: 40px 0;
+            margin: 40px 0 0 0;
           }
           h2 {
             color: $blue;
@@ -1092,6 +1097,9 @@ body.home-page {
       }
     }
   }
+  .course-type-section:last-child {
+    margin-bottom: 0;
+  }
 
   .course-outline {
     margin-top: 70px;
@@ -1365,6 +1373,14 @@ body.about-page {
       padding: 40px;
     }
 
+    .right-confetti img {
+        right: -30%;
+      @media screen and (max-width: 425px){
+        width: 173%;
+        right: -85px;
+      }
+    }
+
     .about-content {
 
       h2 {
@@ -1455,7 +1471,7 @@ body.about-page {
             height: 160px;
 
             img {
-              max-height: 160px;
+              max-width: 160px;
               vertical-align: middle;
             }
           }
@@ -1489,10 +1505,6 @@ body.about-page {
           }
 
           .profile-icons {
-            // display: flex;
-            // justify-content: space-around;
-            // align-items: center;
-            // width: 75%;
             text-align: center;
             margin: auto;
             a{
@@ -1769,9 +1781,6 @@ body.about-page {
   footer {
     background-color: $light-blue;
     .footer-container {
-      @media screen and (max-width: 662px){
-        padding: 40px 20px;
-      }
       .footer-links {
         .logo-links {
           color: white;
