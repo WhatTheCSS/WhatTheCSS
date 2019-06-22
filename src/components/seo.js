@@ -77,7 +77,12 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800,900"
+        rel="stylesheet"
+      />
+    </Helmet>
   )
 }
 
