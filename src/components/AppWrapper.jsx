@@ -1,10 +1,9 @@
 import React from "react"
-import SEO from "../components/seo"
+import SEO from "./seo"
 import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
-import About from "../components/AboutPage/About"
 
-const AboutPage = () => (
+const AppWrapper = () => (
   <Wrapper>
     <Global
       styles={css`
@@ -42,11 +41,10 @@ const AboutPage = () => (
       `}
     />
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <About />
   </Wrapper>
 )
 
-export default AboutPage
+export default AppWrapper
 
 const Wrapper = styled.div`
   * {

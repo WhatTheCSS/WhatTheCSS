@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { colors } from "../../../ReusableComponents/colors"
+import { colors } from "../../ReusableComponents/colors"
 import FooterForm from "./FooterForm"
 import FooterLinks from "./FooterLinks"
 
@@ -19,7 +19,6 @@ const Footer = () => (
 export default Footer
 
 const FooterWrapper = styled.footer`
-  margin-top: 70px;
   padding: 40px;
   position: relative;
   @media screen and (max-width: 662px) {

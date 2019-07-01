@@ -2,15 +2,32 @@ import React from "react"
 import styled from "@emotion/styled"
 import { colors } from "../ReusableComponents/colors"
 import LogoTeal from "../imgs/logos/wtcss_logo_teal.png"
+import LogoRed from "../imgs/logos/wtcss_logo_red.png"
 
-const Nav = ({ home, course, about }) => (
+const Nav = ({ currentPage }) => (
   <Navigation>
-    <Logo href="https://www.whatthecss.com">
-      <img
-        src={LogoTeal}
-        alt="What the CSS?! logo of question mark and exclamation point"
-      />
-    </Logo>
+    {currentPage === "about" ? (
+      <Logo red href="https://www.whatthecss.com">
+        <img
+          src={LogoRed}
+          alt="What the CSS?! logo of question mark and exclamation point"
+        />
+      </Logo>
+    ) : currentPage === "course" ? (
+      <Logo href="https://www.whatthecss.com">
+        <img
+          src={LogoTeal}
+          alt="What the CSS?! logo of question mark and exclamation point"
+        />
+      </Logo>
+    ) : (
+      <Logo href="https://www.whatthecss.com">
+        <img
+          src={LogoTeal}
+          alt="What the CSS?! logo of question mark and exclamation point"
+        />
+      </Logo>
+    )}
     <NavLinks>
       <NavLink>
         <a href="https://www.whatthecss.com">Home</a>
@@ -41,14 +58,12 @@ const Navigation = styled.nav`
 
 const Logo = styled.a`
   display: block;
-  height: 150px;
-  margin-bottom: 20px;
   img {
     height: 200px;
     border-radius: 50%;
     border: 3px solid white;
     &:hover {
-      border-color: ${colors.teal};
+      border-color: ${props => (props.red ? colors.red : colors.teal)};
     }
     @media screen and (max-width: 991px) {
       height: 120px;
@@ -79,8 +94,7 @@ const NavLinks = styled.ul`
 const NavLink = styled.li`
   display: inline-block;
   margin-right: 10px;
-  margin-bottom: 25px;
-
+  margin-bottom: 20px;
   a {
     text-decoration: none;
     text-transform: uppercase;
@@ -133,7 +147,8 @@ const NavLink = styled.li`
   &:nth-of-type(4) a:after {
     background-color: ${colors.green};
   }
-  &:last-of-type a:after {
+  &:last-of-type,
+  &:last-of-type a {
     margin-right: 0;
   }
 `

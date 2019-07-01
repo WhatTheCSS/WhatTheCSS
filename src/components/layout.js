@@ -9,13 +9,15 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
-import Header from "./header"
-import "./layout.css"
-import Main from "./HomePage/HomePage"
+import HomePage from "./HomePage/HomePage"
 
 const Layout = () => (
   <Wrapper>
-    <Main />
+    <HomePage />
   </Wrapper>
 )
 export default Layout
+
+const Wrapper = styled.div`
+  width: 100%;
+`

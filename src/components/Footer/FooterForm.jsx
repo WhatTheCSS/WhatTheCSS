@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { YellowButton } from "../../../ReusableComponents/buttons"
-import MascotCatImg from "../../../imgs/other/WTCSS_mascot_cat_cropped.png"
-import { colors } from "../../../ReusableComponents/colors"
+import { YellowButton } from "../../ReusableComponents/buttons"
+import MascotCatImg from "../../imgs/other/WTCSS_mascot_cat_cropped.png"
+import { colors } from "../../ReusableComponents/colors"
 
 const FooterForm = () => (
   <FooterFormWrapper>
