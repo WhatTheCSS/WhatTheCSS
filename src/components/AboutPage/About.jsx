@@ -7,10 +7,10 @@ import Footer from "../Footer/Footer"
 
 const About = () => (
   <>
-    <Hero page="about" />
+    <Hero currentPage="about" />
     <AboutPageWrapper>
       <AboutContent />
-      <Footer page="about" />
+      <Footer currentPage="about" />
     </AboutPageWrapper>
   </>
 )

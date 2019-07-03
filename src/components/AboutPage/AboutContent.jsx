@@ -38,6 +38,7 @@ const AboutContentWrapper = styled.section`
     margin-bottom: 40px;
   }
   & > h1 {
+    margin-top: 80px;
     margin-bottom: 20px;
     text-align: center;
 

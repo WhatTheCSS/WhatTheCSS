@@ -4,13 +4,14 @@ import { colors } from "../ReusableComponents/colors"
 import Nav from "./Nav"
 import HomePageHeaderImg from "../imgs/header/WTCSS_pageheaders_home@2x.png"
 import AboutPageHeaderImg from "../imgs/header/WTCSS_pageheader_about.svg"
+import CoursePageHeaderImg from "../imgs/header/WTCSS_pageheaders_course.png"
 import { TopConfettiLayer } from "./Confetti/TopConfettiLayer"
 
-const Hero = ({ page }) => (
+const Hero = ({ currentPage }) => (
   <>
-    {page === "about" ? (
+    {currentPage === "about" ? (
       <AboutHeroWrapper>
-        <Nav currentPage={page} />
+        <Nav currentPage={currentPage} />
         <AboutHeroContainer>
           <AboutHeroContent>
             <h1>
@@ -26,21 +27,21 @@ const Hero = ({ page }) => (
         </AboutHeroContainer>
         <TopConfettiLayer />
       </AboutHeroWrapper>
-    ) : page === "course" ? (
+    ) : currentPage === "course" ? (
       <HeroWrapper>
-        <Nav />
+        <Nav currentPage={currentPage} />
         <HeroContainer>
-          <HeroContent>
+          <CourseHeroContent>
             <h1>
               The <span>Course</span>
             </h1>
-          </HeroContent>
-          <HeroImg>
+          </CourseHeroContent>
+          <CourseHeroImg>
             <img
-              src={HomePageHeaderImg}
-              alt="Family portrait of What the CSS?! mascots including a bull dog, a flamingo, a black cat, a bunny and a fox all wearing clothing."
+              src={CoursePageHeaderImg}
+              alt="illustration of a red notebook with a What the CSS?! logo (question mark and exclamation point) on it."
             />
-          </HeroImg>
+          </CourseHeroImg>
         </HeroContainer>
         <TopConfettiLayer />
       </HeroWrapper>
@@ -152,9 +153,6 @@ const HeroImg = styled.div`
 const AboutHeroWrapper = styled(HeroWrapper)`
   position: relative;
   padding-bottom: 50px;
-  @media screen and (min-width: 425px) {
-    margin-bottom: 100px;
-  }
 `
 
 const AboutHeroContainer = styled(HeroContainer)`
@@ -168,7 +166,9 @@ const AboutHeroContainer = styled(HeroContainer)`
     max-width: 1200px;
     margin: auto;
   }
-  margin-bottom: 100px;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 100px;
+  }
 `
 
 const AboutHeroContent = styled.div`
@@ -189,7 +189,7 @@ const AboutHeroContent = styled.div`
     }
     span {
       display: block;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 100px;
     }
     @media screen and (max-width: 425px) {
@@ -241,5 +241,59 @@ const AboutImg = styled.div`
     right: 5%;
     bottom: 10px;
     transform: rotate(-5deg);
+  }
+`
+
+const CourseHeroContent = styled(HeroContent)`
+  background-color: ${colors.yellow};
+  max-width: 540px;
+
+  h1 span {
+    font-weight: 800;
+    font-size: 100px;
+    display: block;
+    @media screen and (max-width: 667px) {
+      font-size: 80px;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 60px;
+    }
+  }
+`
+
+const CourseHeroImg = styled(HeroImg)`
+  margin-top: 80px;
+  width: 100%;
+  max-width: 540px;
+  background-color: ${colors.lightBlue};
+
+  img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: 15px;
+  }
+
+  @media screen and (min-width: 992px) {
+    margin-top: 40px;
+    max-width: 400px;
+    right: 8%;
+    top: 28px;
+    transform: rotate(-5deg);
+    img {
+      transform: rotate(0deg);
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin: auto;
+    margin-top: -15px;
+
+    img {
+      max-width: 50%;
+      max-height: 40%;
+      display: block;
+      margin: 15px auto;
+    }
   }
 `

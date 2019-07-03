@@ -2,17 +2,41 @@ import React from "react"
 import styled from "@emotion/styled"
 import { YellowButton } from "../../ReusableComponents/buttons"
 import MascotCatImg from "../../imgs/other/WTCSS_mascot_cat_cropped.png"
+import MascotFoxImg from "../../imgs/other/WTCSS_mascot_fox_cropped.png"
+import MascotFlamingoImg from "../../imgs/other/WTCSS_mascot_flamingo_cropped.png"
 import { colors } from "../../ReusableComponents/colors"
 
-const FooterForm = () => (
-  <FooterFormWrapper>
-    <img src={MascotCatImg} alt="" />
-    <FooterFormContent>
-      <h2>Are you ready?</h2>
-      <p>Sign up now to be notifed when the course has launched!</p>
-      <YellowButton href="http://eepurl.com/dhmwZr">Sign Up</YellowButton>
-    </FooterFormContent>
-  </FooterFormWrapper>
+const FooterForm = ({ currentPage }) => (
+  <>
+    {currentPage === "about" ? (
+      <FooterFormWrapper>
+        <img src={MascotFoxImg} alt="" />
+        <FooterFormContent about>
+          <h2>Are you ready?</h2>
+          <p>Sign up now to be notifed when the course has launched!</p>
+          <YellowButton href="http://eepurl.com/dhmwZr">Sign Up</YellowButton>
+        </FooterFormContent>
+      </FooterFormWrapper>
+    ) : currentPage === "course" ? (
+      <FooterFormWrapper course>
+        <img src={MascotFlamingoImg} alt="" />
+        <FooterFormContent>
+          <h2>Are you ready?</h2>
+          <p>Sign up now to be notifed when the course has launched!</p>
+          <YellowButton href="http://eepurl.com/dhmwZr">Sign Up</YellowButton>
+        </FooterFormContent>
+      </FooterFormWrapper>
+    ) : (
+      <FooterFormWrapper>
+        <img src={MascotCatImg} alt="" />
+        <FooterFormContent>
+          <h2>Are you ready?</h2>
+          <p>Sign up now to be notifed when the course has launched!</p>
+          <YellowButton href="http://eepurl.com/dhmwZr">Sign Up</YellowButton>
+        </FooterFormContent>
+      </FooterFormWrapper>
+    )}
+  </>
 )
 
 export default FooterForm
@@ -27,6 +51,7 @@ const FooterFormWrapper = styled.section`
     position: absolute;
     bottom: 0;
     height: 350px;
+    left: ${props => (props.course ? "-35px" : "0")};
   }
   @media screen and (max-width: 662px) {
     img {
@@ -41,7 +66,7 @@ const FooterFormWrapper = styled.section`
 `
 
 const FooterFormContent = styled.div`
-  margin-left: 230px;
+  margin-left: ${props => (props.about ? `278px` : `230px`)};
   max-width: 500px;
   a {
     margin: 40px 0 0 0;

@@ -10,6 +10,7 @@ export const colors = {
   black: "#525050",
   purple: "#8C83A0",
   tan: "#F9E1A9",
+  altBlue: "#4d6bb0",
   lightBlue: "#E5EFED",
   lightGray: "#F3F3F4",
 }

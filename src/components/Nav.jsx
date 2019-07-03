@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 import { colors } from "../ReusableComponents/colors"
 import LogoTeal from "../imgs/logos/wtcss_logo_teal.png"
 import LogoRed from "../imgs/logos/wtcss_logo_red.png"
+import LogoYellow from "../imgs/logos/wtcss_logo_yellow.png"
 
 const Nav = ({ currentPage }) => (
   <Navigation>
@@ -14,9 +15,9 @@ const Nav = ({ currentPage }) => (
         />
       </Logo>
     ) : currentPage === "course" ? (
-      <Logo href="https://www.whatthecss.com">
+      <Logo yellow href="https://www.whatthecss.com">
         <img
-          src={LogoTeal}
+          src={LogoYellow}
           alt="What the CSS?! logo of question mark and exclamation point"
         />
       </Logo>
@@ -63,7 +64,8 @@ const Logo = styled.a`
     border-radius: 50%;
     border: 3px solid white;
     &:hover {
-      border-color: ${props => (props.red ? colors.red : colors.teal)};
+      border-color: ${props =>
+        props.red ? colors.red : props.yellow ? colors.yellow : colors.teal};
     }
     @media screen and (max-width: 991px) {
       height: 120px;

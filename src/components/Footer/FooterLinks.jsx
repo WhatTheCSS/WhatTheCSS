@@ -4,14 +4,27 @@ import { colors } from "../../ReusableComponents/colors"
 import TwitterSVG from "../../imgs/other/twitter.svg"
 import DEVtoSVG from "../../imgs/other/dev.svg"
 
-const FooterLinks = () => (
+const FooterLinks = ({ currentPage }) => (
   <FooterLinksWrapper>
-    <LogoLinks href="https://twitter.com/WhatTheCSS">
-      <img src={TwitterSVG} alt="twitter icon" />
-    </LogoLinks>
-    <LogoLinks href="https://dev.to/whatthecss">
-      <img src={DEVtoSVG} alt="dev.to icon" />
-    </LogoLinks>
+    {currentPage === "about" ? (
+      <>
+        <LogoLinks dark href="https://twitter.com/WhatTheCSS">
+          <img src={TwitterSVG} alt="twitter icon" />
+        </LogoLinks>
+        <LogoLinks dark href="https://dev.to/whatthecss">
+          <img src={DEVtoSVG} alt="dev.to icon" />
+        </LogoLinks>
+      </>
+    ) : (
+      <>
+        <LogoLinks href="https://twitter.com/WhatTheCSS">
+          <img src={TwitterSVG} alt="twitter icon" />
+        </LogoLinks>
+        <LogoLinks href="https://dev.to/whatthecss">
+          <img src={DEVtoSVG} alt="dev.to icon" />
+        </LogoLinks>
+      </>
+    )}
   </FooterLinksWrapper>
 )
 
@@ -28,7 +41,8 @@ const LogoLinks = styled.a`
   width: 60px;
   display: inline-block;
   color: white;
-  border: 3px solid white;
+  border: ${props =>
+    props.dark ? `3px solid ${colors.blue}` : `3px solid ${colors.white}`};
   transition: 0.2s;
   margin: auto;
   margin-right: 15px;
