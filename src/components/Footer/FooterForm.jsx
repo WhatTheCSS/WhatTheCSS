@@ -13,7 +13,7 @@ const FooterForm = ({ currentPage }) => (
         <img src={MascotFoxImg} alt="" />
         <FooterFormContent about>
           <h2>Are you ready?</h2>
-          <p>Sign up now to be notifed when the course has launched!</p>
+          <p>Sign up now to start your 30 day CSS journey!</p>
           <Checkout cancelRedirectLink="https://localhost:8000/about" yellow />
         </FooterFormContent>
       </FooterFormWrapper>
@@ -22,7 +22,7 @@ const FooterForm = ({ currentPage }) => (
         <img src={MascotFlamingoImg} alt="" />
         <FooterFormContent>
           <h2>Are you ready?</h2>
-          <p>Sign up now to be notifed when the course has launched!</p>
+          <p>Sign up now to start your 30 day CSS journey!</p>
           <Checkout cancelRedirectLink="https://localhost:8000/course" yellow />
         </FooterFormContent>
       </FooterFormWrapper>
@@ -31,7 +31,7 @@ const FooterForm = ({ currentPage }) => (
         <img src={MascotCatImg} alt="" />
         <FooterFormContent>
           <h2>Are you ready?</h2>
-          <p>Sign up now to be notifed when the course has launched!</p>
+          <p>Sign up now to start your 30 day CSS journey!</p>
           <Checkout cancelRedirectLink="https://localhost:8000/" yellow />
         </FooterFormContent>
       </FooterFormWrapper>
