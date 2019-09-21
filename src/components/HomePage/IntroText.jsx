@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { TwoThirdGridContainer } from "../../ReusableComponents/containers"
-import { RedButton } from "../../ReusableComponents/buttons"
+import Checkout from "../checkout"
 import { colors } from "../../ReusableComponents/colors"
 
 const IntroText = () => (
@@ -15,7 +15,7 @@ const IntroText = () => (
         your skills working with a demanding client.
       </p>
     </IntroContent>
-    <RedButton href="http://eepurl.com/dhmwZr">Sign Up</RedButton>
+    <Checkout cancelRedirectLink="https://localhost:8000/" red />
   </IntroTextWrapper>
 )
 

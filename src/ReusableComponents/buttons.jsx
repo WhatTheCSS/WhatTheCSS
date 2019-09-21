@@ -14,6 +14,7 @@ export const Button = styled.a`
   transition-timing-function: ease-in-out;
   transition: 0.2s;
   position: relative;
+  cursor: pointer;
   z-index: 1;
   @media screen and (max-width: 425px) {
     margin: 20px auto 0 auto;

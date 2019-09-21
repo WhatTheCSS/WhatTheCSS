@@ -13,6 +13,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-stripe`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sharp`,

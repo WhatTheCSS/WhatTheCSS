@@ -31,13 +31,13 @@ const Nav = ({ currentPage }) => (
     )}
     <NavLinks>
       <NavLink>
-        <a href="https://www.whatthecss.com">Home</a>
+        <a href="/">Home</a>
       </NavLink>
       <NavLink>
-        <a href="https://www.whatthecss.com/course">Course</a>
+        <a href="/course">Course</a>
       </NavLink>
       <NavLink>
-        <a href="https://www.whatthecss.com/about">About</a>
+        <a href="/about">About</a>
       </NavLink>
     </NavLinks>
   </Navigation>

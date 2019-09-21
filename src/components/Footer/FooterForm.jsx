@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { YellowButton } from "../../ReusableComponents/buttons"
+import Checkout from "../checkout"
 import MascotCatImg from "../../imgs/other/WTCSS_mascot_cat_cropped.png"
 import MascotFoxImg from "../../imgs/other/WTCSS_mascot_fox_cropped.png"
 import MascotFlamingoImg from "../../imgs/other/WTCSS_mascot_flamingo_cropped.png"
@@ -14,7 +14,7 @@ const FooterForm = ({ currentPage }) => (
         <FooterFormContent about>
           <h2>Are you ready?</h2>
           <p>Sign up now to be notifed when the course has launched!</p>
-          <YellowButton href="http://eepurl.com/dhmwZr">Sign Up</YellowButton>
+          <Checkout cancelRedirectLink="https://localhost:8000/about" yellow />
         </FooterFormContent>
       </FooterFormWrapper>
     ) : currentPage === "course" ? (
@@ -23,7 +23,7 @@ const FooterForm = ({ currentPage }) => (
         <FooterFormContent>
           <h2>Are you ready?</h2>
           <p>Sign up now to be notifed when the course has launched!</p>
-          <YellowButton href="http://eepurl.com/dhmwZr">Sign Up</YellowButton>
+          <Checkout cancelRedirectLink="https://localhost:8000/course" yellow />
         </FooterFormContent>
       </FooterFormWrapper>
     ) : (
@@ -32,7 +32,7 @@ const FooterForm = ({ currentPage }) => (
         <FooterFormContent>
           <h2>Are you ready?</h2>
           <p>Sign up now to be notifed when the course has launched!</p>
-          <YellowButton href="http://eepurl.com/dhmwZr">Sign Up</YellowButton>
+          <Checkout cancelRedirectLink="https://localhost:8000/" yellow />
         </FooterFormContent>
       </FooterFormWrapper>
     )}

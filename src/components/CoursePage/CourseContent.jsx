@@ -1,9 +1,11 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { RedButton } from "../../ReusableComponents/buttons"
+import { colors } from "../../ReusableComponents/colors"
 import CourseTypeSection from "./CourseTypeSection"
 import CourseOutline from "./CourseOutline"
 import ClientDaysSection from "./ClientDaysSection"
+import Checkout from "../checkout"
 
 const CourseContent = () => (
   <CourseContentWrapper>
@@ -15,9 +17,7 @@ const CourseContent = () => (
         exercise, a challenge, resources and a music playlist.
       </p>
       <CourseTypeSection />
-      <RedButton href="http://eepurl.com/dhmwZr" target="_blank">
-        Sign Up
-      </RedButton>
+      <Checkout cancelRedirectLink="https://localhost:8000/course" red />
       <CourseOutline />
       <ClientDaysSection />
     </div>
