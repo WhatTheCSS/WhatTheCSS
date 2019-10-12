@@ -103,6 +103,7 @@ const CourseSection = styled(TwoThirdGridContainerReverse)`
       margin: 7px;
       font-size: 21px;
       padding-left: 10px;
+      padding-right: 10px;
       @media screen and (max-width: 776px) {
         display: block;
       }
