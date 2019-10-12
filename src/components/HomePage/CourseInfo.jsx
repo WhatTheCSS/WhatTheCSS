@@ -2,10 +2,14 @@ import React from "react"
 import styled from "@emotion/styled"
 import { colors } from "../../ReusableComponents/colors"
 import { TealButton } from "../../ReusableComponents/buttons"
+import CourseBoardSVG from "../../imgs/homepage/CourseBoardSVG.gif"
 
 const CourseInfo = () => (
   <CourseInfoWrapper>
-    <CourseImg>{/*add svg + svg animations*/}</CourseImg>
+    <CourseImg>
+      {/*add svg + svg animations*/}
+      <img src={CourseBoardSVG} alt="" />
+    </CourseImg>
     <CourseContent>
       <h2>The Course</h2>
       <p>
@@ -34,6 +38,9 @@ const CourseImg = styled.div`
   padding: 20px;
   position: relative;
   margin-bottom: 70px;
+  img {
+    width: 100%;
+  }
   &:after {
     position: absolute;
     content: "";
